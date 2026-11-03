@@ -160,16 +160,20 @@ a {
   margin: 0 auto;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .hero-header {
   text-align: center;
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.75rem;
 }
 
 .hero-kicker {
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.45rem;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--hero-muted);
@@ -179,7 +183,7 @@ a {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: clamp(4.25rem, 19vw, 10.5rem);
+  font-size: clamp(4.1rem, 18vw, 8.75rem);
   line-height: 0.88;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -187,9 +191,9 @@ a {
 }
 
 .hero-byline {
-  margin: 1rem 0 0.45rem;
+  margin: 0.8rem 0 0.35rem;
   font-family: var(--font-body);
-  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  font-size: clamp(1.08rem, 2.2vw, 1.3rem);
   font-weight: 400;
   color: #e8e8e8;
 }
@@ -198,7 +202,7 @@ a {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--hero-dim);
@@ -210,9 +214,9 @@ a {
 
 .viewfinder {
   position: relative;
-  max-width: 920px;
-  margin: 0 auto 2.25rem;
-  padding: 0.85rem 0.85rem 0.75rem;
+  max-width: var(--max-reading);
+  margin: 0 auto 1.75rem;
+  padding: 0.8rem 0.85rem 0.7rem;
   background: #0b0b0b;
   border: 1px solid var(--rule-dark);
 }
@@ -592,6 +596,10 @@ a {
   align-items: stretch;
 }
 
+.support-action .btn {
+  width: 100%;
+}
+
 /* ==========================================================================
    3 & 4. THE FILM & ZHAN PETROV (Editorial Prose)
    ========================================================================== */
@@ -919,10 +927,10 @@ a {
 
 @media (min-width: 768px) {
   .hero {
-    padding: 4.5rem 2rem 5.25rem;
+    padding: 2.75rem 2rem 3.5rem;
   }
   .viewfinder {
-    padding: 1rem 1.1rem 0.9rem;
+    padding: 0.9rem 1rem 0.8rem;
   }
   .page-main {
     padding: 0 2rem;
