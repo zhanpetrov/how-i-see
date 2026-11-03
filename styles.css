@@ -1,0 +1,933 @@
+/* ==========================================================================
+   HOW I SEE — A film by Zhan Petrov
+   Pure monochrome stylesheet · Mobile-first · Accessible
+   ========================================================================== */
+
+:root {
+  --black: #070707;
+  --black-elevated: #111111;
+  --white: #ffffff;
+  --paper: #f8f8f6;
+  --ink: #0a0a0a;
+  --ink-muted: #525252;
+  --ink-soft: #737373;
+  --hero-muted: #b8b8b8;
+  --hero-dim: #808080;
+  --rule-light: #dededa;
+  --rule-strong: #141414;
+  --rule-dark: rgba(255, 255, 255, 0.18);
+
+  --font-display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+
+  --max-hero: 1020px;
+  --max-reading: 760px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.68;
+  color: var(--ink);
+  background-color: var(--paper);
+  overflow-x: clip;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+iframe,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+
+/* Keyboard focus visibility — high contrast on both dark and light surfaces */
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.hero :focus-visible,
+.watch-room :focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 3px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 1000;
+  padding: 0.65rem 1.1rem;
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--black);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* ==========================================================================
+   1. HERO — Pure Black + Subtle Film Grain + Optical Viewfinder
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 3.25rem 1.25rem 4.25rem;
+  border-bottom: 1px solid #000000;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Subtle silver-halide film grain overlay */
+.hero::before,
+.watch-room::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.055;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  animation: grainShift 8s steps(6) infinite;
+}
+
+@keyframes grainShift {
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(-2%, 1.5%); }
+  40%  { transform: translate(1.5%, -2%); }
+  60%  { transform: translate(-1.5%, -1%); }
+  80%  { transform: translate(2%, 1%); }
+  100% { transform: translate(0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero::before,
+  .watch-room::before {
+    animation: none;
+    inset: 0;
+  }
+}
+
+.hero-inner {
+  max-width: var(--max-hero);
+  margin: 0 auto;
+}
+
+.hero-header {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+
+.hero-kicker {
+  margin: 0 0 0.6rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--hero-muted);
+}
+
+.hero-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(4.25rem, 19vw, 10.5rem);
+  line-height: 0.88;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.hero-byline {
+  margin: 1rem 0 0.45rem;
+  font-family: var(--font-body);
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  font-weight: 400;
+  color: #e8e8e8;
+}
+
+.hero-facts {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--hero-dim);
+}
+
+/* ==========================================================================
+   THE ONE BOLD IDEA — Camera Viewfinder Frame
+   ========================================================================== */
+
+.viewfinder {
+  position: relative;
+  max-width: 920px;
+  margin: 0 auto 2.25rem;
+  padding: 0.85rem 0.85rem 0.75rem;
+  background: #0b0b0b;
+  border: 1px solid var(--rule-dark);
+}
+
+.vf-hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--hero-muted);
+  user-select: none;
+}
+
+.vf-hud--top {
+  margin-bottom: 0.65rem;
+}
+
+.vf-hud--bottom {
+  margin-top: 0.65rem;
+  color: var(--hero-dim);
+}
+
+.vf-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--white);
+}
+
+.vf-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--white);
+  display: inline-block;
+  animation: gatePulse 3.2s ease-in-out infinite;
+}
+
+@keyframes gatePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.vf-gate {
+  position: relative;
+  padding: 6px;
+}
+
+/* Four optical ground-glass corner brackets */
+.vf-corner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: var(--white);
+  border-style: solid;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.vf-corner--tl {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px;
+}
+
+.vf-corner--tr {
+  top: 0;
+  right: 0;
+  border-width: 2px 2px 0 0;
+}
+
+.vf-corner--bl {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 2px 2px;
+}
+
+.vf-corner--br {
+  bottom: 0;
+  right: 0;
+  border-width: 0 2px 2px 0;
+}
+
+/* Subtle mid-frame optical crosshair fiducials on gate edges */
+.vf-tick {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.55);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.vf-tick--top,
+.vf-tick--bottom {
+  left: 50%;
+  width: 1px;
+  height: 7px;
+  transform: translateX(-50%);
+}
+
+.vf-tick--top { top: 0; }
+.vf-tick--bottom { bottom: 0; }
+
+.vf-tick--left,
+.vf-tick--right {
+  top: 50%;
+  width: 7px;
+  height: 1px;
+  transform: translateY(-50%);
+}
+
+.vf-tick--left { left: 0; }
+.vf-tick--right { right: 0; }
+
+.vf-screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+}
+
+.vf-screen iframe,
+.vf-screen video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #000000;
+}
+
+/* Hero CTA Actions */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.85rem;
+}
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 48px;
+  padding: 0.72rem 1.65rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 140ms ease, color 140ms ease, border-color 140ms ease;
+}
+
+.btn--hero-primary {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--white);
+}
+
+.btn--hero-primary:hover {
+  background: transparent;
+  color: var(--white);
+}
+
+.btn--hero-secondary {
+  background: transparent;
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.48);
+}
+
+.btn--hero-secondary:hover {
+  border-color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.btn--ticket {
+  width: 100%;
+  background: var(--ink);
+  color: var(--white);
+  border-color: var(--ink);
+}
+
+.btn--ticket:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: var(--white);
+  color: var(--ink);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.btn--outline:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: var(--ink);
+  color: var(--white);
+}
+
+/* Disabled / Empty-link placeholder state */
+.btn:disabled,
+.btn[aria-disabled="true"],
+.btn.is-disabled {
+  background: #e7e7e4;
+  color: #767676;
+  border-color: #cfcfca;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   MAIN EDITORIAL CONTENT (Light Page Below)
+   ========================================================================== */
+
+.page-main {
+  max-width: var(--max-reading);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.section {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid var(--rule-light);
+}
+
+.section:last-of-type {
+  border-bottom: 0;
+}
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.section-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  line-height: 1.05;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.section-index {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  color: var(--ink-soft);
+}
+
+/* ==========================================================================
+   2. WATCH — Rent / Own Tickets + Optional Support
+   ========================================================================== */
+
+.tickets-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.ticket-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.6rem 1.5rem;
+  background: var(--white);
+  border: 1.5px solid var(--rule-strong);
+}
+
+.ticket-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.9rem;
+  margin-bottom: 0.95rem;
+  border-bottom: 1px dashed #bdbdb7;
+}
+
+.ticket-label {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.ticket-price {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.ticket-terms {
+  margin: 0 0 1.4rem;
+  font-size: 1.02rem;
+  color: var(--ink-muted);
+}
+
+.ticket-action {
+  margin-top: auto;
+}
+
+.ticket-status {
+  margin: 0.65rem 0 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.84rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.ticket-status[hidden] {
+  display: none;
+}
+
+/* Optional third tier: Support */
+.support-bar {
+  margin-top: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--white);
+  border: 1px solid #c7c7c2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.support-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.support-label {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.support-terms {
+  margin: 0;
+  font-size: 0.98rem;
+  color: var(--ink-muted);
+}
+
+.support-action {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* ==========================================================================
+   3 & 4. THE FILM & ZHAN PETROV (Editorial Prose)
+   ========================================================================== */
+
+.logline {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.2rem, 2.6vw, 1.42rem);
+  line-height: 1.48;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.prose p {
+  margin: 0 0 1.15rem;
+  font-size: 1.0625rem;
+  color: #1f1f1f;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.director-statement {
+  margin: 1.75rem 0 0;
+  padding: 0.15rem 0 0.15rem 1.25rem;
+  border-left: 2px solid var(--ink);
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+.director-statement p {
+  margin: 0 0 0.4rem;
+  font-size: 1.02rem;
+}
+
+.director-statement cite {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+/* ==========================================================================
+   5 & 6. SCREENINGS & PRESS
+   ========================================================================== */
+
+.event-item,
+.press-item {
+  padding: 1.35rem 1.5rem;
+  background: var(--white);
+  border: 1px solid #cfcfca;
+}
+
+.event-meta,
+.press-meta {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.event-title,
+.press-title {
+  margin: 0 0 0.45rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.38;
+  color: var(--ink);
+}
+
+.event-detail,
+.press-detail {
+  margin: 0 0 0.9rem;
+  font-size: 1rem;
+  color: var(--ink-muted);
+}
+
+.inline-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.5rem;
+  margin-top: 1.25rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.inline-links a,
+.arrow-link {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 0.24em;
+  word-break: break-word;
+}
+
+.inline-links a:hover,
+.arrow-link:hover {
+  color: var(--ink-muted);
+}
+
+/* ==========================================================================
+   7. CREDITS
+   ========================================================================== */
+
+.credits-list {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: 1px solid var(--rule-light);
+}
+
+.credits-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.15rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--rule-light);
+}
+
+.credits-row dt {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.credits-row dd {
+  margin: 0;
+  font-size: 1.04rem;
+  color: var(--ink);
+}
+
+/* ==========================================================================
+   8. FOOTER
+   ========================================================================== */
+
+.site-footer {
+  border-top: 1.5px solid var(--rule-strong);
+  background: var(--paper);
+  padding: 2.25rem 1.25rem 3rem;
+}
+
+.footer-inner {
+  max-width: var(--max-reading);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.footer-brand {
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.35rem;
+}
+
+/* ==========================================================================
+   WATCH.HTML — Screening Room (Phase-2 Paywall Player Page)
+   ========================================================================== */
+
+.watch-room {
+  position: relative;
+  min-height: 100vh;
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.watch-nav {
+  max-width: var(--max-hero);
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.watch-nav a {
+  text-decoration: none;
+  color: var(--hero-muted);
+  font-size: 0.92rem;
+}
+
+.watch-nav a:hover {
+  color: var(--white);
+}
+
+.watch-main {
+  max-width: var(--max-hero);
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.watch-gate-message {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  background: #080808;
+}
+
+.watch-gate-title {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.watch-gate-copy {
+  max-width: 440px;
+  margin: 0 0 1.35rem;
+  font-size: 0.98rem;
+  color: var(--hero-muted);
+}
+
+.watch-controls-bar {
+  max-width: 920px;
+  margin: 1rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.watch-expiry {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--hero-muted);
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS (Mobile-First -> Tablet / Desktop)
+   ========================================================================== */
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2.5rem 1rem 3.25rem;
+  }
+  .viewfinder {
+    padding: 0.65rem 0.6rem 0.6rem;
+  }
+  .vf-hud {
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+  }
+  .vf-hide-xs {
+    display: none;
+  }
+  .hero-actions .btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 640px) {
+  .tickets-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .support-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .support-action {
+    flex-shrink: 0;
+    min-width: 210px;
+  }
+  .credits-row {
+    grid-template-columns: 200px 1fr;
+    align-items: baseline;
+    gap: 1.5rem;
+  }
+  .footer-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 4.5rem 2rem 5.25rem;
+  }
+  .viewfinder {
+    padding: 1rem 1.1rem 0.9rem;
+  }
+  .page-main {
+    padding: 0 2rem;
+  }
+  .section {
+    padding: 4.25rem 0;
+  }
+}

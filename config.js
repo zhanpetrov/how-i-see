@@ -1,0 +1,23 @@
+// ============================================================================
+// HOW I SEE — Site Configuration (the only file you ever need to edit)
+// ============================================================================
+// Phase 1 ("links"): Paste your public Stripe Payment Links into `rent.link`,
+// `buy.link`, and (optionally) `support.link`. While a link is "", its button
+// stays greyed out with a "Checkout opens soon" notice.
+//
+// Phase 2 ("worker"): Set `mode: "worker"` and `WORKER_URL` to your paywall
+// worker endpoint to unlock instant tokenized playback on watch.html.
+// NEVER put Stripe secret API keys in this file — only public Payment Links.
+// ============================================================================
+
+window.SITE = {
+  mode: "links",            // "links" = Stripe Payment Links, "worker" = phase-2 paywall
+  WORKER_URL: "",
+  rent:    { label: "Rent", price: "$4", terms: "48 hours to watch, streaming in HD", link: "" },
+  buy:     { label: "Own",  price: "$9", terms: "Watch any time, plus a downloadable copy", link: "" },
+  support: { label: "Support the film", terms: "Pay what you want.", link: "" },
+  trailerEmbed: "https://www.youtube-nocookie.com/embed/videoseries?list=PLEQX7QC9SchHZZeCY9vgstOFX4Oxgf8Ko",
+  fragmentsUrl: "https://www.youtube.com/playlist?list=PLEQX7QC9SchHZZeCY9vgstOFX4Oxgf8Ko",
+  filmfreewayUrl: "https://filmfreeway.com/projects/4067236",
+  contactEmail: "zhanpetrov8@gmail.com"
+};
