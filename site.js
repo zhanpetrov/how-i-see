@@ -182,7 +182,8 @@
     // the Stripe Payment Link settings, never in this public code.
     var ytId = trimStr(params.get("v"));
     if (!isWorkerMode && /^[A-Za-z0-9_-]{11}$/.test(ytId)) {
-      var plan = trimStr(params.get("plan")).toLowerCase() === "own" ? "own" : "rent";
+      var planRaw = trimStr(params.get("plan")).toLowerCase();
+      var plan = planRaw === "own" ? "own" : planRaw === "rent" ? "rent" : "";
       var screen = root.querySelector(".vf-screen");
       if (screen) {
         var frame = document.createElement("iframe");
@@ -195,12 +196,14 @@
         screen.insertBefore(frame, screen.firstChild);
       }
       if (gateEl) gateEl.hidden = true;
-      if (hudModeEl) hudModeEl.textContent = plan === "own" ? "OWNED" : "RENTAL · 48 HOURS";
+      if (hudModeEl) hudModeEl.textContent = plan === "own" ? "OWNED" : plan === "rent" ? "RENTAL · 48 HOURS" : "SCREENING ROOM";
       if (controlsBar) controlsBar.hidden = false;
       if (expiryEl) {
         expiryEl.textContent = plan === "own"
           ? "Thank you. Bookmark this page to watch any time."
-          : "Thank you. Bookmark this page — your rental is for 48 hours.";
+          : plan === "rent"
+            ? "Thank you. Bookmark this page — your rental is for 48 hours."
+            : "Thank you for watching HOW I SEE. Bookmark this page.";
       }
       return;
     }
