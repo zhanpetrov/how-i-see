@@ -64,6 +64,14 @@ git push origin main
 
 ---
 
+## Bilingual Menu (`EN` / `日本語`)
+
+The top navigation bar includes a built-in **English / Japanese (`EN` / `日本語`)** switcher across both `index.html` and `watch.html`:
+- Switching languages translates navigation items, ticket cards, synopsis, director bio, screening details, press, and credits while preserving live prices and Stripe Payment Links from `config.js`.
+- Visitors can also open the Japanese edition directly via <https://zhanpetrov.github.io/how-i-see/?lang=ja>.
+
+---
+
 ## Local Preview
 
 ```bash

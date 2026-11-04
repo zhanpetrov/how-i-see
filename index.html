@@ -27,28 +27,61 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <meta name="theme-color" content="#070707">
 
-  <!-- Google Fonts: Big Shoulders Display & Source Serif 4 -->
+  <!-- Google Fonts: Big Shoulders Display, Source Serif 4, Noto Sans JP & Shippori Mincho -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=Noto+Sans+JP:wght@500;700&amp;family=Shippori+Mincho:wght@400;600&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <a class="skip-link" href="#watch">Skip to content</a>
+<body id="top">
+  <a class="skip-link" href="#watch" data-i18n="skip">Skip to content</a>
+
+  <!-- TOP MENU BAR + LANGUAGE SWITCHER -->
+  <nav class="site-nav" aria-label="Primary">
+    <div class="site-nav-inner">
+      <a class="site-nav-brand" href="#top">HOW I SEE</a>
+
+      <div class="site-nav-links" id="site-nav-links">
+        <a href="#watch" data-i18n="nav.watch">Watch</a>
+        <a href="#film" data-i18n="nav.film">The Film</a>
+        <a href="#director" data-i18n="nav.director">Director</a>
+        <a href="#screenings" data-i18n="nav.screenings">Screenings</a>
+        <a href="#press" data-i18n="nav.press">Press</a>
+        <a href="#credits" data-i18n="nav.credits">Credits</a>
+      </div>
+
+      <div class="site-nav-controls">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn is-active" data-set-lang="en" aria-pressed="true" lang="en">EN</button>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <button type="button" class="lang-btn" data-set-lang="ja" aria-pressed="false" lang="ja">日本語</button>
+        </div>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav-links"
+          data-i18n="nav.menu"
+        >Menu</button>
+      </div>
+    </div>
+  </nav>
 
   <!-- 1. HERO -->
   <header class="hero">
     <div class="hero-inner">
       <div class="hero-header">
-        <p class="hero-kicker">Short Documentary</p>
+        <p class="hero-kicker" data-i18n="hero.kicker">Short Documentary</p>
         <h1 class="hero-title">HOW I SEE</h1>
-        <p class="hero-byline">A film by Zhan Petrov</p>
-        <p class="hero-facts">2025 &middot; <span class="nowrap">15 min</span> &middot; <span class="nowrap">Black &amp; White</span> &middot; English &middot; <span class="nowrap">San Francisco</span></p>
+        <p class="hero-byline" data-i18n="hero.byline">A film by Zhan Petrov</p>
+        <p class="hero-facts" data-i18n-html="hero.facts">2025 &middot; <span class="nowrap">15 min</span> &middot; <span class="nowrap">Black &amp; White</span> &middot; English &middot; <span class="nowrap">San Francisco</span></p>
       </div>
 
       <!-- Camera-Viewfinder Frame -->
-      <div class="viewfinder" role="region" aria-label="Film fragments trailer">
+      <div class="viewfinder" role="region" aria-label="Film fragments trailer" data-i18n-aria="hero.vfRegion">
         <div class="vf-hud vf-hud--top" aria-hidden="true">
           <span class="vf-status"><span class="vf-dot"></span> 16:9 &middot; B&amp;W</span>
           <span class="vf-hide-xs">TENDERLOIN, SF</span>
@@ -71,6 +104,7 @@
               id="trailer-iframe"
               src="https://www.youtube-nocookie.com/embed/videoseries?list=PLEQX7QC9SchHZZeCY9vgstOFX4Oxgf8Ko"
               title="HOW I SEE — Fragments trailer playlist"
+              data-i18n-title="hero.iframeTitle"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
@@ -86,13 +120,14 @@
       </div>
 
       <div class="hero-actions">
-        <a class="btn btn--hero-primary" href="#watch">Watch the film</a>
+        <a class="btn btn--hero-primary" href="#watch" data-i18n="hero.ctaWatch">Watch the film</a>
         <a
           class="btn btn--hero-secondary"
           href="https://www.youtube.com/playlist?list=PLEQX7QC9SchHZZeCY9vgstOFX4Oxgf8Ko"
           data-site-fragments
           target="_blank"
           rel="noopener"
+          data-i18n="hero.ctaFragments"
         >All fragments &nearr;</a>
       </div>
     </div>
@@ -103,7 +138,7 @@
     <!-- 2. WATCH -->
     <section class="section" id="watch" aria-labelledby="heading-watch">
       <div class="section-header">
-        <h2 class="section-title" id="heading-watch">Watch</h2>
+        <h2 class="section-title" id="heading-watch" data-i18n="watch.heading">Watch</h2>
         <span class="section-index">01</span>
       </div>
 
@@ -144,7 +179,7 @@
       </div>
 
       <!-- Optional Third: Support -->
-      <aside class="support-bar" data-tier="support" aria-label="Support the film">
+      <aside class="support-bar" data-tier="support" aria-label="Support the film" data-i18n-aria="watch.supportAria">
         <div class="support-copy">
           <h3 class="support-label" data-tier-label>Support the film</h3>
           <p class="support-terms" data-tier-terms>Pay what you want.</p>
@@ -161,41 +196,41 @@
     <!-- 3. THE FILM -->
     <section class="section" id="film" aria-labelledby="heading-film">
       <div class="section-header">
-        <h2 class="section-title" id="heading-film">The Film</h2>
+        <h2 class="section-title" id="heading-film" data-i18n="film.heading">The Film</h2>
         <span class="section-index">02</span>
       </div>
 
-      <p class="logline">
+      <p class="logline" data-i18n="film.logline">
         Shot in stark black and white on the streets of San Francisco’s Tenderloin, a Ukrainian filmmaker confronts the unsettling visual and human parallels between an American neighborhood left behind and the war tearing through his homeland.
       </p>
 
       <div class="prose">
-        <p>
+        <p data-i18n-html="film.p1">
           Drawn into the Tenderloin through the street-level cinema of his mentor Rob Nilsson, Zhan Petrov walked its blocks and alleys with a camera to listen to people surviving on the margins of one of the wealthiest cities on earth. Interweaving street encounters with reflections alongside Bay Area filmmakers Rob Nilsson and Robert Zagone and Ukrainian war filmmaker Mstyslav Chernov, <em>HOW I SEE</em> holds two landscapes of ruin in a single frame: the sudden destruction of Russian bombardment in Ukraine, and the slow attrition of systemic neglect, displacement, and indifference in San Francisco.
         </p>
-        <p>
+        <p data-i18n="film.p2">
           The film’s form was forged directly by the realities of making it. During the first night of shooting, Petrov and his crew were attacked on the street and their camera equipment was smashed—yet technicians managed to salvage every frame of footage from the damaged phones. Refusing either to abandon the work or to film from a tourist’s safe remove, Petrov returned to those same blocks alongside a local guide who knew the neighborhood from within, finishing the film at eye level.
         </p>
       </div>
 
       <blockquote class="director-statement">
-        <p>“My subject is the slow death of human decency caused by systemic neglect and the predations of unchecked money and power. This is how I see.”</p>
-        <cite>&mdash; Zhan Petrov</cite>
+        <p data-i18n="film.quote">“My subject is the slow death of human decency caused by systemic neglect and the predations of unchecked money and power. This is how I see.”</p>
+        <cite data-i18n="film.quoteCite">&mdash; Zhan Petrov</cite>
       </blockquote>
     </section>
 
     <!-- 4. ZHAN PETROV -->
     <section class="section" id="director" aria-labelledby="heading-director">
       <div class="section-header">
-        <h2 class="section-title" id="heading-director">Zhan Petrov</h2>
+        <h2 class="section-title" id="heading-director" data-i18n="director.heading">Zhan Petrov</h2>
         <span class="section-index">03</span>
       </div>
 
       <div class="prose">
-        <p>
+        <p data-i18n="director.p1">
           Born in Odessa, Ukraine, in 1992 and named by his father after French New Wave director Jean-Luc Godard, Zhan Petrov graduated from the Ukrainian National Marine Academy and served at sea as a second officer on international merchant vessels before coming to the United States away from the war in Ukraine.
         </p>
-        <p>
+        <p data-i18n-html="director.p2">
           Based in the San Francisco Bay Area, Petrov works across documentary and experimental cinema as a close collaborator of Cam&eacute;ra d’Or and Sundance Grand Jury Prize winner Rob Nilsson within Nilsson’s improvisational Direct Action method. His films include the single-take four-screen feature <em>Love Funeral</em> (2021) and the feature documentary <em>The Way Things Seem to Be</em>, a portrait of Nilsson’s life and work.
         </p>
       </div>
@@ -204,14 +239,14 @@
     <!-- 5. SCREENINGS -->
     <section class="section" id="screenings" aria-labelledby="heading-screenings">
       <div class="section-header">
-        <h2 class="section-title" id="heading-screenings">Screenings</h2>
+        <h2 class="section-title" id="heading-screenings" data-i18n="screenings.heading">Screenings</h2>
         <span class="section-index">04</span>
       </div>
 
       <article class="event-item">
-        <p class="event-meta">May 7, 2026 &middot; San Francisco</p>
-        <h3 class="event-title">Tenderloin Museum &mdash; 398 Eddy St, San Francisco, CA</h3>
-        <p class="event-detail">
+        <p class="event-meta" data-i18n="screenings.meta">May 7, 2026 &middot; San Francisco</p>
+        <h3 class="event-title" data-i18n="screenings.venue">Tenderloin Museum &mdash; 398 Eddy St, San Francisco, CA</h3>
+        <p class="event-detail" data-i18n-html="screenings.detail">
           Screened as the opening prelude to Rob Nilsson’s <em>CHALK</em> (1996), followed by a filmmaker discussion. Presented in collaboration with the Tenderloin Museum.
         </p>
         <a
@@ -219,6 +254,7 @@
           href="https://www.tenderloinmuseum.org/public-programs-2026-1/2026/5/7/rob-nilssons-chalk-1996"
           target="_blank"
           rel="noopener"
+          data-i18n="screenings.eventLink"
         >Event details at Tenderloin Museum &nearr;</a>
       </article>
 
@@ -229,26 +265,27 @@
           target="_blank"
           rel="noopener"
         >FilmFreeway &nearr;</a>
-        <span>Booking &amp; Inquiries: <a href="mailto:zhanpetrov8@gmail.com" data-site-email="text">zhanpetrov8@gmail.com</a></span>
+        <span><span data-i18n="screenings.inquiries">Booking &amp; Inquiries:</span> <a href="mailto:zhanpetrov8@gmail.com" data-site-email="text">zhanpetrov8@gmail.com</a></span>
       </div>
     </section>
 
     <!-- 6. PRESS -->
     <section class="section" id="press" aria-labelledby="heading-press">
       <div class="section-header">
-        <h2 class="section-title" id="heading-press">Press</h2>
+        <h2 class="section-title" id="heading-press" data-i18n="press.heading">Press</h2>
         <span class="section-index">05</span>
       </div>
 
       <article class="press-item">
         <p class="press-meta">CineSource Magazine</p>
-        <h3 class="press-title">“Zhan Petrov: A New Voice in Improv Film from Ukraine”</h3>
-        <p class="press-detail">Profile by Doniphan Blair</p>
+        <h3 class="press-title" data-i18n="press.title">“Zhan Petrov: A New Voice in Improv Film from Ukraine”</h3>
+        <p class="press-detail" data-i18n="press.author">Profile by Doniphan Blair</p>
         <a
           class="arrow-link"
           href="https://cinesourcemagazine.com/index.php?%2Fsite%2Fcomments%2Fzhan_petrov_a_new_voice_in_improv_film_from_ukraine%2F="
           target="_blank"
           rel="noopener"
+          data-i18n="press.link"
         >Read article &nearr;</a>
       </article>
     </section>
@@ -256,38 +293,38 @@
     <!-- 7. CREDITS -->
     <section class="section" id="credits" aria-labelledby="heading-credits">
       <div class="section-header">
-        <h2 class="section-title" id="heading-credits">Credits</h2>
+        <h2 class="section-title" id="heading-credits" data-i18n="credits.heading">Credits</h2>
         <span class="section-index">06</span>
       </div>
 
       <dl class="credits-list">
         <div class="credits-row">
-          <dt>Director &amp; Writer</dt>
-          <dd>Zhan Petrov</dd>
+          <dt data-i18n="credits.directorDt">Director &amp; Writer</dt>
+          <dd data-i18n="credits.directorDd">Zhan Petrov</dd>
         </div>
         <div class="credits-row">
-          <dt>Producers</dt>
-          <dd>Zhan Petrov, Rob Nilsson</dd>
+          <dt data-i18n="credits.producersDt">Producers</dt>
+          <dd data-i18n="credits.producersDd">Zhan Petrov, Rob Nilsson</dd>
         </div>
         <div class="credits-row">
-          <dt>Featuring</dt>
-          <dd>Rob Nilsson, Mstyslav Chernov, Robert Zagone</dd>
+          <dt data-i18n="credits.featuringDt">Featuring</dt>
+          <dd data-i18n="credits.featuringDd">Rob Nilsson, Mstyslav Chernov, Robert Zagone</dd>
         </div>
         <div class="credits-row">
-          <dt>Location</dt>
-          <dd>Tenderloin, San Francisco, CA</dd>
+          <dt data-i18n="credits.locationDt">Location</dt>
+          <dd data-i18n="credits.locationDd">Tenderloin, San Francisco, CA</dd>
         </div>
         <div class="credits-row">
-          <dt>Year</dt>
-          <dd>2025</dd>
+          <dt data-i18n="credits.yearDt">Year</dt>
+          <dd data-i18n="credits.yearDd">2025</dd>
         </div>
         <div class="credits-row">
-          <dt>Running Time</dt>
-          <dd>15 minutes</dd>
+          <dt data-i18n="credits.runtimeDt">Running Time</dt>
+          <dd data-i18n="credits.runtimeDd">15 minutes</dd>
         </div>
         <div class="credits-row">
-          <dt>Format</dt>
-          <dd>Digital &middot; Black &amp; White &middot; 16:9 &middot; English</dd>
+          <dt data-i18n="credits.formatDt">Format</dt>
+          <dd data-i18n="credits.formatDd">Digital &middot; Black &amp; White &middot; 16:9 &middot; English</dd>
         </div>
       </dl>
     </section>
@@ -305,7 +342,7 @@
           target="_blank"
           rel="noopener"
         >FilmFreeway</a>
-        <a href="mailto:zhanpetrov8@gmail.com" data-site-email>Contact</a>
+        <a href="mailto:zhanpetrov8@gmail.com" data-site-email data-i18n="footer.contact">Contact</a>
       </div>
       <span>&copy; 2025 Zhan Petrov</span>
     </div>
