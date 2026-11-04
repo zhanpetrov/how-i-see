@@ -40,7 +40,7 @@
       "tier.buy.label": "Own",
       "tier.buy.terms": "Watch any time, as often as you like",
       "tier.support.label": "Support the film",
-      "tier.support.terms": "Pay what you want.",
+      "tier.support.terms": "Pay what you want, from $5. Goes to the next cut and festival fees. Includes the film.",
       "film.heading": "The Film",
       "film.logline":
         "Shot in stark black and white on the streets of San Francisco\u2019s Tenderloin, a Ukrainian filmmaker confronts the unsettling visual and human parallels between an American neighborhood left behind and the war tearing through his homeland.",
@@ -101,7 +101,8 @@
       "watchRoom.permanent": "Permanent access \u00b7 Stream any time",
       "watchRoom.ytOwn": "Thank you. Bookmark this page to watch any time.",
       "watchRoom.ytRent": "Thank you. Bookmark this page \u2014 your rental is for 48 hours.",
-      "watchRoom.ytNeutral": "Thank you for watching HOW I SEE. Bookmark this page."
+      "watchRoom.ytNeutral": "Thank you for watching HOW I SEE. Bookmark this page.",
+      "watchRoom.ytSupport": "Thank you for supporting HOW I SEE. Your support goes to the next cut and festival fees. Bookmark this page to watch any time."
     },
 
     ja: {
@@ -134,7 +135,7 @@
       "tier.buy.label": "\u8cfc\u5165\uff08\u7121\u671f\u9650\uff09",
       "tier.buy.terms": "\u3044\u3064\u3067\u3082\u30fb\u4f55\u5ea6\u3067\u3082\u7121\u671f\u9650\u3067\u8996\u8074\u53ef\u80fd",
       "tier.support.label": "\u4f5c\u54c1\u3092\u652f\u63f4\u3059\u308b",
-      "tier.support.terms": "\u4efb\u610f\u306e\u91d1\u984d\u3067\u672c\u4f5c\u3092\u652f\u63f4\u3044\u305f\u3060\u3051\u307e\u3059\u3002",
+      "tier.support.terms": "\u4efb\u610f\u306e\u91d1\u984d\uff085\u30c9\u30eb\u304b\u3089\uff09\u3067\u672c\u4f5c\u3092\u652f\u63f4\u3044\u305f\u3060\u3051\u307e\u3059\u3002\u6b21\u306e\u7de8\u96c6\u3068\u6620\u753b\u796d\u306e\u51fa\u54c1\u8cbb\u7528\u306b\u5145\u3066\u3089\u308c\u3001\u672c\u7de8\u3082\u3054\u8996\u8074\u3044\u305f\u3060\u3051\u307e\u3059\u3002",
       "film.heading": "\u4f5c\u54c1\u7d39\u4ecb",
       "film.logline":
         "\u30b5\u30f3\u30d5\u30e9\u30f3\u30b7\u30b9\u30b3\u30fb\u30c6\u30f3\u30c0\u30fc\u30ed\u30a4\u30f3\u5730\u533a\u306e\u8def\u4e0a\u3067\u9bae\u70c8\u306a\u30e2\u30ce\u30af\u30ed\u30fc\u30e0\u306b\u3088\u3063\u3066\u64ae\u5f71\u3055\u308c\u305f\u672c\u4f5c\u3067\u3001\u30a6\u30af\u30e9\u30a4\u30ca\u51fa\u8eab\u306e\u6620\u753b\u76e3\u7763\u306f\u3001\u53d6\u308a\u6b8b\u3055\u308c\u305f\u30a2\u30e1\u30ea\u30ab\u306e\u8857\u89d2\u3068\u6226\u706b\u306b\u5f15\u304d\u88c2\u304b\u308c\u308b\u6545\u90f7\u3068\u306e\u9593\u306b\u6a2a\u305f\u308f\u308b\u3001\u4e0d\u7a4f\u306a\u8996\u899a\u7684\u30fb\u4eba\u9593\u7684\u5171\u9cf4\u3068\u5411\u304d\u5408\u3046\u3002",
@@ -195,7 +196,8 @@
       "watchRoom.permanent": "\u7121\u671f\u9650\u30a2\u30af\u30bb\u30b9 \u00b7 \u3044\u3064\u3067\u3082\u8996\u8074\u53ef\u80fd",
       "watchRoom.ytOwn": "\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\u3053\u306e\u30da\u30fc\u30b8\u3092\u30d6\u30c3\u30af\u30de\u30fc\u30af\u3057\u3066\u3001\u3044\u3064\u3067\u3082\u3054\u8996\u8074\u304f\u3060\u3055\u3044\u3002",
       "watchRoom.ytRent": "\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\u3053\u306e\u30da\u30fc\u30b8\u3092\u30d6\u30c3\u30af\u30de\u30fc\u30af\u3057\u3066\u304f\u3060\u3055\u3044\uff08\u30ec\u30f3\u30bf\u30eb\u8996\u8074\u671f\u9593\u306f48\u6642\u9593\u3067\u3059\uff09\u3002",
-      "watchRoom.ytNeutral": "\u300eHOW I SEE\u300f\u3092\u3054\u8996\u8074\u3044\u305f\u3060\u304d\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\u3053\u306e\u30da\u30fc\u30b8\u3092\u30d6\u30c3\u30af\u30de\u30fc\u30af\u3057\u3066\u3054\u5229\u7528\u304f\u3060\u3055\u3044\u3002"
+      "watchRoom.ytNeutral": "\u300eHOW I SEE\u300f\u3092\u3054\u8996\u8074\u3044\u305f\u3060\u304d\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\u3053\u306e\u30da\u30fc\u30b8\u3092\u30d6\u30c3\u30af\u30de\u30fc\u30af\u3057\u3066\u3054\u5229\u7528\u304f\u3060\u3055\u3044\u3002",
+      "watchRoom.ytSupport": "\u300eHOW I SEE\u300f\u3092\u3054\u652f\u63f4\u3044\u305f\u3060\u304d\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\u3044\u305f\u3060\u3044\u305f\u3054\u652f\u63f4\u306f\u6b21\u306e\u7de8\u96c6\u3068\u6620\u753b\u796d\u306e\u51fa\u54c1\u8cbb\u7528\u306b\u5145\u3066\u3089\u308c\u307e\u3059\u3002\u3053\u306e\u30da\u30fc\u30b8\u3092\u30d6\u30c3\u30af\u30de\u30fc\u30af\u3057\u3066\u3001\u3044\u3064\u3067\u3082\u3054\u8996\u8074\u304f\u3060\u3055\u3044\u3002"
     }
   };
 
@@ -443,7 +445,9 @@
           ? t("watchRoom.ytOwn")
           : watchRoomPlan === "rent"
             ? t("watchRoom.ytRent")
-            : t("watchRoom.ytNeutral");
+            : watchRoomPlan === "support"
+              ? t("watchRoom.ytSupport")
+              : t("watchRoom.ytNeutral");
     } else if (watchRoomState === "verifying") {
       if (gateTitle) gateTitle.textContent = t("watchRoom.verifyingTitle");
       if (gateCopy) gateCopy.textContent = t("watchRoom.verifyingCopy");
@@ -590,7 +594,7 @@
     var ytId = trimStr(params.get("v"));
     if (!isWorkerMode && /^[A-Za-z0-9_-]{11}$/.test(ytId)) {
       var planRaw = trimStr(params.get("plan")).toLowerCase();
-      watchRoomPlan = planRaw === "own" ? "own" : planRaw === "rent" ? "rent" : "";
+      watchRoomPlan = planRaw === "own" ? "own" : planRaw === "rent" ? "rent" : planRaw === "support" ? "support" : "";
       watchRoomState = "yt";
 
       var screen = root.querySelector(".vf-screen");
@@ -614,7 +618,9 @@
             ? "OWNED"
             : watchRoomPlan === "rent"
               ? "RENTAL \u00b7 48 HOURS"
-              : "SCREENING ROOM";
+              : watchRoomPlan === "support"
+                ? "SUPPORTER"
+                : "SCREENING ROOM";
       }
       if (controlsBar) controlsBar.hidden = false;
       renderWatchRoomDynamicCopy();

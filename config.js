@@ -15,7 +15,7 @@ window.SITE = {
   WORKER_URL: "",
   rent:    { label: "Rent", price: "$4", terms: "48 hours to watch, streaming in HD", link: "https://buy.stripe.com/fZu6oH3m48PPbOibS87g400" },
   buy:     { label: "Own",  price: "$9", terms: "Watch any time, as often as you like", link: "https://buy.stripe.com/4gM3cvaOwgih7y209q7g401" },
-  support: { label: "Support the film", terms: "Pay what you want.", link: "" },
+  support: { label: "Support the film", terms: "Pay what you want, from $5. Goes to the next cut and festival fees. Includes the film.", link: "https://buy.stripe.com/7sYeVd09S1nn6tY09q7g402" },
   trailerEmbed: "https://www.youtube-nocookie.com/embed/videoseries?list=PLEQX7QC9SchHZZeCY9vgstOFX4Oxgf8Ko",
   fragmentsUrl: "https://www.youtube.com/playlist?list=PLEQX7QC9SchHZZeCY9vgstOFX4Oxgf8Ko",
   filmfreewayUrl: "https://filmfreeway.com/projects/4067236",
