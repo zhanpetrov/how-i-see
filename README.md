@@ -2,7 +2,7 @@
 
 One-page website and post-purchase screening room for **HOW I SEE** (2025, 15 min, B&W), a short documentary directed by Zhan Petrov.
 
-- **Live site:** <https://zhanpetrov.github.io/how-i-see/>
+- **Live site:** <https://howisee.homes/>
 - **Repository:** <https://github.com/zhanpetrov/how-i-see>
 
 ---
@@ -55,7 +55,7 @@ git push origin main
 
 [`watch.html`](./watch.html) (`noindex, nofollow`) is pre-built for Phase 2 tokenized playback:
 1. Deploy your Cloudflare Worker / backend paywall that creates Stripe Checkout Sessions (`POST /checkout`) and verifies completed sessions (`GET /access?session_id=...` or `GET /access?token=...`), returning `{ streamUrl, downloadUrl, expiresAt }`.
-2. Set your Stripe Checkout `success_url` to `https://zhanpetrov.github.io/how-i-see/watch.html?session_id={CHECKOUT_SESSION_ID}`.
+2. Set your Stripe Checkout `success_url` to `https://howisee.homes/watch.html?session_id={CHECKOUT_SESSION_ID}`.
 3. Update `config.js`:
    ```js
    mode: "worker",
@@ -69,7 +69,7 @@ git push origin main
 The top navigation bar includes a built-in **English / Japanese (`EN` / `日本語`)** switcher across both `index.html` and `watch.html`:
 - Switching languages translates navigation items, ticket cards, synopsis, director bio, screening details, press, and credits while preserving live prices and Stripe Payment Links from `config.js`.
 - **Stripe Checkout localization (`?locale=ja`):** When `日本語` is selected, Stripe Payment Links automatically append `?locale=ja` (and `?locale=en` in English) so the Stripe Checkout interface (contact fields, payment methods, card form, and pay button) opens in Japanese. If you ever create dedicated Japanese/JPY Payment Links in Stripe, you can optionally add `linkJa` and `priceJa` to any tier in `config.js`.
-- Visitors can also open the Japanese edition directly via <https://zhanpetrov.github.io/how-i-see/?lang=ja>.
+- Visitors can also open the Japanese edition directly via <https://howisee.homes/?lang=ja>.
 
 ---
 
