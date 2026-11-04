@@ -85,8 +85,8 @@ python3 -m http.server 8000
 | File | Purpose |
 | :--- | :--- |
 | `config.js` | Single source of truth for prices, Stripe links, embed URLs, and contact email |
-| `index.html` | Main one-page film site (Hero viewfinder, Watch, The Film, Director, Screenings, Press, Credits, Footer) |
-| `watch.html` | Post-purchase screening room (`noindex`) for Phase 2 tokenized streaming & download |
+| `index.html` | Main one-page film site (Hero poster showcase, Official Trailer viewfinder, Watch, The Film, Director, Screenings, Press, Credits, Footer) |
+| `watch.html` | Screening room (`noindex`) for streaming & supporter playback |
 | `styles.css` | Pure black-and-white responsive stylesheet (`Big Shoulders Display` + `Source Serif 4`) |
 | `site.js` | Wires `window.SITE` into `index.html` and `watch.html` |
-| `assets/` | Monochrome viewfinder `favicon.svg` and `og-card.png` for social link previews |
+| `assets/` | Official FilmFreeway `poster.jpg`, `trailer.mp4`, `trailer-poster.jpg`, and viewfinder `favicon.svg` |

@@ -14,6 +14,7 @@
       pageTitle: "HOW I SEE — A film by Zhan Petrov",
       watchPageTitle: "Screening Room — HOW I SEE",
       skip: "Skip to content",
+      "nav.trailer": "Trailer",
       "nav.watch": "Watch",
       "nav.film": "The Film",
       "nav.director": "Director",
@@ -26,10 +27,13 @@
       "hero.byline": "A film by Zhan Petrov",
       "hero.facts":
         '2025 &middot; <span class="nowrap">15 min</span> &middot; <span class="nowrap">Black &amp; White</span> &middot; English &middot; <span class="nowrap">San Francisco</span>',
-      "hero.vfRegion": "Film fragments trailer",
-      "hero.iframeTitle": "HOW I SEE — Fragments trailer playlist",
+      "hero.posterAlt": "HOW I SEE — Official Film Poster",
+      "hero.vfRegion": "HOW I SEE official trailer",
       "hero.ctaWatch": "Watch the film",
-      "hero.ctaFragments": "All fragments \u2197",
+      "hero.ctaTrailer": "Watch trailer",
+      "trailer.kicker": "Official Trailer",
+      "trailer.playAria": "Play official trailer",
+      "trailer.playLabel": "Play Trailer",
       "watch.heading": "Watch",
       "watch.supportAria": "Support the film",
       "watch.soon": "Checkout opens soon",
@@ -113,6 +117,7 @@
       pageTitle: "HOW I SEE \u2014 \u30b8\u30e3\u30f3\u30fb\u30da\u30c8\u30ed\u30d5\u76e3\u7763\u4f5c\u54c1",
       watchPageTitle: "\u30b9\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30eb\u30fc\u30e0 \u2014 HOW I SEE",
       skip: "\u672c\u6587\u3078\u30b9\u30ad\u30c3\u30d7",
+      "nav.trailer": "\u4e88\u544a\u7de8",
       "nav.watch": "\u8996\u8074",
       "nav.film": "\u4f5c\u54c1\u7d39\u4ecb",
       "nav.director": "\u76e3\u7763",
@@ -125,10 +130,13 @@
       "hero.byline": "\u30b8\u30e3\u30f3\u30fb\u30da\u30c8\u30ed\u30d5\u76e3\u7763\u4f5c\u54c1",
       "hero.facts":
         '2025\u5e74 &middot; <span class="nowrap">15\u5206</span> &middot; <span class="nowrap">\u30e2\u30ce\u30af\u30ed</span> &middot; \u82f1\u8a9e &middot; <span class="nowrap">\u30b5\u30f3\u30d5\u30e9\u30f3\u30b7\u30b9\u30b3</span>',
-      "hero.vfRegion": "\u4e88\u544a\u7de8\u30fb\u65ad\u7247\u6620\u50cf\u30d7\u30ec\u30a4\u30ea\u30b9\u30c8",
-      "hero.iframeTitle": "HOW I SEE \u2014 \u65ad\u7247\u6620\u50cf\u30fb\u4e88\u544a\u7de8\u518d\u751f\u30ea\u30b9\u30c8",
+      "hero.posterAlt": "HOW I SEE \u2014 \u516c\u5f0f\u30dd\u30b9\u30bf\u30fc",
+      "hero.vfRegion": "HOW I SEE \u516c\u5f0f\u4e88\u544a\u7de8",
       "hero.ctaWatch": "\u672c\u7de8\u3092\u8996\u8074\u3059\u308b",
-      "hero.ctaFragments": "\u3059\u3079\u3066\u306e\u65ad\u7247\u6620\u50cf \u2197",
+      "hero.ctaTrailer": "\u4e88\u544a\u7de8\u3092\u89b3\u308b",
+      "trailer.kicker": "\u516c\u5f0f\u4e88\u544a\u7de8",
+      "trailer.playAria": "\u516c\u5f0f\u4e88\u544a\u7de8\u3092\u518d\u751f",
+      "trailer.playLabel": "\u4e88\u544a\u7de8\u3092\u518d\u751f",
       "watch.heading": "\u672c\u7de8\u8996\u8074",
       "watch.supportAria": "\u4f5c\u54c1\u3092\u652f\u63f4\u3059\u308b",
       "watch.soon": "\u6c7a\u6e08\u53d7\u4ed8\u306f\u307e\u3082\u306a\u304f\u958b\u59cb\u3057\u307e\u3059",
@@ -264,17 +272,67 @@
   }
 
   function wireGlobalLinks() {
-    var trailerUrl = trimStr(cfg.trailerEmbed);
-    var trailerEl = document.getElementById("trailer-iframe");
-    if (trailerEl && trailerUrl && trailerEl.getAttribute("src") !== trailerUrl) {
-      trailerEl.setAttribute("src", trailerUrl);
+    var posterUrl = trimStr(cfg.posterSrc);
+    var posterEl = document.getElementById("hero-poster-img");
+    if (posterEl && posterUrl && posterEl.getAttribute("src") !== posterUrl) {
+      posterEl.setAttribute("src", posterUrl);
     }
 
-    var fragmentsUrl = trimStr(cfg.fragmentsUrl);
-    if (fragmentsUrl) {
-      var fragLinks = document.querySelectorAll("[data-site-fragments]");
-      for (var i = 0; i < fragLinks.length; i++) {
-        fragLinks[i].setAttribute("href", fragmentsUrl);
+    var trailerEmbedUrl = trimStr(cfg.trailerEmbed);
+    var trailerScreen = document.getElementById("trailer-screen");
+    var trailerVideo = document.getElementById("trailer-video");
+    var trailerPlayBtn = document.getElementById("trailer-play-btn");
+
+    if (trailerScreen && trailerEmbedUrl) {
+      trailerScreen.innerHTML = "";
+      var iframe = document.createElement("iframe");
+      iframe.src = trailerEmbedUrl;
+      iframe.title = "HOW I SEE — Official Trailer";
+      iframe.allow =
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen";
+      iframe.allowFullscreen = true;
+      iframe.referrerPolicy = "strict-origin-when-cross-origin";
+      iframe.loading = "lazy";
+      trailerScreen.appendChild(iframe);
+    } else if (trailerVideo) {
+      var trailerSrc = trimStr(cfg.trailerSrc);
+      var trailerPoster = trimStr(cfg.trailerPoster);
+      if (trailerSrc && trailerVideo.getAttribute("src") !== trailerSrc) {
+        trailerVideo.setAttribute("src", trailerSrc);
+      }
+      if (trailerPoster && trailerVideo.getAttribute("poster") !== trailerPoster) {
+        trailerVideo.setAttribute("poster", trailerPoster);
+      }
+
+      if (trailerPlayBtn) {
+        trailerVideo.controls = false;
+        var startTrailer = function () {
+          trailerVideo.controls = true;
+          trailerPlayBtn.hidden = true;
+          var playPromise = trailerVideo.play();
+          if (playPromise && typeof playPromise.catch === "function") {
+            playPromise.catch(function () {});
+          }
+        };
+        trailerPlayBtn.addEventListener("click", startTrailer);
+        trailerVideo.addEventListener("play", function () {
+          trailerVideo.controls = true;
+          trailerPlayBtn.hidden = true;
+        });
+
+        var heroTrailerLinks = document.querySelectorAll("[data-play-trailer]");
+        for (var p = 0; p < heroTrailerLinks.length; p++) {
+          heroTrailerLinks[p].addEventListener("click", function (ev) {
+            var stage = document.getElementById("trailer");
+            if (stage && typeof stage.scrollIntoView === "function") {
+              ev.preventDefault();
+              var reduce =
+                window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+              stage.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" });
+            }
+            startTrailer();
+          });
+        }
       }
     }
 
@@ -526,6 +584,12 @@
     for (var m = 0; m < titleNodes.length; m++) {
       var tKey = titleNodes[m].getAttribute("data-i18n-title");
       titleNodes[m].setAttribute("title", t(tKey));
+    }
+
+    var altNodes = document.querySelectorAll("[data-i18n-alt]");
+    for (var q = 0; q < altNodes.length; q++) {
+      var altKey = altNodes[q].getAttribute("data-i18n-alt");
+      altNodes[q].setAttribute("alt", t(altKey));
     }
 
     var langBtns = document.querySelectorAll("[data-set-lang]");

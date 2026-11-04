@@ -17,8 +17,10 @@ window.SITE = {
   freeVideoId: "7PF84Qt1Ggg",
   free:    { label: "Watch free", price: "$0", priceJa: "0\u5186", terms: "The full film, streaming in HD. No account, no payment.", link: "watch.html" },
   support: { label: "Support the film", price: "Any amount", priceJa: "\u4efb\u610f\u306e\u91d1\u984d", terms: "Pay what you want, any amount from $1. Goes to the next cut and festival fees.", link: "https://buy.stripe.com/7sYeVd09S1nn6tY09q7g402" },
-  trailerEmbed: "https://www.youtube-nocookie.com/embed/videoseries?list=PLEQX7QC9SchHZZeCY9vgstOFX4Oxgf8Ko",
-  fragmentsUrl: "https://www.youtube.com/playlist?list=PLEQX7QC9SchHZZeCY9vgstOFX4Oxgf8Ko",
+  posterSrc: "assets/poster.jpg",
+  trailerSrc: "assets/trailer.mp4",
+  trailerPoster: "assets/trailer-poster.jpg",
+  trailerEmbed: "",
   filmfreewayUrl: "https://filmfreeway.com/projects/4067236",
   contactEmail: "zhanpetrov8@gmail.com"
 };

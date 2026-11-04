@@ -329,9 +329,35 @@ html[lang="ja"] .menu-toggle {
   white-space: nowrap;
 }
 
+.hero-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .hero-header {
   text-align: center;
-  margin-bottom: 1.6rem;
+  margin-bottom: 0;
+}
+
+.hero-poster {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: #000000;
+  padding: 5px;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.72);
+}
+
+.hero-poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 597 / 800;
+  object-fit: cover;
+  background: #000000;
 }
 
 .hero-kicker {
@@ -354,7 +380,7 @@ html[lang="ja"] .hero-kicker {
   margin: 0;
   font-family: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
   font-weight: 900;
-  font-size: clamp(4.1rem, 18vw, 8.5rem);
+  font-size: clamp(4.1rem, 18vw, 8.2rem);
   line-height: 0.88;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -386,13 +412,38 @@ html[lang="ja"] .hero-facts {
 }
 
 /* ==========================================================================
-   THE ONE BOLD IDEA — Camera Viewfinder Frame
+   THE ONE BOLD IDEA — Camera Viewfinder Frame (Official Trailer)
    ========================================================================== */
+
+.trailer-stage {
+  max-width: var(--max-reading);
+  margin: 2.75rem auto 0;
+  padding-top: 2.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  scroll-margin-top: 68px;
+}
+
+.trailer-stage-label {
+  margin: 0 0 0.85rem;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--hero-muted);
+}
+
+html[lang="ja"] .trailer-stage-label {
+  font-family: var(--font-sans-ja);
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+}
 
 .viewfinder {
   position: relative;
   max-width: var(--max-reading);
-  margin: 0 auto 1.65rem;
+  margin: 0 auto;
   padding: 0.8rem 0.85rem 0.7rem;
   background: #0b0b0b;
   border: 1px solid var(--rule-dark);
@@ -529,6 +580,63 @@ html[lang="ja"] .hero-facts {
   height: 100%;
   border: 0;
   background: #000000;
+  object-fit: contain;
+}
+
+.vf-play-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.vf-play-overlay:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.vf-play-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1.35rem;
+  background: rgba(7, 7, 7, 0.88);
+  color: var(--white);
+  border: 1.5px solid var(--white);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.98rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: background-color 140ms ease, color 140ms ease;
+}
+
+html[lang="ja"] .vf-play-badge {
+  font-family: var(--font-sans-ja);
+  font-size: 0.86rem;
+  letter-spacing: 0.08em;
+}
+
+.vf-play-overlay:hover .vf-play-badge {
+  background: var(--white);
+  color: var(--black);
+}
+
+.vf-play-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent currentColor;
 }
 
 /* Hero CTA Actions */
@@ -536,6 +644,7 @@ html[lang="ja"] .hero-facts {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
   gap: 0.85rem;
 }
 
@@ -1224,7 +1333,7 @@ html[lang="ja"] .watch-expiry {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1.4rem;
+    gap: 1rem;
     padding: 0;
     background: transparent;
     border-bottom: 0;
@@ -1232,14 +1341,48 @@ html[lang="ja"] .watch-expiry {
   }
   .site-nav-links a {
     padding: 0.25rem 0;
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     border-bottom: 0;
   }
   .menu-toggle {
     display: none;
   }
   .hero {
-    padding: 2.35rem 2rem 3.25rem;
+    padding: 2.6rem 2rem 3.5rem;
+  }
+  .hero-showcase {
+    max-width: 880px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(250px, 315px) 1fr;
+    column-gap: 3rem;
+    row-gap: 1.6rem;
+    align-items: center;
+  }
+  .hero-poster {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    max-width: 315px;
+    margin: 0;
+  }
+  .hero-header {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    text-align: left;
+  }
+  .hero-title {
+    font-size: clamp(4.5rem, 8.5vw, 7.2rem);
+  }
+  .hero-actions {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    justify-content: flex-start;
+  }
+  .trailer-stage {
+    margin-top: 3.25rem;
+    padding-top: 2.6rem;
   }
   .viewfinder {
     padding: 0.9rem 1rem 0.8rem;
@@ -1249,6 +1392,16 @@ html[lang="ja"] .watch-expiry {
   }
   .section {
     padding: 4.25rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-nav-links,
+  .site-nav.is-open .site-nav-links {
+    gap: 1.4rem;
+  }
+  .site-nav-links a {
+    font-size: 0.92rem;
   }
 }
 

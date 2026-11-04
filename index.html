@@ -13,16 +13,16 @@
   <meta property="og:title" content="HOW I SEE — A film by Zhan Petrov">
   <meta property="og:description" content="2025 · 15 min · Black &amp; White · Shot on the streets of San Francisco’s Tenderloin, reflecting on visual parallels to war-torn Ukraine.">
   <meta property="og:url" content="https://zhanpetrov.github.io/how-i-see/">
-  <meta property="og:image" content="https://zhanpetrov.github.io/how-i-see/assets/og-card.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="https://zhanpetrov.github.io/how-i-see/assets/trailer-poster.jpg">
+  <meta property="og:image:width" content="1194">
+  <meta property="og:image:height" content="682">
   <meta property="og:image:alt" content="HOW I SEE — A film by Zhan Petrov (2025, 15 min, Black and White)">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="HOW I SEE — A film by Zhan Petrov">
   <meta name="twitter:description" content="2025 · 15 min · Black &amp; White · Shot on the streets of San Francisco’s Tenderloin.">
-  <meta name="twitter:image" content="https://zhanpetrov.github.io/how-i-see/assets/og-card.png">
+  <meta name="twitter:image" content="https://zhanpetrov.github.io/how-i-see/assets/trailer-poster.jpg">
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <meta name="theme-color" content="#070707">
@@ -43,6 +43,7 @@
       <a class="site-nav-brand" href="#top">HOW I SEE</a>
 
       <div class="site-nav-links" id="site-nav-links">
+        <a href="#trailer" data-i18n="nav.trailer">Trailer</a>
         <a href="#watch" data-i18n="nav.watch">Watch</a>
         <a href="#film" data-i18n="nav.film">The Film</a>
         <a href="#director" data-i18n="nav.director">Director</a>
@@ -70,65 +71,87 @@
     </div>
   </nav>
 
-  <!-- 1. HERO -->
+  <!-- 1. HERO OPENING (POSTER) + OFFICIAL TRAILER -->
   <header class="hero">
     <div class="hero-inner">
-      <div class="hero-header">
-        <p class="hero-kicker" data-i18n="hero.kicker">Short Documentary</p>
-        <h1 class="hero-title">HOW I SEE</h1>
-        <p class="hero-byline" data-i18n="hero.byline">A film by Zhan Petrov</p>
-        <p class="hero-facts" data-i18n-html="hero.facts">2025 &middot; <span class="nowrap">15 min</span> &middot; <span class="nowrap">Black &amp; White</span> &middot; English &middot; <span class="nowrap">San Francisco</span></p>
-      </div>
-
-      <!-- Camera-Viewfinder Frame -->
-      <div class="viewfinder" role="region" aria-label="Film fragments trailer" data-i18n-aria="hero.vfRegion">
-        <div class="vf-hud vf-hud--top" aria-hidden="true">
-          <span class="vf-status"><span class="vf-dot"></span> 16:9 &middot; B&amp;W</span>
-          <span class="vf-hide-xs">TENDERLOIN, SF</span>
-          <span>24 FPS &middot; HD</span>
+      <div class="hero-showcase">
+        <div class="hero-header">
+          <p class="hero-kicker" data-i18n="hero.kicker">Short Documentary</p>
+          <h1 class="hero-title">HOW I SEE</h1>
+          <p class="hero-byline" data-i18n="hero.byline">A film by Zhan Petrov</p>
+          <p class="hero-facts" data-i18n-html="hero.facts">2025 &middot; <span class="nowrap">15 min</span> &middot; <span class="nowrap">Black &amp; White</span> &middot; English &middot; <span class="nowrap">San Francisco</span></p>
         </div>
 
-        <div class="vf-gate">
-          <span class="vf-corner vf-corner--tl" aria-hidden="true"></span>
-          <span class="vf-corner vf-corner--tr" aria-hidden="true"></span>
-          <span class="vf-corner vf-corner--bl" aria-hidden="true"></span>
-          <span class="vf-corner vf-corner--br" aria-hidden="true"></span>
+        <figure class="hero-poster">
+          <img
+            id="hero-poster-img"
+            src="assets/poster.jpg"
+            alt="HOW I SEE — Official Film Poster"
+            data-i18n-alt="hero.posterAlt"
+            width="597"
+            height="800"
+            fetchpriority="high"
+            decoding="async"
+          >
+        </figure>
 
-          <span class="vf-tick vf-tick--top" aria-hidden="true"></span>
-          <span class="vf-tick vf-tick--bottom" aria-hidden="true"></span>
-          <span class="vf-tick vf-tick--left" aria-hidden="true"></span>
-          <span class="vf-tick vf-tick--right" aria-hidden="true"></span>
+        <div class="hero-actions">
+          <a class="btn btn--hero-primary" href="#watch" data-i18n="hero.ctaWatch">Watch the film</a>
+          <a class="btn btn--hero-secondary" href="#trailer" data-play-trailer data-i18n="hero.ctaTrailer">Watch trailer</a>
+        </div>
+      </div>
 
-          <div class="vf-screen">
-            <iframe
-              id="trailer-iframe"
-              src="https://www.youtube-nocookie.com/embed/videoseries?list=PLEQX7QC9SchHZZeCY9vgstOFX4Oxgf8Ko"
-              title="HOW I SEE — Fragments trailer playlist"
-              data-i18n-title="hero.iframeTitle"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-              loading="lazy"
-            ></iframe>
+      <!-- Official FilmFreeway Trailer inside Camera-Viewfinder Frame -->
+      <div class="trailer-stage" id="trailer">
+        <p class="trailer-stage-label" data-i18n="trailer.kicker">Official Trailer</p>
+
+        <div class="viewfinder" role="region" aria-label="HOW I SEE official trailer" data-i18n-aria="hero.vfRegion">
+          <div class="vf-hud vf-hud--top" aria-hidden="true">
+            <span class="vf-status"><span class="vf-dot"></span> 16:9 &middot; B&amp;W</span>
+            <span class="vf-hide-xs">TENDERLOIN, SF</span>
+            <span>HD &middot; 01:10</span>
+          </div>
+
+          <div class="vf-gate">
+            <span class="vf-corner vf-corner--tl" aria-hidden="true"></span>
+            <span class="vf-corner vf-corner--tr" aria-hidden="true"></span>
+            <span class="vf-corner vf-corner--bl" aria-hidden="true"></span>
+            <span class="vf-corner vf-corner--br" aria-hidden="true"></span>
+
+            <span class="vf-tick vf-tick--top" aria-hidden="true"></span>
+            <span class="vf-tick vf-tick--bottom" aria-hidden="true"></span>
+            <span class="vf-tick vf-tick--left" aria-hidden="true"></span>
+            <span class="vf-tick vf-tick--right" aria-hidden="true"></span>
+
+            <div class="vf-screen" id="trailer-screen">
+              <video
+                id="trailer-video"
+                src="assets/trailer.mp4"
+                poster="assets/trailer-poster.jpg"
+                preload="metadata"
+                playsinline
+                controls
+              ></video>
+              <button
+                type="button"
+                class="vf-play-overlay"
+                id="trailer-play-btn"
+                aria-label="Play official trailer"
+                data-i18n-aria="trailer.playAria"
+              >
+                <span class="vf-play-badge">
+                  <span class="vf-play-triangle" aria-hidden="true"></span>
+                  <span data-i18n="trailer.playLabel">Play Trailer</span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="vf-hud vf-hud--bottom" aria-hidden="true">
+            <span>OFFICIAL TRAILER</span>
+            <span>00:01:10</span>
           </div>
         </div>
-
-        <div class="vf-hud vf-hud--bottom" aria-hidden="true">
-          <span>REEL &middot; FRAGMENTS</span>
-          <span>00:15:00:00</span>
-        </div>
-      </div>
-
-      <div class="hero-actions">
-        <a class="btn btn--hero-primary" href="#watch" data-i18n="hero.ctaWatch">Watch the film</a>
-        <a
-          class="btn btn--hero-secondary"
-          href="https://www.youtube.com/playlist?list=PLEQX7QC9SchHZZeCY9vgstOFX4Oxgf8Ko"
-          data-site-fragments
-          target="_blank"
-          rel="noopener"
-          data-i18n="hero.ctaFragments"
-        >All fragments &nearr;</a>
       </div>
     </div>
   </header>
