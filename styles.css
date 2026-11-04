@@ -329,22 +329,41 @@ html[lang="ja"] .menu-toggle {
   white-space: nowrap;
 }
 
-.hero-showcase {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+.hero-header {
+  max-width: var(--max-reading);
+  margin: 0 auto;
+  text-align: center;
 }
 
-.hero-header {
+.poster-stage {
+  max-width: var(--max-reading);
+  margin: 2.65rem auto 0;
+  padding-top: 2.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  scroll-margin-top: 68px;
+}
+
+.poster-stage-label {
+  margin: 0 0 1rem;
   text-align: center;
-  margin-bottom: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--hero-muted);
+}
+
+html[lang="ja"] .poster-stage-label {
+  font-family: var(--font-sans-ja);
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
 }
 
 .hero-poster {
   margin: 0 auto;
   width: 100%;
-  max-width: 300px;
+  max-width: 310px;
   border: 1px solid rgba(255, 255, 255, 0.24);
   background: #000000;
   padding: 5px;
@@ -417,9 +436,7 @@ html[lang="ja"] .hero-facts {
 
 .trailer-stage {
   max-width: var(--max-reading);
-  margin: 2.75rem auto 0;
-  padding-top: 2.25rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  margin: 1.75rem auto 0;
   scroll-margin-top: 68px;
 }
 
@@ -641,6 +658,8 @@ html[lang="ja"] .vf-play-badge {
 
 /* Hero CTA Actions */
 .hero-actions {
+  max-width: var(--max-reading);
+  margin: 1.5rem auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1328,41 +1347,23 @@ html[lang="ja"] .watch-expiry {
     padding: 0.55rem 2rem;
   }
   .hero {
-    padding: 2.6rem 2rem 3.5rem;
-  }
-  .hero-showcase {
-    max-width: 880px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: minmax(250px, 315px) 1fr;
-    column-gap: 3rem;
-    row-gap: 1.6rem;
-    align-items: center;
-  }
-  .hero-poster {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    max-width: 315px;
-    margin: 0;
-  }
-  .hero-header {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: end;
-    text-align: left;
+    padding: 2.6rem 2rem 3.75rem;
   }
   .hero-title {
-    font-size: clamp(4.5rem, 8.5vw, 7.2rem);
-  }
-  .hero-actions {
-    grid-column: 2;
-    grid-row: 2;
-    align-self: start;
-    justify-content: flex-start;
+    font-size: clamp(4.6rem, 9.5vw, 7.6rem);
   }
   .trailer-stage {
-    margin-top: 3.25rem;
-    padding-top: 2.6rem;
+    margin-top: 2.15rem;
+  }
+  .hero-actions {
+    margin-top: 1.75rem;
+  }
+  .poster-stage {
+    margin-top: 3.15rem;
+    padding-top: 2.65rem;
+  }
+  .hero-poster {
+    max-width: 350px;
   }
   .viewfinder {
     padding: 0.9rem 1rem 0.8rem;

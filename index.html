@@ -45,7 +45,6 @@
       <div class="site-nav-links" id="site-nav-links">
         <a href="#trailer" data-i18n="nav.trailer">Trailer</a>
         <a href="#watch" data-i18n="nav.watch">Watch</a>
-        <a href="#vr360" data-i18n="nav.vr360">360&deg;</a>
         <a href="#film" data-i18n="nav.film">The Film</a>
         <a href="#interviews" data-i18n="nav.interviews">Interviews</a>
         <a href="#director" data-i18n="nav.director">Director</a>
@@ -73,41 +72,18 @@
     </div>
   </nav>
 
-  <!-- 1. HERO OPENING (POSTER) + OFFICIAL TRAILER -->
+  <!-- 1. HERO OPENING (OFFICIAL TRAILER FIRST, THEN OFFICIAL POSTER) -->
   <header class="hero">
     <div class="hero-inner">
-      <div class="hero-showcase">
-        <div class="hero-header">
-          <p class="hero-kicker" data-i18n="hero.kicker">Short Documentary</p>
-          <h1 class="hero-title">HOW I SEE</h1>
-          <p class="hero-byline" data-i18n="hero.byline">A film by Zhan Petrov</p>
-          <p class="hero-facts" data-i18n-html="hero.facts">2025 &middot; <span class="nowrap">15 min</span> &middot; <span class="nowrap">Black &amp; White</span> &middot; English &middot; <span class="nowrap">San Francisco</span></p>
-        </div>
-
-        <figure class="hero-poster">
-          <img
-            id="hero-poster-img"
-            src="assets/poster.jpg"
-            alt="HOW I SEE — Official Film Poster"
-            data-i18n-alt="hero.posterAlt"
-            width="597"
-            height="800"
-            fetchpriority="high"
-            decoding="async"
-          >
-        </figure>
-
-        <div class="hero-actions">
-          <a class="btn btn--hero-primary" href="#watch" data-i18n="hero.ctaWatch">Watch the film</a>
-          <a class="btn btn--hero-secondary" href="#trailer" data-play-trailer data-i18n="hero.ctaTrailer">Watch trailer</a>
-          <a class="btn btn--hero-secondary" href="#vr360" data-i18n="hero.cta360">Hyde &amp; Ellis 360&deg;</a>
-        </div>
+      <div class="hero-header">
+        <p class="hero-kicker" data-i18n="hero.kicker">Short Documentary</p>
+        <h1 class="hero-title">HOW I SEE</h1>
+        <p class="hero-byline" data-i18n="hero.byline">A film by Zhan Petrov</p>
+        <p class="hero-facts" data-i18n-html="hero.facts">2025 &middot; <span class="nowrap">15 min</span> &middot; <span class="nowrap">Black &amp; White</span> &middot; English &middot; <span class="nowrap">San Francisco</span></p>
       </div>
 
-      <!-- Official FilmFreeway Trailer inside Camera-Viewfinder Frame -->
+      <!-- Official FilmFreeway Trailer inside Camera-Viewfinder Frame (Opening) -->
       <div class="trailer-stage" id="trailer">
-        <p class="trailer-stage-label" data-i18n="trailer.kicker">Official Trailer</p>
-
         <div class="viewfinder" role="region" aria-label="HOW I SEE official trailer" data-i18n-aria="hero.vfRegion">
           <div class="vf-hud vf-hud--top" aria-hidden="true">
             <span class="vf-status"><span class="vf-dot"></span> 16:9 &middot; B&amp;W</span>
@@ -155,6 +131,27 @@
             <span>00:01:10</span>
           </div>
         </div>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn--hero-primary" href="#watch" data-i18n="hero.ctaWatch">Watch the film</a>
+        <a class="btn btn--hero-secondary" href="#trailer" data-play-trailer data-i18n="hero.ctaTrailer">Watch trailer</a>
+      </div>
+
+      <!-- Official Film Poster (After Trailer) -->
+      <div class="poster-stage" id="poster">
+        <p class="poster-stage-label" data-i18n="poster.kicker">Official Poster</p>
+        <figure class="hero-poster">
+          <img
+            id="hero-poster-img"
+            src="assets/poster.jpg"
+            alt="HOW I SEE — Official Film Poster"
+            data-i18n-alt="hero.posterAlt"
+            width="597"
+            height="800"
+            decoding="async"
+          >
+        </figure>
       </div>
     </div>
   </header>
@@ -205,139 +202,11 @@
       </div>
     </section>
 
-    <!-- 2B. HYDE & ELLIS · 360° (8-CAMERA TENDERLOIN SPHERICAL OBSERVATION) -->
-    <section class="section" id="vr360" aria-labelledby="heading-vr360">
-      <div class="section-header">
-        <h2 class="section-title" id="heading-vr360" data-i18n="vr360.heading">Hyde &amp; Ellis &middot; 360&deg;</h2>
-        <span class="section-index">02</span>
-      </div>
-
-      <p class="logline" data-i18n="vr360.lead">
-        Eight live street cameras at the corner of Hyde &amp; Ellis in San Francisco’s Tenderloin—observed continuously and calibrated into a three-minute 360&deg; monochrome sphere.
-      </p>
-
-      <div class="viewfinder viewfinder--360" id="vr360-viewfinder" role="region" aria-label="Hyde and Ellis 360 degree Tenderloin street player" data-i18n-aria="vr360.regionAria">
-        <div class="vf-hud vf-hud--top" aria-hidden="true">
-          <span class="vf-status"><span class="vf-dot"></span> 360&deg; &middot; B&amp;W</span>
-          <span class="vr360-hud-angle" id="vr360-hud-angle">YAW 000&deg; &middot; HYDE &amp; ELLIS SW</span>
-          <span>4K &middot; 03:00</span>
-        </div>
-
-        <div class="vf-gate">
-          <span class="vf-corner vf-corner--tl" aria-hidden="true"></span>
-          <span class="vf-corner vf-corner--tr" aria-hidden="true"></span>
-          <span class="vf-corner vf-corner--bl" aria-hidden="true"></span>
-          <span class="vf-corner vf-corner--br" aria-hidden="true"></span>
-
-          <span class="vf-tick vf-tick--top" aria-hidden="true"></span>
-          <span class="vf-tick vf-tick--bottom" aria-hidden="true"></span>
-          <span class="vf-tick vf-tick--left" aria-hidden="true"></span>
-          <span class="vf-tick vf-tick--right" aria-hidden="true"></span>
-
-          <div class="vf-screen vf-screen--360" id="vr360-screen" tabindex="0" aria-label="Interactive 360 degree street view — drag or use arrow keys to look around" data-i18n-aria="vr360.canvasAria">
-            <canvas id="vr360-canvas"></canvas>
-            <video
-              id="vr360-video"
-              src="assets/hyde-ellis-360.mp4"
-              preload="metadata"
-              playsinline
-              loop
-              crossorigin="anonymous"
-              hidden
-            ></video>
-            <iframe
-              id="vr360-yt-frame"
-              title="HOW I SEE — Hyde &amp; Ellis 360° (YouTube 4K)"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen; xr-spatial-tracking"
-              allowfullscreen
-              referrerpolicy="strict-origin-when-cross-origin"
-              hidden
-            ></iframe>
-
-            <button
-              type="button"
-              class="vf-play-overlay vf-play-overlay--360"
-              id="vr360-play-overlay"
-              aria-label="Play 3-minute 360 degree Tenderloin observation"
-              data-i18n-aria="vr360.playAria"
-            >
-              <span class="vf-play-badge">
-                <span class="vf-play-triangle" aria-hidden="true"></span>
-                <span data-i18n="vr360.playLabel">Enter 360&deg; &middot; 03:00</span>
-              </span>
-            </button>
-
-            <div class="vr360-drag-hint" id="vr360-drag-hint" aria-hidden="true" data-i18n="vr360.dragHint">
-              Drag to look 360&deg; &middot; Scroll to zoom
-            </div>
-          </div>
-        </div>
-
-        <div class="vr360-controls" id="vr360-controls">
-          <div class="vr360-transport">
-            <button type="button" class="vr360-ctrl-btn" id="vr360-btn-play" data-i18n="vr360.btnPlay">Play</button>
-            <input
-              type="range"
-              class="vr360-scrub"
-              id="vr360-scrub"
-              min="0"
-              max="180"
-              step="0.1"
-              value="0"
-              aria-label="Seek 360 video timeline"
-              data-i18n-aria="vr360.scrubAria"
-            >
-            <span class="vr360-time" id="vr360-time">00:00 / 03:00</span>
-          </div>
-
-          <div class="vr360-actions">
-            <button type="button" class="vr360-ctrl-btn" id="vr360-btn-mute" data-i18n="vr360.btnSoundOn">Sound: On</button>
-            <button type="button" class="vr360-ctrl-btn" id="vr360-btn-recenter" data-i18n="vr360.btnRecenter">0&deg; Center</button>
-            <button type="button" class="vr360-ctrl-btn" id="vr360-btn-gyro" hidden data-i18n="vr360.btnGyro">Gyro</button>
-            <button type="button" class="vr360-ctrl-btn" id="vr360-btn-fs" data-i18n="vr360.btnFullscreen">Fullscreen</button>
-            <button type="button" class="vr360-ctrl-btn" id="vr360-btn-mode" data-i18n="vr360.btnYtEmbed">YouTube 4K Mode</button>
-          </div>
-        </div>
-
-        <div class="vf-hud vf-hud--bottom" aria-hidden="true">
-          <span>EIGHT TENDERLOIN FEEDS &middot; EASTMAN 5222 GRADE</span>
-          <span id="vr360-hud-fov">FOV 75&deg;</span>
-        </div>
-      </div>
-
-      <div class="vr360-cams" role="group" aria-label="Jump to camera perspective" data-i18n-aria="vr360.camsAria">
-        <button type="button" class="vr360-cam-btn is-active" data-vr-yaw="0" data-vr-pitch="-2">Hyde &amp; Ellis SW &middot; 0&deg;</button>
-        <button type="button" class="vr360-cam-btn" data-vr-yaw="61" data-vr-pitch="-6">Hyde St. South &middot; +61&deg;</button>
-        <button type="button" class="vr360-cam-btn" data-vr-yaw="82" data-vr-pitch="14">Camp Hyde &middot; +82&deg;</button>
-        <button type="button" class="vr360-cam-btn" data-vr-yaw="140" data-vr-pitch="14">Hyde St. West &middot; +140&deg;</button>
-        <button type="button" class="vr360-cam-btn" data-vr-yaw="141" data-vr-pitch="-6">Hyde St. North &middot; +141&deg;</button>
-        <button type="button" class="vr360-cam-btn" data-vr-yaw="-138" data-vr-pitch="-6">Ellis St. East &middot; &minus;138&deg;</button>
-        <button type="button" class="vr360-cam-btn" data-vr-yaw="-58" data-vr-pitch="-6">Ellis St. West &middot; &minus;58&deg;</button>
-        <button type="button" class="vr360-cam-btn" data-vr-yaw="-30" data-vr-pitch="6">Ellis Detail &middot; &minus;30&deg;</button>
-      </div>
-
-      <div class="prose vr360-note">
-        <p data-i18n="vr360.note">
-          Assembled from real-time nocturnal observation across all eight corner feeds at Hyde and Ellis Streets: midnight walkers crossing beneath the signals at DAIR’S Speed Wash, motorcycles and brake lights streaking down damp asphalt, and a Pacific marine fog bank rolling down Hyde Street into a glowing silver-halide streetlamp halo.
-        </p>
-      </div>
-
-      <div class="inline-links">
-        <a
-          href="https://youtu.be/f-DT6I0NT-I"
-          id="vr360-yt-link"
-          target="_blank"
-          rel="noopener"
-          data-i18n="vr360.ytDirectLink"
-        >Watch in 4K 360&deg; on YouTube (Unlisted) &nearr;</a>
-      </div>
-    </section>
-
     <!-- 3. THE FILM -->
     <section class="section" id="film" aria-labelledby="heading-film">
       <div class="section-header">
         <h2 class="section-title" id="heading-film" data-i18n="film.heading">The Film</h2>
-        <span class="section-index">03</span>
+        <span class="section-index">02</span>
       </div>
 
       <p class="logline" data-i18n="film.logline">
@@ -363,7 +232,7 @@
     <section class="section" id="interviews" aria-labelledby="heading-interviews">
       <div class="section-header">
         <h2 class="section-title" id="heading-interviews" data-i18n="interviews.heading">Street Interviews</h2>
-        <span class="section-index">04</span>
+        <span class="section-index">03</span>
       </div>
 
       <p class="logline" data-i18n="interviews.lead">
@@ -423,7 +292,7 @@
     <section class="section" id="director" aria-labelledby="heading-director">
       <div class="section-header">
         <h2 class="section-title" id="heading-director" data-i18n="director.heading">Zhan Petrov</h2>
-        <span class="section-index">05</span>
+        <span class="section-index">04</span>
       </div>
 
       <div class="prose">
@@ -440,7 +309,7 @@
     <section class="section" id="screenings" aria-labelledby="heading-screenings">
       <div class="section-header">
         <h2 class="section-title" id="heading-screenings" data-i18n="screenings.heading">Screenings</h2>
-        <span class="section-index">06</span>
+        <span class="section-index">05</span>
       </div>
 
       <article class="event-item">
@@ -473,7 +342,7 @@
     <section class="section" id="press" aria-labelledby="heading-press">
       <div class="section-header">
         <h2 class="section-title" id="heading-press" data-i18n="press.heading">Press</h2>
-        <span class="section-index">07</span>
+        <span class="section-index">06</span>
       </div>
 
       <article class="press-item">
@@ -494,7 +363,7 @@
     <section class="section" id="credits" aria-labelledby="heading-credits">
       <div class="section-header">
         <h2 class="section-title" id="heading-credits" data-i18n="credits.heading">Credits</h2>
-        <span class="section-index">08</span>
+        <span class="section-index">07</span>
       </div>
 
       <dl class="credits-list">
