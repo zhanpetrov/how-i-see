@@ -143,54 +143,40 @@
       </div>
 
       <div class="tickets-grid">
-        <!-- Rent Ticket -->
-        <article class="ticket-card" data-tier="rent">
+        <!-- Free Ticket -->
+        <article class="ticket-card" data-tier="free">
           <div>
             <div class="ticket-top">
-              <h3 class="ticket-label" data-tier-label>Rent</h3>
-              <span class="ticket-price" data-tier-price>$4</span>
+              <h3 class="ticket-label" data-tier-label>Watch free</h3>
+              <span class="ticket-price" data-tier-price>$0</span>
             </div>
-            <p class="ticket-terms" data-tier-terms>48 hours to watch, streaming in HD</p>
+            <p class="ticket-terms" data-tier-terms>The full film, streaming in HD. No account, no payment.</p>
           </div>
           <div class="ticket-action">
             <div data-tier-slot>
-              <button type="button" class="btn btn--ticket is-disabled" disabled aria-disabled="true">Rent — $4</button>
+              <a class="btn btn--ticket" href="watch.html">Watch free — $0</a>
             </div>
-            <p class="ticket-status" data-tier-status>Checkout opens soon</p>
+            <p class="ticket-status" data-tier-status hidden></p>
           </div>
         </article>
 
-        <!-- Own Ticket -->
-        <article class="ticket-card" data-tier="buy">
+        <!-- Support Ticket -->
+        <article class="ticket-card" data-tier="support">
           <div>
             <div class="ticket-top">
-              <h3 class="ticket-label" data-tier-label>Own</h3>
-              <span class="ticket-price" data-tier-price>$9</span>
+              <h3 class="ticket-label" data-tier-label>Support the film</h3>
+              <span class="ticket-price" data-tier-price>Any amount</span>
             </div>
-            <p class="ticket-terms" data-tier-terms>Watch any time, as often as you like</p>
+            <p class="ticket-terms" data-tier-terms>Pay what you want, any amount from $1. Goes to the next cut and festival fees.</p>
           </div>
           <div class="ticket-action">
             <div data-tier-slot>
-              <button type="button" class="btn btn--ticket is-disabled" disabled aria-disabled="true">Own — $9</button>
+              <button type="button" class="btn btn--outline is-disabled" disabled aria-disabled="true">Support the film</button>
             </div>
             <p class="ticket-status" data-tier-status>Checkout opens soon</p>
           </div>
         </article>
       </div>
-
-      <!-- Optional Third: Support -->
-      <aside class="support-bar" data-tier="support" aria-label="Support the film" data-i18n-aria="watch.supportAria">
-        <div class="support-copy">
-          <h3 class="support-label" data-tier-label>Support the film</h3>
-          <p class="support-terms" data-tier-terms>Pay what you want, from $5. Goes to the next cut and festival fees. Includes the film.</p>
-        </div>
-        <div class="support-action">
-          <div data-tier-slot>
-            <button type="button" class="btn btn--outline is-disabled" disabled aria-disabled="true">Support the film</button>
-          </div>
-          <p class="ticket-status" data-tier-status>Checkout opens soon</p>
-        </div>
-      </aside>
     </section>
 
     <!-- 3. THE FILM -->

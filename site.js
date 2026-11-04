@@ -40,7 +40,9 @@
       "tier.buy.label": "Own",
       "tier.buy.terms": "Watch any time, as often as you like",
       "tier.support.label": "Support the film",
-      "tier.support.terms": "Pay what you want, from $5. Goes to the next cut and festival fees. Includes the film.",
+      "tier.support.terms": "Pay what you want, any amount from $1. Goes to the next cut and festival fees.",
+      "tier.free.label": "Watch free",
+      "tier.free.terms": "The full film, streaming in HD. No account, no payment.",
       "film.heading": "The Film",
       "film.logline":
         "Shot in stark black and white on the streets of San Francisco\u2019s Tenderloin, a Ukrainian filmmaker confronts the unsettling visual and human parallels between an American neighborhood left behind and the war tearing through his homeland.",
@@ -102,6 +104,8 @@
       "watchRoom.ytOwn": "Thank you. Bookmark this page to watch any time.",
       "watchRoom.ytRent": "Thank you. Bookmark this page \u2014 your rental is for 48 hours.",
       "watchRoom.ytNeutral": "Thank you for watching HOW I SEE. Bookmark this page.",
+      "watchRoom.ytFree": "Free screening. If the film stays with you, support it with any amount.",
+      "watchRoom.supportCta": "Support the film",
       "watchRoom.ytSupport": "Thank you for supporting HOW I SEE. Your support goes to the next cut and festival fees. Bookmark this page to watch any time."
     },
 
@@ -135,7 +139,9 @@
       "tier.buy.label": "\u8cfc\u5165\uff08\u7121\u671f\u9650\uff09",
       "tier.buy.terms": "\u3044\u3064\u3067\u3082\u30fb\u4f55\u5ea6\u3067\u3082\u7121\u671f\u9650\u3067\u8996\u8074\u53ef\u80fd",
       "tier.support.label": "\u4f5c\u54c1\u3092\u652f\u63f4\u3059\u308b",
-      "tier.support.terms": "\u4efb\u610f\u306e\u91d1\u984d\uff085\u30c9\u30eb\u304b\u3089\uff09\u3067\u672c\u4f5c\u3092\u652f\u63f4\u3044\u305f\u3060\u3051\u307e\u3059\u3002\u6b21\u306e\u7de8\u96c6\u3068\u6620\u753b\u796d\u306e\u51fa\u54c1\u8cbb\u7528\u306b\u5145\u3066\u3089\u308c\u3001\u672c\u7de8\u3082\u3054\u8996\u8074\u3044\u305f\u3060\u3051\u307e\u3059\u3002",
+      "tier.support.terms": "\u4efb\u610f\u306e\u91d1\u984d\uff081\u30c9\u30eb\u304b\u3089\uff09\u3067\u672c\u4f5c\u3092\u652f\u63f4\u3044\u305f\u3060\u3051\u307e\u3059\u3002\u6b21\u306e\u7de8\u96c6\u3068\u6620\u753b\u796d\u306e\u51fa\u54c1\u8cbb\u7528\u306b\u5145\u3066\u3089\u308c\u307e\u3059\u3002",
+      "tier.free.label": "\u7121\u6599\u3067\u89b3\u308b",
+      "tier.free.terms": "\u672c\u7de8\u3092\u7121\u6599\u30fbHD\u3067\u914d\u4fe1\u3002\u767b\u9332\u3082\u652f\u6255\u3044\u3082\u4e0d\u8981\u3067\u3059\u3002",
       "film.heading": "\u4f5c\u54c1\u7d39\u4ecb",
       "film.logline":
         "\u30b5\u30f3\u30d5\u30e9\u30f3\u30b7\u30b9\u30b3\u30fb\u30c6\u30f3\u30c0\u30fc\u30ed\u30a4\u30f3\u5730\u533a\u306e\u8def\u4e0a\u3067\u9bae\u70c8\u306a\u30e2\u30ce\u30af\u30ed\u30fc\u30e0\u306b\u3088\u3063\u3066\u64ae\u5f71\u3055\u308c\u305f\u672c\u4f5c\u3067\u3001\u30a6\u30af\u30e9\u30a4\u30ca\u51fa\u8eab\u306e\u6620\u753b\u76e3\u7763\u306f\u3001\u53d6\u308a\u6b8b\u3055\u308c\u305f\u30a2\u30e1\u30ea\u30ab\u306e\u8857\u89d2\u3068\u6226\u706b\u306b\u5f15\u304d\u88c2\u304b\u308c\u308b\u6545\u90f7\u3068\u306e\u9593\u306b\u6a2a\u305f\u308f\u308b\u3001\u4e0d\u7a4f\u306a\u8996\u899a\u7684\u30fb\u4eba\u9593\u7684\u5171\u9cf4\u3068\u5411\u304d\u5408\u3046\u3002",
@@ -197,6 +203,8 @@
       "watchRoom.ytOwn": "\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\u3053\u306e\u30da\u30fc\u30b8\u3092\u30d6\u30c3\u30af\u30de\u30fc\u30af\u3057\u3066\u3001\u3044\u3064\u3067\u3082\u3054\u8996\u8074\u304f\u3060\u3055\u3044\u3002",
       "watchRoom.ytRent": "\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\u3053\u306e\u30da\u30fc\u30b8\u3092\u30d6\u30c3\u30af\u30de\u30fc\u30af\u3057\u3066\u304f\u3060\u3055\u3044\uff08\u30ec\u30f3\u30bf\u30eb\u8996\u8074\u671f\u9593\u306f48\u6642\u9593\u3067\u3059\uff09\u3002",
       "watchRoom.ytNeutral": "\u300eHOW I SEE\u300f\u3092\u3054\u8996\u8074\u3044\u305f\u3060\u304d\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\u3053\u306e\u30da\u30fc\u30b8\u3092\u30d6\u30c3\u30af\u30de\u30fc\u30af\u3057\u3066\u3054\u5229\u7528\u304f\u3060\u3055\u3044\u3002",
+      "watchRoom.ytFree": "\u7121\u6599\u4e0a\u6620\u3067\u3059\u3002\u5fc3\u306b\u6b8b\u3063\u305f\u3089\u3001\u4efb\u610f\u306e\u91d1\u984d\u3067\u672c\u4f5c\u3092\u3054\u652f\u63f4\u304f\u3060\u3055\u3044\u3002",
+      "watchRoom.supportCta": "\u4f5c\u54c1\u3092\u652f\u63f4\u3059\u308b",
       "watchRoom.ytSupport": "\u300eHOW I SEE\u300f\u3092\u3054\u652f\u63f4\u3044\u305f\u3060\u304d\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\u3044\u305f\u3060\u3044\u305f\u3054\u652f\u63f4\u306f\u6b21\u306e\u7de8\u96c6\u3068\u6620\u753b\u796d\u306e\u51fa\u54c1\u8cbb\u7528\u306b\u5145\u3066\u3089\u308c\u307e\u3059\u3002\u3053\u306e\u30da\u30fc\u30b8\u3092\u30d6\u30c3\u30af\u30de\u30fc\u30af\u3057\u3066\u3001\u3044\u3064\u3067\u3082\u3054\u8996\u8074\u304f\u3060\u3055\u3044\u3002"
     }
   };
@@ -204,7 +212,8 @@
   var DEFAULT_EN_TIERS = {
     rent: { label: "Rent", terms: "48 hours to watch, streaming in HD" },
     buy: { label: "Own", terms: "Watch any time, as often as you like" },
-    support: { label: "Support the film", terms: "Pay what you want." }
+    support: { label: "Support the film", terms: "Pay what you want, any amount from $1. Goes to the next cut and festival fees." },
+    free: { label: "Watch free", terms: "The full film, streaming in HD. No account, no payment." }
   };
 
   var currentLang = "en";
@@ -392,7 +401,7 @@
       if (!slotEl) continue;
 
       var btnVariant = tierKey === "support" ? "btn btn--outline" : "btn btn--ticket";
-      var ctaLabel = price ? copy.label + " \u2014 " + price : copy.label;
+      var ctaLabel = price && /^[$\u00a5\u20ac\u00a30-9]/.test(price) ? copy.label + " \u2014 " + price : copy.label;
       slotEl.innerHTML = "";
 
       if (!isWorkerMode && directLink) {
@@ -447,7 +456,22 @@
             ? t("watchRoom.ytRent")
             : watchRoomPlan === "support"
               ? t("watchRoom.ytSupport")
-              : t("watchRoom.ytNeutral");
+              : watchRoomPlan === "free"
+                ? t("watchRoom.ytFree")
+                : t("watchRoom.ytNeutral");
+      var supportCta = document.getElementById("watch-support");
+      var supportLink = cfg.support ? trimStr(cfg.support.link) : "";
+      var navSupport = document.getElementById("watch-nav-support");
+      if (navSupport && supportLink) navSupport.href = localizeCheckoutUrl(supportLink, currentLang);
+      if (supportCta) {
+        supportCta.textContent = t("watchRoom.supportCta");
+        if (supportLink && watchRoomPlan !== "support") {
+          supportCta.href = localizeCheckoutUrl(supportLink, currentLang);
+          supportCta.hidden = false;
+        } else {
+          supportCta.hidden = true;
+        }
+      }
     } else if (watchRoomState === "verifying") {
       if (gateTitle) gateTitle.textContent = t("watchRoom.verifyingTitle");
       if (gateCopy) gateCopy.textContent = t("watchRoom.verifyingCopy");
@@ -591,10 +615,16 @@
     // Payment Links mode: Stripe redirects buyers here with the YouTube video id
     // in the URL (?v=VIDEO_ID&plan=rent|own&session_id=...). The id lives only in
     // the Stripe Payment Link settings, never in this public code.
+    // Free release: with no ?v, the Screening Room plays cfg.freeVideoId.
     var ytId = trimStr(params.get("v"));
+    var freeId = trimStr(cfg.freeVideoId);
+    var planRaw = trimStr(params.get("plan")).toLowerCase();
+    if (!ytId && freeId) {
+      ytId = freeId;
+      planRaw = "free";
+    }
     if (!isWorkerMode && /^[A-Za-z0-9_-]{11}$/.test(ytId)) {
-      var planRaw = trimStr(params.get("plan")).toLowerCase();
-      watchRoomPlan = planRaw === "own" ? "own" : planRaw === "rent" ? "rent" : planRaw === "support" ? "support" : "";
+      watchRoomPlan = planRaw === "own" ? "own" : planRaw === "rent" ? "rent" : planRaw === "support" ? "support" : planRaw === "free" ? "free" : "";
       watchRoomState = "yt";
 
       var screen = root.querySelector(".vf-screen");
@@ -620,7 +650,9 @@
               ? "RENTAL \u00b7 48 HOURS"
               : watchRoomPlan === "support"
                 ? "SUPPORTER"
-                : "SCREENING ROOM";
+                : watchRoomPlan === "free"
+                  ? "FREE SCREENING"
+                  : "SCREENING ROOM";
       }
       if (controlsBar) controlsBar.hidden = false;
       renderWatchRoomDynamicCopy();
