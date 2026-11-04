@@ -1405,5 +1405,199 @@ html[lang="ja"] .watch-expiry {
   }
 }
 
+/* ==========================================================================
+   HYDE & ELLIS · 360° — Interactive Spherical Viewfinder & 8-Camera Selector
+   ========================================================================== */
+
+.viewfinder--360 {
+  margin-top: 1.5rem;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.22);
+}
+
+.viewfinder--360 :focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 2px;
+}
+
+.vr360-hud-angle {
+  color: #dcdcdc;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vf-screen--360 {
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.vf-screen--360.is-dragging {
+  cursor: grabbing;
+}
+
+.vf-screen--360 canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #050505;
+}
+
+.vf-play-overlay--360 {
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.42) 100%);
+}
+
+.vf-play-overlay--360 .vf-play-badge {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.vr360-drag-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 0.75rem;
+  transform: translateX(-50%);
+  z-index: 2;
+  padding: 0.24rem 0.68rem;
+  background: rgba(7, 7, 7, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #d4d4d4;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 260ms ease;
+}
+
+html[lang="ja"] .vr360-drag-hint {
+  font-family: var(--font-sans-ja);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+}
+
+.vr360-drag-hint.is-faded {
+  opacity: 0;
+}
+
+.vr360-controls {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.35rem 0.15rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.vr360-transport {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.vr360-scrub {
+  flex: 1;
+  min-width: 80px;
+  accent-color: var(--white);
+  height: 4px;
+  cursor: pointer;
+}
+
+.vr360-time {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  color: var(--hero-muted);
+  white-space: nowrap;
+}
+
+.vr360-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.vr360-ctrl-btn {
+  appearance: none;
+  background: #141414;
+  color: #e6e6e6;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  padding: 0.32rem 0.62rem;
+  min-height: 30px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+html[lang="ja"] .vr360-ctrl-btn {
+  font-family: var(--font-sans-ja);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+}
+
+.vr360-ctrl-btn:hover,
+.vr360-ctrl-btn.is-active {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--white);
+}
+
+.vr360-cams {
+  margin-top: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+}
+
+.vr360-cam-btn {
+  appearance: none;
+  background: var(--white);
+  color: var(--ink);
+  border: 1px solid #bdbdb7;
+  padding: 0.36rem 0.68rem;
+  min-height: 32px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+.vr360-cam-btn:hover,
+.vr360-cam-btn.is-active {
+  background: var(--ink);
+  color: var(--white);
+  border-color: var(--ink);
+}
+
+.vr360-note {
+  margin-top: 1.35rem;
+}
+
+@media (min-width: 680px) {
+  .vr360-controls {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .vr360-transport {
+    flex: 1;
+    max-width: 360px;
+  }
+}
+
 /* Never show elements marked hidden (e.g. the download button and controls bar before access is granted). */
 [hidden] { display: none !important; }

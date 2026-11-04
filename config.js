@@ -21,6 +21,10 @@ window.SITE = {
   trailerSrc: "assets/trailer.mp4",
   trailerPoster: "assets/trailer-poster.jpg",
   trailerEmbed: "",
+  vr360VideoId: "f-DT6I0NT-I",
+  vr360YoutubeUrl: "https://youtu.be/f-DT6I0NT-I",
+  vr360Src: "assets/hyde-ellis-360.mp4",
+  vr360Poster: "assets/hyde-ellis-360-poster.jpg",
   filmfreewayUrl: "https://filmfreeway.com/projects/4067236",
   contactEmail: "zhanpetrov8@gmail.com"
 };

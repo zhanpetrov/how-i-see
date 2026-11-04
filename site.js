@@ -16,6 +16,7 @@
       skip: "Skip to content",
       "nav.trailer": "Trailer",
       "nav.watch": "Watch",
+      "nav.vr360": "360\u00b0",
       "nav.film": "The Film",
       "nav.director": "Director",
       "nav.screenings": "Screenings",
@@ -31,6 +32,30 @@
       "hero.vfRegion": "HOW I SEE official trailer",
       "hero.ctaWatch": "Watch the film",
       "hero.ctaTrailer": "Watch trailer",
+      "hero.cta360": "Hyde & Ellis 360\u00b0",
+      "vr360.heading": "Hyde & Ellis \u00b7 360\u00b0",
+      "vr360.lead":
+        "Eight live street cameras at the corner of Hyde & Ellis in San Francisco\u2019s Tenderloin\u2014observed continuously and calibrated into a three-minute 360\u00b0 monochrome sphere.",
+      "vr360.regionAria": "Hyde and Ellis 360 degree Tenderloin street player",
+      "vr360.canvasAria": "Interactive 360 degree street view \u2014 drag or use arrow keys to look around",
+      "vr360.playAria": "Play 3-minute 360 degree Tenderloin observation",
+      "vr360.playLabel": "Enter 360\u00b0 \u00b7 03:00",
+      "vr360.dragHint": "Drag to look 360\u00b0 \u00b7 Scroll to zoom",
+      "vr360.btnPlay": "Play",
+      "vr360.btnPause": "Pause",
+      "vr360.scrubAria": "Seek 360 video timeline",
+      "vr360.btnSoundOn": "Sound: On",
+      "vr360.btnSoundOff": "Sound: Muted",
+      "vr360.btnRecenter": "0\u00b0 Center",
+      "vr360.btnGyro": "Gyro",
+      "vr360.btnGyroActive": "Gyro: On",
+      "vr360.btnFullscreen": "Fullscreen",
+      "vr360.btnYtEmbed": "YouTube 4K Mode",
+      "vr360.btnWebgl": "Interactive WebGL 360\u00b0",
+      "vr360.camsAria": "Jump to camera perspective",
+      "vr360.note":
+        "Assembled from real-time nocturnal observation across all eight corner feeds at Hyde and Ellis Streets: midnight walkers crossing beneath the signals at DAIR\u2019S Speed Wash, motorcycles and brake lights streaking down damp asphalt, and a Pacific marine fog bank rolling down Hyde Street into a glowing silver-halide streetlamp halo.",
+      "vr360.ytDirectLink": "Watch in 4K 360\u00b0 on YouTube (Unlisted) \u2197",
       "trailer.kicker": "Official Trailer",
       "trailer.playAria": "Play official trailer",
       "trailer.playLabel": "Play Trailer",
@@ -119,6 +144,7 @@
       skip: "\u672c\u6587\u3078\u30b9\u30ad\u30c3\u30d7",
       "nav.trailer": "\u4e88\u544a\u7de8",
       "nav.watch": "\u8996\u8074",
+      "nav.vr360": "360\u00b0",
       "nav.film": "\u4f5c\u54c1\u7d39\u4ecb",
       "nav.director": "\u76e3\u7763",
       "nav.screenings": "\u4e0a\u6620\u60c5\u5831",
@@ -134,6 +160,30 @@
       "hero.vfRegion": "HOW I SEE \u516c\u5f0f\u4e88\u544a\u7de8",
       "hero.ctaWatch": "\u672c\u7de8\u3092\u8996\u8074\u3059\u308b",
       "hero.ctaTrailer": "\u4e88\u544a\u7de8\u3092\u89b3\u308b",
+      "hero.cta360": "Hyde & Ellis 360\u00b0",
+      "vr360.heading": "Hyde & Ellis \u00b7 360\u00b0",
+      "vr360.lead":
+        "\u30b5\u30f3\u30d5\u30e9\u30f3\u30b7\u30b9\u30b3\u30fb\u30c6\u30f3\u30c0\u30fc\u30ed\u30a4\u30f3\u306e\u30cf\u30a4\u30c9\u901a\u308a\u3068\u30a8\u30ea\u30b9\u901a\u308a\u306e\u4ea4\u5dee\u70b9\u3092\u898b\u3064\u3081\u308b8\u53f0\u306e\u30e9\u30a4\u30d6\u8857\u982d\u30ab\u30e1\u30e9\u3092\u9023\u7d9a\u89b3\u6e2c\u3057\u30013\u5206\u9593\u306e360\u00b0\u30e2\u30ce\u30af\u30ed\u30fc\u30e0\u7403\u9762\u6620\u50cf\u3078\u3068\u7d50\u6676\u5316\u3057\u305f\u89b3\u5bdf\u7de8\u3002",
+      "vr360.regionAria": "Hyde and Ellis 360\u5ea6\u30c6\u30f3\u30c0\u30fc\u30ed\u30a4\u30f3\u8857\u982d\u30d7\u30ec\u30fc\u30e4\u30fc",
+      "vr360.canvasAria": "\u30a4\u30f3\u30bf\u30e9\u30af\u30c6\u30a3\u30d6360\u5ea6\u30b9\u30c8\u30ea\u30fc\u30c8\u30d3\u30e5\u30fc \u2014 \u30c9\u30e9\u30c3\u30b0\u307e\u305f\u306f\u77e2\u5370\u30ad\u30fc\u3067\u5468\u56f2\u3092\u898b\u6e21\u305b\u307e\u3059",
+      "vr360.playAria": "3\u5206\u9593\u306e360\u5ea6\u30c6\u30f3\u30c0\u30fc\u30ed\u30a4\u30f3\u89b3\u5bdf\u6620\u50cf\u3092\u518d\u751f",
+      "vr360.playLabel": "360\u00b0\u6620\u50cf\u3092\u518d\u751f \u00b7 03:00",
+      "vr360.dragHint": "\u30c9\u30e9\u30c3\u30b0\u3067360\u00b0\u8996\u70b9\u79fb\u52d5 \u00b7 \u30b9\u30af\u30ed\u30fc\u30eb\u3067\u30ba\u30fc\u30e0",
+      "vr360.btnPlay": "\u518d\u751f",
+      "vr360.btnPause": "\u4e00\u6642\u505c\u6b62",
+      "vr360.scrubAria": "360\u5ea6\u6620\u50cf\u306e\u518d\u751f\u4f4d\u7f6e",
+      "vr360.btnSoundOn": "\u97f3\u58f0: ON",
+      "vr360.btnSoundOff": "\u97f3\u58f0: \u30df\u30e5\u30fc\u30c8",
+      "vr360.btnRecenter": "0\u00b0 \u6b63\u9762\u3078",
+      "vr360.btnGyro": "\u30b8\u30e3\u30a4\u30ed",
+      "vr360.btnGyroActive": "\u30b8\u30e3\u30a4\u30ed: ON",
+      "vr360.btnFullscreen": "\u5168\u753b\u9762",
+      "vr360.btnYtEmbed": "YouTube 4K\u30e2\u30fc\u30c9",
+      "vr360.btnWebgl": "WebGL 360\u00b0\u30e2\u30fc\u30c9",
+      "vr360.camsAria": "\u30ab\u30e1\u30e9\u30a2\u30f3\u30b0\u30eb\u3092\u5207\u308a\u66ff\u3048",
+      "vr360.note":
+        "\u30cf\u30a4\u30c9\u901a\u308a\u3068\u30a8\u30ea\u30b9\u901a\u308a\u306e8\u3064\u306e\u8857\u89d2\u30ab\u30e1\u30e9\u3092\u6df1\u591c\u306b\u30ea\u30a2\u30eb\u30bf\u30a4\u30e0\u89b3\u6e2c\u3057\u3066\u69cb\u6210\u3002DAIR\u2019S Speed Wash\u524d\u306e\u4fe1\u53f7\u306e\u4e0b\u3092\u6a2a\u65ad\u3059\u308b\u591c\u306e\u6b69\u884c\u8005\u3001\u6fe1\u308c\u305f\u30a2\u30b9\u30d5\u30a1\u30eb\u30c8\u3092\u99c6\u3051\u629c\u3051\u308b\u30aa\u30fc\u30c8\u30d0\u30a4\u3068\u30d6\u30ec\u30fc\u30ad\u30e9\u30a4\u30c8\u3001\u305d\u3057\u3066\u592a\u5e73\u6d0b\u306e\u6d77\u9727\u304c\u30cf\u30a4\u30c9\u901a\u308a\u3078\u6d41\u308c\u8fbc\u307f\u3001\u8857\u706f\u3092\u9280\u5869\u30d5\u30a3\u30eb\u30e0\u306e\u5149\u6688\u3078\u3068\u5909\u3048\u3066\u3044\u304f3\u5206\u9593\u3002",
+      "vr360.ytDirectLink": "YouTube\u30674K 360\u00b0\u7248\uff08\u9650\u5b9a\u516c\u958b\uff09\u3092\u89b3\u308b \u2197",
       "trailer.kicker": "\u516c\u5f0f\u4e88\u544a\u7de8",
       "trailer.playAria": "\u516c\u5f0f\u4e88\u544a\u7de8\u3092\u518d\u751f",
       "trailer.playLabel": "\u4e88\u544a\u7de8\u3092\u518d\u751f",
@@ -601,6 +651,9 @@
 
     wireTickets();
     renderWatchRoomDynamicCopy();
+    if (typeof syncVr360DynamicLabels === "function") {
+      syncVr360DynamicLabels();
+    }
 
     if (persist) {
       try {
@@ -658,6 +711,555 @@
         toggleBtn.focus();
       }
     });
+  }
+
+  var syncVr360DynamicLabels = null;
+
+  function wireVr360Player() {
+    var screenEl = document.getElementById("vr360-screen");
+    var canvasEl = document.getElementById("vr360-canvas");
+    var videoEl = document.getElementById("vr360-video");
+    var ytFrame = document.getElementById("vr360-yt-frame");
+    var overlayBtn = document.getElementById("vr360-play-overlay");
+    var dragHintEl = document.getElementById("vr360-drag-hint");
+    var btnPlay = document.getElementById("vr360-btn-play");
+    var scrubEl = document.getElementById("vr360-scrub");
+    var timeEl = document.getElementById("vr360-time");
+    var btnMute = document.getElementById("vr360-btn-mute");
+    var btnRecenter = document.getElementById("vr360-btn-recenter");
+    var btnGyro = document.getElementById("vr360-btn-gyro");
+    var btnFs = document.getElementById("vr360-btn-fs");
+    var btnMode = document.getElementById("vr360-btn-mode");
+    var hudAngleEl = document.getElementById("vr360-hud-angle");
+    var hudFovEl = document.getElementById("vr360-hud-fov");
+    var ytDirectLink = document.getElementById("vr360-yt-link");
+    var camBtns = document.querySelectorAll("[data-vr-yaw]");
+
+    if (!screenEl || !canvasEl || !videoEl) return;
+
+    var vrSrc = trimStr(cfg.vr360Src) || "assets/hyde-ellis-360.mp4";
+    var vrPoster = trimStr(cfg.vr360Poster) || "assets/hyde-ellis-360-poster.jpg";
+    var vrYtId = trimStr(cfg.vr360VideoId);
+    var vrYtUrl = trimStr(cfg.vr360YoutubeUrl) || (vrYtId ? "https://youtu.be/" + vrYtId : "");
+
+    if (videoEl.getAttribute("src") !== vrSrc) {
+      videoEl.setAttribute("src", vrSrc);
+    }
+    if (ytDirectLink && vrYtUrl) {
+      ytDirectLink.setAttribute("href", vrYtUrl);
+    }
+    if (!vrYtId && btnMode) {
+      btnMode.hidden = true;
+    }
+
+    var CAM_SECTORS = [
+      { yaw: 0, pitch: -2, name: "HYDE & ELLIS SW" },
+      { yaw: 61, pitch: -6, name: "HYDE ST. SOUTH" },
+      { yaw: 82, pitch: 14, name: "CAMP HYDE" },
+      { yaw: 140, pitch: 14, name: "HYDE ST. WEST" },
+      { yaw: 141, pitch: -6, name: "HYDE ST. NORTH" },
+      { yaw: -138, pitch: -6, name: "ELLIS ST. EAST" },
+      { yaw: -58, pitch: -6, name: "ELLIS ST. WEST" },
+      { yaw: -30, pitch: 6, name: "ELLIS DETAIL" }
+    ];
+
+    var yawDeg = 0;
+    var pitchDeg = -2;
+    var targetYaw = 0;
+    var targetPitch = -2;
+    var vfovDeg = 52;
+    var isDragging = false;
+    var lastX = 0;
+    var lastY = 0;
+    var pinchDist = 0;
+    var isYtMode = false;
+    var gyroEnabled = false;
+    var gyroBaseAlpha = null;
+    var posterReady = false;
+
+    function normYaw(deg) {
+      var d = ((deg + 180) % 360 + 360) % 360 - 180;
+      return d;
+    }
+
+    function fmtClock(sec) {
+      var s = Math.max(0, Math.floor(sec || 0));
+      var m = Math.floor(s / 60);
+      var r = s % 60;
+      return (m < 10 ? "0" : "") + m + ":" + (r < 10 ? "0" : "") + r;
+    }
+
+    function nearestSectorName(y, p) {
+      var best = CAM_SECTORS[0];
+      var bestScore = 1e9;
+      for (var i = 0; i < CAM_SECTORS.length; i++) {
+        var c = CAM_SECTORS[i];
+        var dyaw = normYaw(y - c.yaw);
+        var dp = (p - c.pitch) * 1.25;
+        var sc = dyaw * dyaw + dp * dp;
+        if (sc < bestScore) {
+          bestScore = sc;
+          best = c;
+        }
+      }
+      return best.name;
+    }
+
+    function updateHud() {
+      var ny = Math.round(normYaw(yawDeg));
+      var sign = ny > 0 ? "+" : ny < 0 ? "\u2212" : "";
+      var absStr = String(Math.abs(ny));
+      while (absStr.length < 3) absStr = "0" + absStr;
+      var sector = nearestSectorName(ny, pitchDeg);
+      if (hudAngleEl) {
+        hudAngleEl.textContent = "YAW " + sign + absStr + "\u00b0 \u00b7 " + sector;
+      }
+      if (hudFovEl) {
+        var hfov = Math.round((Math.atan(Math.tan((vfovDeg * Math.PI) / 360) * (16 / 9)) * 360) / Math.PI);
+        hudFovEl.textContent = "FOV " + hfov + "\u00b0";
+      }
+      for (var i = 0; i < camBtns.length; i++) {
+        var bYaw = parseFloat(camBtns[i].getAttribute("data-vr-yaw") || "0");
+        var bPitch = parseFloat(camBtns[i].getAttribute("data-vr-pitch") || "0");
+        var active = Math.abs(normYaw(ny - bYaw)) < 16 && Math.abs(pitchDeg - bPitch) < 14;
+        camBtns[i].classList.toggle("is-active", active);
+      }
+    }
+
+    syncVr360DynamicLabels = function () {
+      if (btnPlay) {
+        btnPlay.textContent = videoEl.paused ? t("vr360.btnPlay") : t("vr360.btnPause");
+      }
+      if (btnMute) {
+        btnMute.textContent = videoEl.muted ? t("vr360.btnSoundOff") : t("vr360.btnSoundOn");
+      }
+      if (btnMode) {
+        btnMode.textContent = isYtMode ? t("vr360.btnWebgl") : t("vr360.btnYtEmbed");
+        btnMode.classList.toggle("is-active", isYtMode);
+      }
+      if (btnGyro) {
+        btnGyro.textContent = gyroEnabled ? t("vr360.btnGyroActive") : t("vr360.btnGyro");
+        btnGyro.classList.toggle("is-active", gyroEnabled);
+      }
+    };
+
+    var gl =
+      canvasEl.getContext("webgl", { antialias: true, alpha: false }) ||
+      canvasEl.getContext("experimental-webgl");
+
+    if (!gl) {
+      // Graceful fallback if WebGL is disabled: switch directly to YouTube 360° embed
+      if (vrYtId && ytFrame) {
+        ytFrame.src =
+          "https://www.youtube-nocookie.com/embed/" +
+          vrYtId +
+          "?rel=0&modestbranding=1&playsinline=1";
+        ytFrame.hidden = false;
+        canvasEl.hidden = true;
+        if (overlayBtn) overlayBtn.hidden = true;
+        if (dragHintEl) dragHintEl.hidden = true;
+      }
+      return;
+    }
+
+    var vsSrc =
+      "attribute vec2 aPos;" +
+      "varying vec2 vUv;" +
+      "void main() {" +
+      "  vUv = aPos * 0.5 + 0.5;" +
+      "  gl_Position = vec4(aPos, 0.0, 1.0);" +
+      "}";
+
+    var fsSrc =
+      "precision highp float;" +
+      "varying vec2 vUv;" +
+      "uniform sampler2D uTex;" +
+      "uniform float uYaw;" +
+      "uniform float uPitch;" +
+      "uniform float uTanHalfFov;" +
+      "uniform float uAspect;" +
+      "const float PI = 3.141592653589793;" +
+      "void main() {" +
+      "  vec2 ndc = vec2((vUv.x * 2.0 - 1.0) * uAspect, vUv.y * 2.0 - 1.0);" +
+      "  vec3 dir = normalize(vec3(ndc.x * uTanHalfFov, ndc.y * uTanHalfFov, 1.0));" +
+      "  float cp = cos(uPitch), sp = sin(uPitch);" +
+      "  float y1 = dir.y * cp + dir.z * sp;" +
+      "  float z1 = dir.z * cp - dir.y * sp;" +
+      "  float cy = cos(uYaw), sy = sin(uYaw);" +
+      "  float wx = dir.x * cy + z1 * sy;" +
+      "  float wz = z1 * cy - dir.x * sy;" +
+      "  float wy = clamp(y1, -1.0, 1.0);" +
+      "  float lam = atan(wx, wz);" +
+      "  float phi = asin(wy);" +
+      "  float u = fract(lam / (2.0 * PI) + 0.5);" +
+      "  float v = clamp(0.5 - phi / PI, 0.001, 0.999);" +
+      "  gl_FragColor = texture2D(uTex, vec2(u, v));" +
+      "}";
+
+    function compileShader(type, src) {
+      var sh = gl.createShader(type);
+      gl.shaderSource(sh, src);
+      gl.compileShader(sh);
+      return sh;
+    }
+
+    var prog = gl.createProgram();
+    gl.attachShader(prog, compileShader(gl.VERTEX_SHADER, vsSrc));
+    gl.attachShader(prog, compileShader(gl.FRAGMENT_SHADER, fsSrc));
+    gl.linkProgram(prog);
+    gl.useProgram(prog);
+
+    var quadBuf = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, quadBuf);
+    gl.bufferData(
+      gl.ARRAY_BUFFER,
+      new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]),
+      gl.STATIC_DRAW
+    );
+
+    var aPosLoc = gl.getAttribLocation(prog, "aPos");
+    gl.enableVertexAttribArray(aPosLoc);
+    gl.vertexAttribPointer(aPosLoc, 2, gl.FLOAT, false, 0, 0);
+
+    var uYawLoc = gl.getUniformLocation(prog, "uYaw");
+    var uPitchLoc = gl.getUniformLocation(prog, "uPitch");
+    var uTanLoc = gl.getUniformLocation(prog, "uTanHalfFov");
+    var uAspectLoc = gl.getUniformLocation(prog, "uAspect");
+
+    var tex = gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D, tex);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, new Uint8Array([8, 8, 8, 255]));
+
+    var posterImg = new Image();
+    posterImg.crossOrigin = "anonymous";
+    posterImg.onload = function () {
+      posterReady = true;
+      if (videoEl.readyState < 2) {
+        gl.bindTexture(gl.TEXTURE_2D, tex);
+        gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, posterImg);
+      }
+    };
+    posterImg.src = vrPoster;
+
+    function startPlayback() {
+      if (isYtMode) return;
+      if (overlayBtn) overlayBtn.hidden = true;
+      var p = videoEl.play();
+      if (p && typeof p.catch === "function") {
+        p.catch(function () {});
+      }
+      syncVr360DynamicLabels();
+    }
+
+    function togglePlay() {
+      if (isYtMode) return;
+      if (videoEl.paused) {
+        startPlayback();
+      } else {
+        videoEl.pause();
+        syncVr360DynamicLabels();
+      }
+    }
+
+    if (overlayBtn) {
+      var badge = overlayBtn.querySelector(".vf-play-badge") || overlayBtn;
+      badge.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+        startPlayback();
+      });
+    }
+    if (btnPlay) {
+      btnPlay.addEventListener("click", togglePlay);
+    }
+
+    videoEl.addEventListener("play", function () {
+      if (overlayBtn) overlayBtn.hidden = true;
+      syncVr360DynamicLabels();
+    });
+    videoEl.addEventListener("pause", function () {
+      syncVr360DynamicLabels();
+    });
+    videoEl.addEventListener("timeupdate", function () {
+      var dur = videoEl.duration && isFinite(videoEl.duration) ? videoEl.duration : 180;
+      if (scrubEl && !scrubEl.matches(":active")) {
+        scrubEl.max = String(dur);
+        scrubEl.value = String(videoEl.currentTime);
+      }
+      if (timeEl) {
+        timeEl.textContent = fmtClock(videoEl.currentTime) + " / " + fmtClock(dur);
+      }
+    });
+
+    if (scrubEl) {
+      scrubEl.addEventListener("input", function () {
+        var v = parseFloat(scrubEl.value);
+        if (!isNaN(v)) {
+          videoEl.currentTime = v;
+        }
+      });
+    }
+
+    if (btnMute) {
+      btnMute.addEventListener("click", function () {
+        videoEl.muted = !videoEl.muted;
+        syncVr360DynamicLabels();
+      });
+    }
+
+    if (btnRecenter) {
+      btnRecenter.addEventListener("click", function () {
+        targetYaw = 0;
+        targetPitch = -2;
+        vfovDeg = 52;
+      });
+    }
+
+    if (btnFs) {
+      btnFs.addEventListener("click", function () {
+        var vf = document.getElementById("vr360-viewfinder") || screenEl;
+        if (document.fullscreenElement) {
+          document.exitFullscreen();
+        } else if (vf.requestFullscreen) {
+          vf.requestFullscreen();
+        } else if (vf.webkitRequestFullscreen) {
+          vf.webkitRequestFullscreen();
+        }
+      });
+    }
+
+    if (btnMode && vrYtId && ytFrame) {
+      btnMode.addEventListener("click", function () {
+        isYtMode = !isYtMode;
+        if (isYtMode) {
+          videoEl.pause();
+          ytFrame.src =
+            "https://www.youtube-nocookie.com/embed/" +
+            vrYtId +
+            "?rel=0&modestbranding=1&playsinline=1&autoplay=1&vq=hd2160";
+          ytFrame.hidden = false;
+          canvasEl.hidden = true;
+          if (overlayBtn) overlayBtn.hidden = true;
+          if (dragHintEl) dragHintEl.hidden = true;
+        } else {
+          ytFrame.src = "about:blank";
+          ytFrame.hidden = true;
+          canvasEl.hidden = false;
+          if (dragHintEl) dragHintEl.hidden = false;
+          startPlayback();
+        }
+        syncVr360DynamicLabels();
+      });
+    }
+
+    // 8-camera preset jump buttons
+    for (var ci = 0; ci < camBtns.length; ci++) {
+      camBtns[ci].addEventListener("click", function (ev) {
+        var btn = ev.currentTarget;
+        var y = parseFloat(btn.getAttribute("data-vr-yaw") || "0");
+        var p = parseFloat(btn.getAttribute("data-vr-pitch") || "0");
+        // Shortest angular path from current targetYaw
+        var diff = normYaw(y - targetYaw);
+        targetYaw = targetYaw + diff;
+        targetPitch = p;
+        if (isYtMode && btnMode) {
+          btnMode.click();
+        }
+      });
+    }
+
+    // Pointer / Touch look-around + Pinch/Wheel zoom
+    function fadeHint() {
+      if (dragHintEl) dragHintEl.classList.add("is-faded");
+    }
+
+    screenEl.addEventListener("mousedown", function (ev) {
+      if (isYtMode) return;
+      isDragging = true;
+      lastX = ev.clientX;
+      lastY = ev.clientY;
+      screenEl.classList.add("is-dragging");
+      fadeHint();
+    });
+
+    window.addEventListener("mousemove", function (ev) {
+      if (!isDragging || isYtMode) return;
+      var dx = ev.clientX - lastX;
+      var dy = ev.clientY - lastY;
+      lastX = ev.clientX;
+      lastY = ev.clientY;
+      var speed = vfovDeg / 460;
+      targetYaw -= dx * speed;
+      targetPitch = Math.max(-82, Math.min(82, targetPitch + dy * speed));
+      yawDeg = targetYaw;
+      pitchDeg = targetPitch;
+    });
+
+    window.addEventListener("mouseup", function () {
+      if (isDragging) {
+        isDragging = false;
+        screenEl.classList.remove("is-dragging");
+      }
+    });
+
+    screenEl.addEventListener(
+      "touchstart",
+      function (ev) {
+        if (isYtMode) return;
+        fadeHint();
+        if (ev.touches.length === 1) {
+          isDragging = true;
+          lastX = ev.touches[0].clientX;
+          lastY = ev.touches[0].clientY;
+        } else if (ev.touches.length === 2) {
+          isDragging = false;
+          var dx = ev.touches[0].clientX - ev.touches[1].clientX;
+          var dy = ev.touches[0].clientY - ev.touches[1].clientY;
+          pinchDist = Math.sqrt(dx * dx + dy * dy);
+        }
+      },
+      { passive: true }
+    );
+
+    screenEl.addEventListener(
+      "touchmove",
+      function (ev) {
+        if (isYtMode) return;
+        if (ev.touches.length === 1 && isDragging) {
+          ev.preventDefault();
+          var dx = ev.touches[0].clientX - lastX;
+          var dy = ev.touches[0].clientY - lastY;
+          lastX = ev.touches[0].clientX;
+          lastY = ev.touches[0].clientY;
+          var speed = vfovDeg / 340;
+          targetYaw -= dx * speed;
+          targetPitch = Math.max(-82, Math.min(82, targetPitch + dy * speed));
+          yawDeg = targetYaw;
+          pitchDeg = targetPitch;
+        } else if (ev.touches.length === 2 && pinchDist > 0) {
+          ev.preventDefault();
+          var ndx = ev.touches[0].clientX - ev.touches[1].clientX;
+          var ndy = ev.touches[0].clientY - ev.touches[1].clientY;
+          var dist = Math.sqrt(ndx * ndx + ndy * ndy);
+          vfovDeg = Math.max(28, Math.min(72, vfovDeg * (pinchDist / Math.max(dist, 1))));
+          pinchDist = dist;
+        }
+      },
+      { passive: false }
+    );
+
+    screenEl.addEventListener("touchend", function () {
+      isDragging = false;
+      pinchDist = 0;
+    });
+
+    screenEl.addEventListener(
+      "wheel",
+      function (ev) {
+        if (isYtMode) return;
+        ev.preventDefault();
+        fadeHint();
+        vfovDeg = Math.max(28, Math.min(72, vfovDeg + (ev.deltaY > 0 ? 3.2 : -3.2)));
+      },
+      { passive: false }
+    );
+
+    screenEl.addEventListener("keydown", function (ev) {
+      if (isYtMode) return;
+      if (ev.key === "ArrowLeft") {
+        ev.preventDefault();
+        targetYaw -= 8;
+      } else if (ev.key === "ArrowRight") {
+        ev.preventDefault();
+        targetYaw += 8;
+      } else if (ev.key === "ArrowUp") {
+        ev.preventDefault();
+        targetPitch = Math.min(82, targetPitch + 6);
+      } else if (ev.key === "ArrowDown") {
+        ev.preventDefault();
+        targetPitch = Math.max(-82, targetPitch - 6);
+      } else if (ev.key === " ") {
+        ev.preventDefault();
+        togglePlay();
+      }
+    });
+
+    // Optional Mobile Gyroscope support
+    if (btnGyro && typeof window.DeviceOrientationEvent !== "undefined" && "ontouchstart" in window) {
+      btnGyro.hidden = false;
+      btnGyro.addEventListener("click", function () {
+        if (gyroEnabled) {
+          gyroEnabled = false;
+          gyroBaseAlpha = null;
+          syncVr360DynamicLabels();
+          return;
+        }
+        var enableListener = function () {
+          gyroEnabled = true;
+          gyroBaseAlpha = null;
+          syncVr360DynamicLabels();
+        };
+        if (typeof window.DeviceOrientationEvent.requestPermission === "function") {
+          window.DeviceOrientationEvent.requestPermission()
+            .then(function (state) {
+              if (state === "granted") enableListener();
+            })
+            .catch(function () {});
+        } else {
+          enableListener();
+        }
+      });
+
+      window.addEventListener("deviceorientation", function (ev) {
+        if (!gyroEnabled || isDragging || ev.alpha === null) return;
+        if (gyroBaseAlpha === null) gyroBaseAlpha = ev.alpha;
+        targetYaw = -(ev.alpha - gyroBaseAlpha);
+        if (ev.beta !== null) {
+          targetPitch = Math.max(-75, Math.min(75, ev.beta - 65));
+        }
+      });
+    }
+
+    function renderLoop() {
+      if (!isYtMode) {
+        var dpr = Math.min(window.devicePixelRatio || 1, 2);
+        var cw = Math.max(1, Math.floor(canvasEl.clientWidth * dpr));
+        var ch = Math.max(1, Math.floor(canvasEl.clientHeight * dpr));
+        if (canvasEl.width !== cw || canvasEl.height !== ch) {
+          canvasEl.width = cw;
+          canvasEl.height = ch;
+          gl.viewport(0, 0, cw, ch);
+        }
+
+        // Smooth camera easing toward targetYaw / targetPitch
+        yawDeg += (targetYaw - yawDeg) * 0.16;
+        pitchDeg += (targetPitch - pitchDeg) * 0.16;
+
+        if (videoEl.readyState >= 2) {
+          gl.bindTexture(gl.TEXTURE_2D, tex);
+          gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, videoEl);
+        } else if (posterReady) {
+          gl.bindTexture(gl.TEXTURE_2D, tex);
+          gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, posterImg);
+        }
+
+        gl.useProgram(prog);
+        gl.uniform1f(uYawLoc, (normYaw(yawDeg) * Math.PI) / 180);
+        gl.uniform1f(uPitchLoc, (pitchDeg * Math.PI) / 180);
+        gl.uniform1f(uTanLoc, Math.tan((vfovDeg * Math.PI) / 360));
+        gl.uniform1f(uAspectLoc, cw / ch);
+        gl.drawArrays(gl.TRIANGLES, 0, 6);
+        updateHud();
+      }
+      window.requestAnimationFrame(renderLoop);
+    }
+
+    updateHud();
+    syncVr360DynamicLabels();
+    window.requestAnimationFrame(renderLoop);
   }
 
   function wireWatchRoom() {
@@ -776,6 +1378,7 @@
 
   wireGlobalLinks();
   wireMenuAndLanguageControls();
+  wireVr360Player();
   applyLanguage(detectInitialLang(), false);
   wireWatchRoom();
 })();
