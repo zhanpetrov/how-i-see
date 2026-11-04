@@ -223,7 +223,12 @@
     try {
       var params = new URLSearchParams(window.location.search);
       var qLang = trimStr(params.get("lang")).toLowerCase();
-      if (qLang === "ja" || qLang === "en") return qLang;
+      if (qLang === "ja" || qLang === "en") {
+        try {
+          window.localStorage.setItem(STORAGE_KEY, qLang);
+        } catch (eSave) {}
+        return qLang;
+      }
     } catch (e) {}
 
     try {
@@ -232,6 +237,19 @@
     } catch (e2) {}
 
     return "en";
+  }
+
+  function localizeCheckoutUrl(rawUrl, lang) {
+    if (!rawUrl) return "";
+    try {
+      var parsed = new URL(rawUrl, window.location.href);
+      if (parsed.hostname.indexOf("stripe.com") !== -1 && !parsed.searchParams.has("locale")) {
+        parsed.searchParams.set("locale", lang === "ja" ? "ja" : "en");
+      }
+      return parsed.toString();
+    } catch (e) {
+      return rawUrl;
+    }
   }
 
   function wireGlobalLinks() {
@@ -279,7 +297,7 @@
     fetch(workerUrl + "/checkout", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ tier: tierKey })
+      body: JSON.stringify({ tier: tierKey, locale: currentLang })
     })
       .then(function (res) {
         if (!res.ok) {
@@ -289,7 +307,7 @@
       })
       .then(function (data) {
         if (data && data.url) {
-          window.location.href = data.url;
+          window.location.href = localizeCheckoutUrl(data.url, currentLang);
           return;
         }
         throw new Error("Missing checkout URL");
@@ -349,8 +367,15 @@
       }
 
       var copy = resolveTierText(tierKey, tierCfg);
-      var price = trimStr(tierCfg.price);
-      var directLink = trimStr(tierCfg.link);
+      var price =
+        currentLang === "ja" && trimStr(tierCfg.priceJa)
+          ? trimStr(tierCfg.priceJa)
+          : trimStr(tierCfg.price);
+      var rawDirectLink =
+        currentLang === "ja" && trimStr(tierCfg.linkJa)
+          ? trimStr(tierCfg.linkJa)
+          : trimStr(tierCfg.link);
+      var directLink = localizeCheckoutUrl(rawDirectLink, currentLang);
 
       var labelEl = card.querySelector("[data-tier-label]");
       var priceEl = card.querySelector("[data-tier-price]");

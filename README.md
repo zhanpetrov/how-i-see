@@ -68,6 +68,7 @@ git push origin main
 
 The top navigation bar includes a built-in **English / Japanese (`EN` / `日本語`)** switcher across both `index.html` and `watch.html`:
 - Switching languages translates navigation items, ticket cards, synopsis, director bio, screening details, press, and credits while preserving live prices and Stripe Payment Links from `config.js`.
+- **Stripe Checkout localization (`?locale=ja`):** When `日本語` is selected, Stripe Payment Links automatically append `?locale=ja` (and `?locale=en` in English) so the Stripe Checkout interface (contact fields, payment methods, card form, and pay button) opens in Japanese. If you ever create dedicated Japanese/JPY Payment Links in Stripe, you can optionally add `linkJa` and `priceJa` to any tier in `config.js`.
 - Visitors can also open the Japanese edition directly via <https://zhanpetrov.github.io/how-i-see/?lang=ja>.
 
 ---
