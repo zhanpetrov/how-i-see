@@ -13,8 +13,8 @@
 window.SITE = {
   mode: "links",            // "links" = Stripe Payment Links, "worker" = phase-2 paywall
   WORKER_URL: "",
-  rent:    { label: "Rent", price: "$4", terms: "48 hours to watch, streaming in HD", link: "" },
-  buy:     { label: "Own",  price: "$9", terms: "Watch any time, plus a downloadable copy", link: "" },
+  rent:    { label: "Rent", price: "$4", terms: "48 hours to watch, streaming in HD", link: "https://buy.stripe.com/fZu6oH3m48PPbOibS87g400" },
+  buy:     { label: "Own",  price: "$9", terms: "Watch any time, as often as you like", link: "https://buy.stripe.com/4gM3cvaOwgih7y209q7g401" },
   support: { label: "Support the film", terms: "Pay what you want.", link: "" },
   trailerEmbed: "https://www.youtube-nocookie.com/embed/videoseries?list=PLEQX7QC9SchHZZeCY9vgstOFX4Oxgf8Ko",
   fragmentsUrl: "https://www.youtube.com/playlist?list=PLEQX7QC9SchHZZeCY9vgstOFX4Oxgf8Ko",
