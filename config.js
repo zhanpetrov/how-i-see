@@ -25,6 +25,8 @@ window.SITE = {
   vr360YoutubeUrl: "https://youtu.be/f-DT6I0NT-I",
   vr360Src: "assets/hyde-ellis-360.mp4",
   vr360Poster: "assets/hyde-ellis-360-poster.jpg",
+  interviewsVideoId: "QgwRsArIVKI",
+  interviewsYoutubeUrl: "https://youtu.be/QgwRsArIVKI",
   filmfreewayUrl: "https://filmfreeway.com/projects/4067236",
   contactEmail: "zhanpetrov8@gmail.com"
 };

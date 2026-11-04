@@ -84,9 +84,10 @@ python3 -m http.server 8000
 
 | File | Purpose |
 | :--- | :--- |
-| `config.js` | Single source of truth for prices, Stripe links, embed URLs, and contact email |
-| `index.html` | Main one-page film site (Hero poster showcase, Official Trailer viewfinder, Watch, The Film, Director, Screenings, Press, Credits, Footer) |
+| `config.js` | Single source of truth for prices, Stripe links, embed URLs (`freeVideoId`, `vr360VideoId`, `interviewsVideoId`), and contact email |
+| `index.html` | Main one-page film site (Hero poster showcase, Official Trailer viewfinder, Watch, Hyde & Ellis 360°, The Film, Street Interviews, Director, Screenings, Press, Credits, Footer) |
+| `interviews-data.js` | Chronological character roster & speaker-divided verbatim transcripts (`00:00 – 41:43`) for the uncut Street Interviews reel |
 | `watch.html` | Screening room (`noindex`) for streaming & supporter playback |
 | `styles.css` | Pure black-and-white responsive stylesheet (`Big Shoulders Display` + `Source Serif 4`) |
-| `site.js` | Wires `window.SITE` into `index.html` and `watch.html` |
-| `assets/` | Official FilmFreeway `poster.jpg`, `trailer.mp4`, `trailer-poster.jpg`, and viewfinder `favicon.svg` |
+| `site.js` | Wires `window.SITE` and `window.INTERVIEWS_DATA` into `index.html` and `watch.html` |
+| `assets/` | Official FilmFreeway `poster.jpg`, `trailer.mp4`, `trailer-poster.jpg`, 360° sphere assets, and viewfinder `favicon.svg` |

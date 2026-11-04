@@ -18,6 +18,7 @@
       "nav.watch": "Watch",
       "nav.vr360": "360\u00b0",
       "nav.film": "The Film",
+      "nav.interviews": "Interviews",
       "nav.director": "Director",
       "nav.screenings": "Screenings",
       "nav.press": "Press",
@@ -82,6 +83,22 @@
       "film.quote":
         "\u201CMy subject is the slow death of human decency caused by systemic neglect and the predations of unchecked money and power. This is how I see.\u201D",
       "film.quoteCite": "\u2014 Zhan Petrov",
+      "interviews.heading": "Street Interviews",
+      "interviews.lead":
+        "Uncut street encounters recorded across San Francisco\u2019s Tenderloin, transit corridors, and train tracks (41:43)\u2014eleven chapters and thirteen voices on camera, divided by person with full verbatim transcripts.",
+      "interviews.iframeTitle": "HOW I SEE \u2014 Full Street Interviews (41:43)",
+      "interviews.fullReel": "00:00 \u2013 41:43 \u00b7 Full Uncut Reel",
+      "interviews.cuedPrefix": "Now cued:",
+      "interviews.watchYt": "Open on YouTube \u2197",
+      "interviews.count": "11 Chapters \u00b7 13 On-Camera Voices \u00b7 Click any timestamp to jump in player",
+      "interviews.expandAll": "Expand all transcripts",
+      "interviews.collapseAll": "Collapse all transcripts",
+      "interviews.playChapterAria": "Jump video to ",
+      "interviews.readTranscript": "Verbatim transcript",
+      "interviews.turnsUnit": "exchanges",
+      "interviews.crewTitle": "Interviewing Crew Behind the Camera",
+      "interviews.crewBody":
+        "<strong>Zhan Petrov</strong> (director &amp; primary interviewer throughout) &middot; <strong>Second Cameraman</strong> (filming handheld second-angle iPhone footage at 06:45&ndash;13:02 &amp; 13:14&ndash;13:21; heard at 18:35) &middot; <strong>Female Co-Interviewer</strong> (asking opening questions on Taylor Street at 18:51&ndash;19:21, confirming take at 27:26, and seen on camera at 39:25&ndash;39:27).",
       "director.heading": "Zhan Petrov",
       "director.p1":
         "Born in Odessa, Ukraine, in 1992 and named by his father after French New Wave director Jean-Luc Godard, Zhan Petrov graduated from the Ukrainian National Marine Academy and served at sea as a second officer on international merchant vessels before coming to the United States away from the war in Ukraine.",
@@ -146,6 +163,7 @@
       "nav.watch": "\u8996\u8074",
       "nav.vr360": "360\u00b0",
       "nav.film": "\u4f5c\u54c1\u7d39\u4ecb",
+      "nav.interviews": "\u8857\u982d\u30a4\u30f3\u30bf\u30d3\u30e5\u30fc",
       "nav.director": "\u76e3\u7763",
       "nav.screenings": "\u4e0a\u6620\u60c5\u5831",
       "nav.press": "\u30d7\u30ec\u30b9",
@@ -210,6 +228,22 @@
       "film.quote":
         "\u300c\u79c1\u306e\u4e3b\u984c\u306f\u3001\u5236\u5ea6\u7684\u306a\u30cd\u30b0\u30ec\u30af\u30c8\u3068\u3001\u6b6f\u6b62\u3081\u306a\u304d\u91d1\u3068\u6a29\u529b\u306e\u53ce\u596a\u306b\u3088\u3063\u3066\u5f15\u304d\u8d77\u3053\u3055\u308c\u308b\u3001\u4eba\u9593\u306e\u5c0a\u53b3\u306e\u7de9\u6162\u306a\u6b7b\u3067\u3042\u308b\u3002\u3053\u308c\u304c\u3001\u79c1\u306e\u898b\u308b\u4e16\u754c\u3060\u3002\u300d",
       "film.quoteCite": "\u2014 \u30b8\u30e3\u30f3\u30fb\u30da\u30c8\u30ed\u30d5",
+      "interviews.heading": "\u8857\u982d\u30a4\u30f3\u30bf\u30d3\u30e5\u30fc\uff08\u5168\u7de8\u8a18\u9332\uff09",
+      "interviews.lead":
+        "\u30b5\u30f3\u30d5\u30e9\u30f3\u30b7\u30b9\u30b3\u30fb\u30c6\u30f3\u30c0\u30fc\u30ed\u30a4\u30f3\u306e\u8857\u89d2\u3084\u99c5\u30db\u30fc\u30e0\u3001\u7dda\u8def\u8107\u3067\u8a18\u9332\u3055\u308c\u305f41\u520643\u79d2\u306e\u30ce\u30fc\u30ab\u30c3\u30c8\u8857\u982d\u30a4\u30f3\u30bf\u30d3\u30e5\u30fc\u3002\u30ab\u30e1\u30e9\u306e\u524d\u3067\u8a9e\u3063\u305f\u516811\u7ae0\u30fb13\u540d\u306e\u4eba\u7269\u5225\u30d7\u30ed\u30d5\u30a3\u30fc\u30eb\u3068\u3001\u8a71\u8005\u5225\u306e\u5168\u6587\u66f8\u304d\u8d77\u3053\u3057\u3092\u53ce\u9332\u3057\u3066\u3044\u307e\u3059\u3002",
+      "interviews.iframeTitle": "HOW I SEE \u2014 \u8857\u982d\u30a4\u30f3\u30bf\u30d3\u30e5\u30fc\u30ce\u30fc\u30ab\u30c3\u30c8\u5168\u7de8 (41:43)",
+      "interviews.fullReel": "00:00 \u2013 41:43 \u00b7 \u30ce\u30fc\u30ab\u30c3\u30c8\u5168\u7de8",
+      "interviews.cuedPrefix": "\u518d\u751f\u4f4d\u7f6e:",
+      "interviews.watchYt": "YouTube\u3067\u958b\u304f \u2197",
+      "interviews.count": "\u516811\u7ae0 \u00b7 \u767b\u5834\u4eba\u726913\u540d \u00b7 \u30bf\u30a4\u30e0\u30b9\u30bf\u30f3\u30d7\u3092\u30af\u30ea\u30c3\u30af\u3059\u308b\u3068\u8a72\u5f53\u30b7\u30fc\u30f3\u3078\u79fb\u52d5",
+      "interviews.expandAll": "\u3059\u3079\u3066\u306e\u66f8\u304d\u8d77\u3053\u3057\u3092\u958b\u304f",
+      "interviews.collapseAll": "\u3059\u3079\u3066\u306e\u66f8\u304d\u8d77\u3053\u3057\u3092\u9589\u3058\u308b",
+      "interviews.playChapterAria": "\u6b21\u306e\u30c1\u30e3\u30d7\u30bf\u30fc\u304b\u3089\u518d\u751f: ",
+      "interviews.readTranscript": "\u82f1\u8a9e\u5168\u6587\u66f8\u304d\u8d77\u3053\u3057\uff08\u8a71\u8005\u5225\uff09",
+      "interviews.turnsUnit": "\u767a\u8a71",
+      "interviews.crewTitle": "\u30ab\u30e1\u30e9\u80cc\u5f8c\u306e\u53d6\u6750\u30fb\u64ae\u5f71\u30af\u30eb\u30fc",
+      "interviews.crewBody":
+        "<strong>\u30b8\u30e3\u30f3\u30fb\u30da\u30c8\u30ed\u30d5\uff08Zhan Petrov\uff09</strong>\uff08\u76e3\u7763\u30fb\u5168\u7de8\u306e\u30e1\u30a4\u30f3\u30a4\u30f3\u30bf\u30d3\u30e5\u30a2\u30fc\uff09 &middot; <strong>\u7b2c2\u30ab\u30e1\u30e9\u30de\u30f3</strong>\uff0806:45&ndash;13:02\u304a\u3088\u307313:14&ndash;13:21\u3067\u5225\u30a2\u30f3\u30b0\u30ebiPhone\u64ae\u5f71\u3092\u62c5\u5f53\u30fb18:35\u306b\u58f0\uff09 &middot; <strong>\u5973\u6027\u5171\u540c\u30a4\u30f3\u30bf\u30d3\u30e5\u30a2\u30fc</strong>\uff0818:51&ndash;19:21\u306e\u30c6\u30a4\u30e9\u30fc\u901a\u308a\u3067\u5c0e\u5165\u8cea\u554f\u30fb27:26\u3067\u53ce\u9332\u78ba\u8a8d\u30fb39:25&ndash;39:27\u306b\u753b\u9762\u767b\u5834\uff09\u3002",
       "director.heading": "\u30b8\u30e3\u30f3\u30fb\u30da\u30c8\u30ed\u30d5",
       "director.p1":
         "1992\u5e74\u3001\u30a6\u30af\u30e9\u30a4\u30ca\u30fb\u30aa\u30c7\u30fc\u30b5\u751f\u307e\u308c\u3002\u30d5\u30e9\u30f3\u30b9\u30fb\u30cc\u30fc\u30f4\u30a7\u30eb\u30f4\u30a1\u30fc\u30b0\u306e\u5de8\u5320\u30b8\u30e3\u30f3\uff1d\u30ea\u30e5\u30c3\u30af\u30fb\u30b4\u30c0\u30fc\u30eb\u306b\u3061\u306a\u3093\u3067\u7236\u304b\u3089\u540d\u4ed8\u3051\u3089\u308c\u305f\u3002\u30a6\u30af\u30e9\u30a4\u30ca\u56fd\u7acb\u6d77\u6d0b\u30a2\u30ab\u30c7\u30df\u30fc\u3092\u5352\u696d\u5f8c\u3001\u56fd\u969b\u5546\u8239\u306e\u4e8c\u7b49\u822a\u6d77\u58eb\u3068\u3057\u3066\u6d77\u4e0a\u3067\u52e4\u52d9\u3057\u305f\u306e\u3061\u3001\u30a6\u30af\u30e9\u30a4\u30ca\u3067\u306e\u6226\u4e89\u3092\u96e2\u308c\u3066\u6e21\u7c73\u3002",
@@ -653,6 +687,9 @@
     renderWatchRoomDynamicCopy();
     if (typeof syncVr360DynamicLabels === "function") {
       syncVr360DynamicLabels();
+    }
+    if (typeof syncInterviewsSection === "function") {
+      syncInterviewsSection();
     }
 
     if (persist) {
@@ -1376,9 +1413,290 @@
       });
   }
 
+  var syncInterviewsSection = null;
+
+  function wireInterviews() {
+    var listEl = document.getElementById("interviews-list");
+    var items = Array.isArray(window.INTERVIEWS_DATA) ? window.INTERVIEWS_DATA : [];
+    if (!listEl || !items.length) return;
+
+    var iframeEl = document.getElementById("interviews-iframe");
+    var screenEl = document.getElementById("interviews-screen");
+    var nowEl = document.getElementById("interviews-now");
+    var ytLinkEl = document.getElementById("interviews-yt-link");
+    var toggleAllBtn = document.getElementById("interviews-toggle-all");
+
+    var vid = trimStr(cfg.interviewsVideoId) || "QgwRsArIVKI";
+    var ytBaseUrl = trimStr(cfg.interviewsYoutubeUrl) || "https://youtu.be/" + vid;
+
+    if (iframeEl && iframeEl.getAttribute("src").indexOf(vid) === -1) {
+      iframeEl.src =
+        "https://www.youtube-nocookie.com/embed/" +
+        vid +
+        "?rel=0&modestbranding=1&playsinline=1";
+    }
+    if (ytLinkEl) {
+      ytLinkEl.href = ytBaseUrl;
+    }
+
+    var cuedNum = "";
+    var cuedTimeLabel = "";
+    var openNums = {};
+
+    function parseTimeSec(mmss) {
+      var parts = String(mmss || "").split(":");
+      if (parts.length === 2) {
+        var m = parseInt(parts[0], 10);
+        var s = parseInt(parts[1], 10);
+        if (!isNaN(m) && !isNaN(s)) return m * 60 + s;
+      }
+      return 0;
+    }
+
+    function updateNowPlayingLabel() {
+      if (!nowEl) return;
+      if (!cuedNum) {
+        nowEl.textContent = t("interviews.fullReel");
+        return;
+      }
+      var match = null;
+      for (var i = 0; i < items.length; i++) {
+        if (items[i].num === cuedNum) {
+          match = items[i];
+          break;
+        }
+      }
+      if (!match) {
+        nowEl.textContent = t("interviews.fullReel");
+        return;
+      }
+      var personName =
+        (currentLang === "ja" && match.name && match.name.ja) ||
+        (match.name && match.name.en) ||
+        "";
+      nowEl.textContent =
+        t("interviews.cuedPrefix") +
+        " " +
+        match.num +
+        " \u00b7 " +
+        personName +
+        " (" +
+        cuedTimeLabel +
+        ")";
+    }
+
+    function updateToggleAllState() {
+      if (!toggleAllBtn) return;
+      var detailsNodes = listEl.querySelectorAll("details.interview-transcript");
+      var allOpen = detailsNodes.length > 0;
+      for (var i = 0; i < detailsNodes.length; i++) {
+        if (!detailsNodes[i].open) {
+          allOpen = false;
+          break;
+        }
+      }
+      toggleAllBtn.setAttribute("aria-expanded", allOpen ? "true" : "false");
+      toggleAllBtn.textContent = allOpen ? t("interviews.collapseAll") : t("interviews.expandAll");
+    }
+
+    function cueToSecond(item, sec, label) {
+      var safeSec = Math.max(0, Math.floor(sec || 0));
+      cuedNum = item.num;
+      cuedTimeLabel = label || item.startLabel || item.time;
+
+      if (iframeEl) {
+        iframeEl.src =
+          "https://www.youtube-nocookie.com/embed/" +
+          vid +
+          "?start=" +
+          safeSec +
+          "&autoplay=1&rel=0&modestbranding=1&playsinline=1";
+      }
+      if (ytLinkEl) {
+        ytLinkEl.href =
+          ytBaseUrl + (ytBaseUrl.indexOf("?") === -1 ? "?" : "&") + "t=" + safeSec + "s";
+      }
+
+      var cards = listEl.querySelectorAll(".interview-card");
+      for (var i = 0; i < cards.length; i++) {
+        cards[i].classList.toggle(
+          "is-cued",
+          cards[i].getAttribute("data-chapter-num") === cuedNum
+        );
+      }
+
+      updateNowPlayingLabel();
+
+      if (screenEl && typeof screenEl.scrollIntoView === "function") {
+        var reduce =
+          window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        screenEl.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" });
+      }
+    }
+
+    function renderCards() {
+      var existingDetails = listEl.querySelectorAll("details.interview-transcript[data-num]");
+      for (var d = 0; d < existingDetails.length; d++) {
+        openNums[existingDetails[d].getAttribute("data-num")] = existingDetails[d].open;
+      }
+
+      listEl.innerHTML = "";
+      var frag = document.createDocumentFragment();
+
+      for (var i = 0; i < items.length; i++) {
+        (function (item) {
+          var nameText =
+            (currentLang === "ja" && item.name && item.name.ja) ||
+            (item.name && item.name.en) ||
+            "";
+          var metaText =
+            (currentLang === "ja" && item.meta && item.meta.ja) ||
+            (item.meta && item.meta.en) ||
+            "";
+          var bioText =
+            (currentLang === "ja" && item.bio && item.bio.ja) ||
+            (item.bio && item.bio.en) ||
+            "";
+
+          var card = document.createElement("article");
+          card.className = "interview-card" + (cuedNum === item.num ? " is-cued" : "");
+          card.setAttribute("data-chapter-num", item.num);
+
+          var head = document.createElement("div");
+          head.className = "interview-head";
+
+          var titleGroup = document.createElement("div");
+          titleGroup.className = "interview-title-group";
+
+          var numSpan = document.createElement("span");
+          numSpan.className = "interview-num";
+          numSpan.textContent = item.num;
+
+          var nameEl = document.createElement("h3");
+          nameEl.className = "interview-name";
+          nameEl.textContent = nameText;
+
+          titleGroup.appendChild(numSpan);
+          titleGroup.appendChild(nameEl);
+
+          var jumpBtn = document.createElement("button");
+          jumpBtn.type = "button";
+          jumpBtn.className = "interview-jump-btn";
+          jumpBtn.setAttribute(
+            "aria-label",
+            t("interviews.playChapterAria") + nameText + " (" + item.startLabel + ")"
+          );
+          jumpBtn.textContent = "\u25b6 " + item.time;
+          jumpBtn.addEventListener("click", function () {
+            cueToSecond(item, item.startSec, item.time);
+          });
+
+          head.appendChild(titleGroup);
+          head.appendChild(jumpBtn);
+          card.appendChild(head);
+
+          if (metaText) {
+            var metaEl = document.createElement("p");
+            metaEl.className = "interview-meta";
+            metaEl.textContent = metaText;
+            card.appendChild(metaEl);
+          }
+
+          if (bioText) {
+            var bioEl = document.createElement("p");
+            bioEl.className = "interview-bio";
+            bioEl.textContent = bioText;
+            card.appendChild(bioEl);
+          }
+
+          var turns = Array.isArray(item.turns) ? item.turns : [];
+          if (turns.length) {
+            var detailsEl = document.createElement("details");
+            detailsEl.className = "interview-transcript";
+            detailsEl.setAttribute("data-num", item.num);
+            if (openNums[item.num]) {
+              detailsEl.open = true;
+            }
+
+            var summaryEl = document.createElement("summary");
+            summaryEl.textContent =
+              t("interviews.readTranscript") +
+              " \u00b7 " +
+              turns.length +
+              (currentLang === "ja" ? "" : " ") +
+              t("interviews.turnsUnit");
+            detailsEl.appendChild(summaryEl);
+
+            var turnsWrap = document.createElement("div");
+            turnsWrap.className = "transcript-turns";
+
+            for (var q = 0; q < turns.length; q++) {
+              (function (turn) {
+                var pEl = document.createElement("p");
+                pEl.className = "transcript-turn";
+
+                var cueBtn = document.createElement("button");
+                cueBtn.type = "button";
+                cueBtn.className = "turn-cue";
+                cueBtn.textContent = "[" + turn.t + "]";
+                cueBtn.setAttribute(
+                  "aria-label",
+                  t("interviews.playChapterAria") + turn.t
+                );
+                cueBtn.addEventListener("click", function () {
+                  cueToSecond(item, parseTimeSec(turn.t), turn.t);
+                });
+
+                var speakerEl = document.createElement("strong");
+                speakerEl.className = "turn-speaker";
+                var spk = currentLang === "ja" && turn.sJa ? turn.sJa : turn.s;
+                speakerEl.textContent = spk + ":";
+
+                pEl.appendChild(cueBtn);
+                pEl.appendChild(speakerEl);
+                pEl.appendChild(document.createTextNode(" " + turn.line));
+                turnsWrap.appendChild(pEl);
+              })(turns[q]);
+            }
+
+            detailsEl.appendChild(turnsWrap);
+            detailsEl.addEventListener("toggle", function () {
+              openNums[item.num] = detailsEl.open;
+              updateToggleAllState();
+            });
+
+            card.appendChild(detailsEl);
+          }
+
+          frag.appendChild(card);
+        })(items[i]);
+      }
+
+      listEl.appendChild(frag);
+      updateNowPlayingLabel();
+      updateToggleAllState();
+    }
+
+    if (toggleAllBtn) {
+      toggleAllBtn.addEventListener("click", function () {
+        var detailsNodes = listEl.querySelectorAll("details.interview-transcript");
+        var shouldOpen = toggleAllBtn.getAttribute("aria-expanded") !== "true";
+        for (var i = 0; i < detailsNodes.length; i++) {
+          detailsNodes[i].open = shouldOpen;
+          var n = detailsNodes[i].getAttribute("data-num");
+          if (n) openNums[n] = shouldOpen;
+        }
+        updateToggleAllState();
+      });
+    }
+
+    syncInterviewsSection = renderCards;
+  }
+
   wireGlobalLinks();
   wireMenuAndLanguageControls();
   wireVr360Player();
+  wireInterviews();
   applyLanguage(detectInitialLang(), false);
   wireWatchRoom();
 })();

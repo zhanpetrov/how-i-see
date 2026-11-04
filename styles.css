@@ -1327,26 +1327,6 @@ html[lang="ja"] .watch-expiry {
   .site-nav-inner {
     padding: 0.55rem 2rem;
   }
-  .site-nav-links,
-  .site-nav.is-open .site-nav-links {
-    position: static;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    padding: 0;
-    background: transparent;
-    border-bottom: 0;
-    box-shadow: none;
-  }
-  .site-nav-links a {
-    padding: 0.25rem 0;
-    font-size: 0.9rem;
-    border-bottom: 0;
-  }
-  .menu-toggle {
-    display: none;
-  }
   .hero {
     padding: 2.6rem 2rem 3.5rem;
   }
@@ -1395,13 +1375,46 @@ html[lang="ja"] .watch-expiry {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 980px) {
   .site-nav-links,
   .site-nav.is-open .site-nav-links {
-    gap: 1.4rem;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.88rem;
+    padding: 0;
+    background: transparent;
+    border-bottom: 0;
+    box-shadow: none;
   }
   .site-nav-links a {
-    font-size: 0.92rem;
+    padding: 0.25rem 0;
+    font-size: 0.86rem;
+    letter-spacing: 0.1em;
+    border-bottom: 0;
+    white-space: nowrap;
+  }
+  html[lang="ja"] .site-nav-links a {
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1120px) {
+  .site-nav-links,
+  .site-nav.is-open .site-nav-links {
+    gap: 1.22rem;
+  }
+  .site-nav-links a {
+    font-size: 0.91rem;
+    letter-spacing: 0.11em;
+  }
+  html[lang="ja"] .site-nav-links a {
+    font-size: 0.82rem;
   }
 }
 
@@ -1597,6 +1610,391 @@ html[lang="ja"] .vr360-ctrl-btn {
     flex: 1;
     max-width: 360px;
   }
+}
+
+/* ==========================================================================
+   STREET INTERVIEWS (#interviews) — Uncut 41:43 Reel, 11 Chapters & Transcripts
+   ========================================================================== */
+
+.interviews-player {
+  margin-top: 1.5rem;
+  border: 1.5px solid var(--rule-strong);
+  background: var(--black);
+}
+
+.interviews-screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000000;
+  overflow: hidden;
+  scroll-margin-top: 72px;
+}
+
+.interviews-screen iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #000000;
+}
+
+.interviews-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding: 0.65rem 0.95rem;
+  background: var(--black);
+  color: var(--white);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.interviews-bar :focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 2px;
+}
+
+.interviews-now {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #e8e8e8;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+html[lang="ja"] .interviews-now {
+  font-family: var(--font-sans-ja);
+  font-size: 0.77rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.interviews-yt-link {
+  color: var(--white);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+html[lang="ja"] .interviews-yt-link {
+  font-size: 0.76rem;
+}
+
+.interviews-toolbar {
+  margin-top: 1.65rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--rule-light);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem 1rem;
+}
+
+.interviews-count {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.84rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+html[lang="ja"] .interviews-count {
+  font-family: var(--font-sans-ja);
+  font-size: 0.76rem;
+  letter-spacing: 0.04em;
+}
+
+.btn-text-toggle {
+  appearance: none;
+  background: var(--white);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 0.35rem 0.76rem;
+  min-height: 32px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+html[lang="ja"] .btn-text-toggle {
+  font-family: var(--font-sans-ja);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+}
+
+.btn-text-toggle:hover,
+.btn-text-toggle[aria-expanded="true"] {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.interviews-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.interview-card {
+  background: var(--white);
+  border: 1px solid #cfcfca;
+  padding: 1.15rem 1.15rem 1rem;
+  transition: border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.interview-card.is-cued {
+  border-color: var(--ink);
+  box-shadow: inset 3px 0 0 var(--ink);
+}
+
+.interview-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.6rem 1rem;
+}
+
+.interview-title-group {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  min-width: 0;
+  flex: 1 1 210px;
+}
+
+.interview-num {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+  flex-shrink: 0;
+}
+
+.interview-name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+html[lang="ja"] .interview-name {
+  font-family: var(--font-sans-ja);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.interview-jump-btn {
+  appearance: none;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid #b5b5ae;
+  padding: 0.32rem 0.68rem;
+  min-height: 32px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 0.84rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36rem;
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+.interview-jump-btn:hover,
+.interview-card.is-cued .interview-jump-btn {
+  background: var(--ink);
+  color: var(--white);
+  border-color: var(--ink);
+}
+
+.interview-meta {
+  margin: 0.42rem 0 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+html[lang="ja"] .interview-meta {
+  font-family: var(--font-sans-ja);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+}
+
+.interview-bio {
+  margin: 0.58rem 0 0;
+  font-size: 0.97rem;
+  line-height: 1.62;
+  color: #222222;
+}
+
+.interview-transcript {
+  margin-top: 0.82rem;
+  border-top: 1px solid var(--rule-light);
+  padding-top: 0.62rem;
+}
+
+.interview-transcript summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.48rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.84rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--ink);
+  user-select: none;
+}
+
+.interview-transcript summary::-webkit-details-marker {
+  display: none;
+}
+
+html[lang="ja"] .interview-transcript summary {
+  font-family: var(--font-sans-ja);
+  font-size: 0.76rem;
+  letter-spacing: 0.04em;
+}
+
+.interview-transcript summary::before {
+  content: "+";
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 0.86rem;
+  width: 1.05rem;
+  height: 1.05rem;
+  border: 1px solid currentColor;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.interview-transcript[open] summary::before {
+  content: "\2212";
+  background: var(--ink);
+  color: var(--white);
+  border-color: var(--ink);
+}
+
+.transcript-turns {
+  margin-top: 0.82rem;
+  padding: 0.85rem 0.92rem;
+  background: var(--paper);
+  border: 1px solid var(--rule-light);
+  display: flex;
+  flex-direction: column;
+  gap: 0.72rem;
+}
+
+.transcript-turn {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.turn-cue {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin-right: 0.42rem;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: color 120ms ease, text-decoration-color 120ms ease;
+}
+
+.turn-cue:hover {
+  color: var(--ink);
+  text-decoration-color: var(--ink);
+}
+
+.turn-speaker {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.86rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-right: 0.38rem;
+}
+
+html[lang="ja"] .turn-speaker {
+  font-family: var(--font-sans-ja);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  text-transform: none;
+}
+
+.interviews-crew {
+  margin-top: 1.35rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--rule-light);
+  background: #f2f2ee;
+}
+
+.interviews-crew-title {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.92rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+html[lang="ja"] .interviews-crew-title {
+  font-family: var(--font-sans-ja);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.interviews-crew-body {
+  margin: 0;
+  font-size: 0.93rem;
+  line-height: 1.62;
+  color: #2b2b2b;
 }
 
 /* Never show elements marked hidden (e.g. the download button and controls bar before access is granted). */

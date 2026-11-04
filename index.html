@@ -47,6 +47,7 @@
         <a href="#watch" data-i18n="nav.watch">Watch</a>
         <a href="#vr360" data-i18n="nav.vr360">360&deg;</a>
         <a href="#film" data-i18n="nav.film">The Film</a>
+        <a href="#interviews" data-i18n="nav.interviews">Interviews</a>
         <a href="#director" data-i18n="nav.director">Director</a>
         <a href="#screenings" data-i18n="nav.screenings">Screenings</a>
         <a href="#press" data-i18n="nav.press">Press</a>
@@ -358,11 +359,71 @@
       </blockquote>
     </section>
 
-    <!-- 4. ZHAN PETROV -->
+    <!-- 4. STREET INTERVIEWS (FULL 41:43 UNCUT REEL & VERBATIM TRANSCRIPTS) -->
+    <section class="section" id="interviews" aria-labelledby="heading-interviews">
+      <div class="section-header">
+        <h2 class="section-title" id="heading-interviews" data-i18n="interviews.heading">Street Interviews</h2>
+        <span class="section-index">04</span>
+      </div>
+
+      <p class="logline" data-i18n="interviews.lead">
+        Uncut street encounters recorded across San Francisco’s Tenderloin, transit corridors, and train tracks (41:43)—eleven chapters and thirteen voices on camera, divided by person with full verbatim transcripts.
+      </p>
+
+      <div class="interviews-player">
+        <div class="interviews-screen" id="interviews-screen">
+          <iframe
+            id="interviews-iframe"
+            src="https://www.youtube-nocookie.com/embed/QgwRsArIVKI?rel=0&amp;modestbranding=1&amp;playsinline=1"
+            title="HOW I SEE — Full Street Interviews (41:43)"
+            data-i18n-title="interviews.iframeTitle"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+            allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div class="interviews-bar">
+          <span class="interviews-now" id="interviews-now" data-i18n="interviews.fullReel">00:00 &ndash; 41:43 &middot; Full Uncut Reel</span>
+          <a
+            class="arrow-link interviews-yt-link"
+            id="interviews-yt-link"
+            href="https://youtu.be/QgwRsArIVKI"
+            target="_blank"
+            rel="noopener"
+            data-i18n="interviews.watchYt"
+          >Open on YouTube &nearr;</a>
+        </div>
+      </div>
+
+      <div class="interviews-toolbar">
+        <p class="interviews-count" data-i18n="interviews.count">11 Chapters &middot; 13 On-Camera Voices &middot; Click any timestamp to jump in player</p>
+        <button
+          type="button"
+          class="btn-text-toggle"
+          id="interviews-toggle-all"
+          aria-expanded="false"
+          data-i18n="interviews.expandAll"
+        >Expand all transcripts</button>
+      </div>
+
+      <div class="interviews-list" id="interviews-list"></div>
+
+      <aside class="interviews-crew" aria-labelledby="interviews-crew-heading">
+        <h3 class="interviews-crew-title" id="interviews-crew-heading" data-i18n="interviews.crewTitle">Interviewing Crew Behind the Camera</h3>
+        <p class="interviews-crew-body" data-i18n-html="interviews.crewBody">
+          <strong>Zhan Petrov</strong> (director &amp; primary interviewer throughout) &middot;
+          <strong>Second Cameraman</strong> (filming handheld second-angle iPhone footage at 06:45&ndash;13:02 &amp; 13:14&ndash;13:21; heard at 18:35) &middot;
+          <strong>Female Co-Interviewer</strong> (asking opening questions on Taylor Street at 18:51&ndash;19:21, confirming take at 27:26, and seen on camera at 39:25&ndash;39:27).
+        </p>
+      </aside>
+    </section>
+
+    <!-- 5. ZHAN PETROV -->
     <section class="section" id="director" aria-labelledby="heading-director">
       <div class="section-header">
         <h2 class="section-title" id="heading-director" data-i18n="director.heading">Zhan Petrov</h2>
-        <span class="section-index">04</span>
+        <span class="section-index">05</span>
       </div>
 
       <div class="prose">
@@ -375,11 +436,11 @@
       </div>
     </section>
 
-    <!-- 5. SCREENINGS -->
+    <!-- 6. SCREENINGS -->
     <section class="section" id="screenings" aria-labelledby="heading-screenings">
       <div class="section-header">
         <h2 class="section-title" id="heading-screenings" data-i18n="screenings.heading">Screenings</h2>
-        <span class="section-index">05</span>
+        <span class="section-index">06</span>
       </div>
 
       <article class="event-item">
@@ -408,11 +469,11 @@
       </div>
     </section>
 
-    <!-- 6. PRESS -->
+    <!-- 7. PRESS -->
     <section class="section" id="press" aria-labelledby="heading-press">
       <div class="section-header">
         <h2 class="section-title" id="heading-press" data-i18n="press.heading">Press</h2>
-        <span class="section-index">06</span>
+        <span class="section-index">07</span>
       </div>
 
       <article class="press-item">
@@ -429,11 +490,11 @@
       </article>
     </section>
 
-    <!-- 7. CREDITS -->
+    <!-- 8. CREDITS -->
     <section class="section" id="credits" aria-labelledby="heading-credits">
       <div class="section-header">
         <h2 class="section-title" id="heading-credits" data-i18n="credits.heading">Credits</h2>
-        <span class="section-index">07</span>
+        <span class="section-index">08</span>
       </div>
 
       <dl class="credits-list">
@@ -470,7 +531,7 @@
 
   </main>
 
-  <!-- 8. FOOTER -->
+  <!-- 9. FOOTER -->
   <footer class="site-footer">
     <div class="footer-inner">
       <span class="footer-brand">HOW I SEE</span>
@@ -488,6 +549,7 @@
   </footer>
 
   <script src="config.js"></script>
+  <script src="interviews-data.js"></script>
   <script src="site.js"></script>
 </body>
 </html>
