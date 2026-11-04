@@ -939,3 +939,6 @@ a {
     padding: 4.25rem 0;
   }
 }
+
+/* Never show elements marked hidden (e.g. the download button and controls bar before access is granted). */
+[hidden] { display: none !important; }
