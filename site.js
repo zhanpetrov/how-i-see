@@ -177,6 +177,34 @@
     var expiryEl = document.getElementById("watch-expiry");
     var downloadEl = document.getElementById("watch-download");
 
+    // Payment Links mode: Stripe redirects buyers here with the YouTube video id
+    // in the URL (?v=VIDEO_ID&plan=rent|own&session_id=...). The id lives only in
+    // the Stripe Payment Link settings, never in this public code.
+    var ytId = trimStr(params.get("v"));
+    if (!isWorkerMode && /^[A-Za-z0-9_-]{11}$/.test(ytId)) {
+      var plan = trimStr(params.get("plan")).toLowerCase() === "own" ? "own" : "rent";
+      var screen = root.querySelector(".vf-screen");
+      if (screen) {
+        var frame = document.createElement("iframe");
+        frame.src = "https://www.youtube-nocookie.com/embed/" + ytId +
+          "?rel=0&modestbranding=1&playsinline=1";
+        frame.title = "HOW I SEE — full film";
+        frame.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen";
+        frame.allowFullscreen = true;
+        frame.referrerPolicy = "strict-origin-when-cross-origin";
+        screen.insertBefore(frame, screen.firstChild);
+      }
+      if (gateEl) gateEl.hidden = true;
+      if (hudModeEl) hudModeEl.textContent = plan === "own" ? "OWNED" : "RENTAL · 48 HOURS";
+      if (controlsBar) controlsBar.hidden = false;
+      if (expiryEl) {
+        expiryEl.textContent = plan === "own"
+          ? "Thank you. Bookmark this page to watch any time."
+          : "Thank you. Bookmark this page — your rental is for 48 hours.";
+      }
+      return;
+    }
+
     if (!isWorkerMode || !workerUrl || (!token && !sessionId)) {
       return;
     }
