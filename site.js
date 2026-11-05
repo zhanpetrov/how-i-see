@@ -75,7 +75,7 @@
       "tier.free.label": "Watch free",
       "tier.free.terms": "The full film, streaming in HD. No account, no payment.",
       "tier.film.label": "Watch the film",
-      "tier.film.terms": "The full film, 15 min, streaming in HD. Pay what you want, from $0.50.",
+      "tier.film.terms": "The full film, 15 min, streaming in HD. Pay what you want, from $1.",
       "tier.interviews.label": "Full uncut interviews",
       "tier.interviews.terms": "All 41:43 of the uncut street interviews, 11 chapters, with verbatim transcripts in English and Japanese.",
       "hero.lead": "Shot in black and white on the streets of San Francisco\u2019s Tenderloin, a Ukrainian filmmaker confronts the parallels between an American neighborhood left behind and the war in his homeland.",
@@ -177,7 +177,7 @@
       "watchRoom.vfAria": "HOW I SEE full film player",
       "watchRoom.gateTitle": "Screening Pass Required",
       "watchRoom.gateCopy":
-        "Pay what you want for <em>HOW I SEE</em>, from $0.50, and you are brought back here to watch the film.",
+        "Pay what you want for <em>HOW I SEE</em>, from $1, and you are brought back here to watch the film.",
       "watchRoom.gateCta": "Watch the film \u00b7 Pay what you want",
       "watchRoom.download": "Download HD Copy",
       "watchRoom.verifyingTitle": "Verifying Screening Pass",
@@ -260,7 +260,7 @@
       "tier.free.label": "\u7121\u6599\u3067\u89b3\u308b",
       "tier.free.terms": "\u672c\u7de8\u3092\u7121\u6599\u30fbHD\u3067\u914d\u4fe1\u3002\u767b\u9332\u3082\u652f\u6255\u3044\u3082\u4e0d\u8981\u3067\u3059\u3002",
       "tier.film.label": "\u672c\u7de8\u3092\u89b3\u308b",
-      "tier.film.terms": "\u672c\u7de8\uff0815\u5206\uff09\u3092HD\u30b9\u30c8\u30ea\u30fc\u30df\u30f3\u30b0\u3067\u3002\u304a\u652f\u6255\u3044\u306f\u4efb\u610f\u306e\u91d1\u984d\u3067\u30010.50\u30c9\u30eb\u304b\u3089\u3002",
+      "tier.film.terms": "\u672c\u7de8\uff0815\u5206\uff09\u3092HD\u30b9\u30c8\u30ea\u30fc\u30df\u30f3\u30b0\u3067\u3002\u304a\u652f\u6255\u3044\u306f\u4efb\u610f\u306e\u91d1\u984d\u3067\u30011\u30c9\u30eb\u304b\u3089\u3002",
       "tier.interviews.label": "\u30ce\u30fc\u30ab\u30c3\u30c8\u8857\u982d\u30a4\u30f3\u30bf\u30d3\u30e5\u30fc",
       "tier.interviews.terms": "41\u520643\u79d2\u306e\u30ce\u30fc\u30ab\u30c3\u30c8\u8857\u982d\u30a4\u30f3\u30bf\u30d3\u30e5\u30fc\u5168\u7de8\uff08\u516811\u7ae0\uff09\u3068\u3001\u82f1\u8a9e\u30fb\u65e5\u672c\u8a9e\u306e\u5168\u6587\u66f8\u304d\u8d77\u3053\u3057\u3002",
       "hero.lead": "\u30b5\u30f3\u30d5\u30e9\u30f3\u30b7\u30b9\u30b3\u30fb\u30c6\u30f3\u30c0\u30fc\u30ed\u30a4\u30f3\u306e\u8def\u4e0a\u3067\u767d\u9ed2\u64ae\u5f71\u3002\u30a6\u30af\u30e9\u30a4\u30ca\u51fa\u8eab\u306e\u6620\u753b\u4f5c\u5bb6\u304c\u3001\u53d6\u308a\u6b8b\u3055\u308c\u305f\u30a2\u30e1\u30ea\u30ab\u306e\u8857\u3068\u7956\u56fd\u306e\u6226\u4e89\u3068\u306e\u91cd\u306a\u308a\u306b\u5411\u304d\u5408\u3046\u3002",
@@ -362,7 +362,7 @@
       "watchRoom.vfAria": "HOW I SEE \u672c\u7de8\u30d7\u30ec\u30fc\u30e4\u30fc",
       "watchRoom.gateTitle": "\u8996\u8074\u30d1\u30b9\u304c\u5fc5\u8981\u3067\u3059",
       "watchRoom.gateCopy":
-        "\u300eHOW I SEE\u300f\u306f\u4efb\u610f\u306e\u91d1\u984d\uff080.50\u30c9\u30eb\u304b\u3089\uff09\u3067\u3054\u89a7\u3044\u305f\u3060\u3051\u307e\u3059\u3002\u304a\u652f\u6255\u3044\u5f8c\u3001\u3053\u306e\u30da\u30fc\u30b8\u306b\u623b\u3063\u3066\u672c\u7de8\u3092\u3054\u8996\u8074\u3044\u305f\u3060\u3051\u307e\u3059\u3002",
+        "\u300eHOW I SEE\u300f\u306f\u4efb\u610f\u306e\u91d1\u984d\uff081\u30c9\u30eb\u304b\u3089\uff09\u3067\u3054\u89a7\u3044\u305f\u3060\u3051\u307e\u3059\u3002\u304a\u652f\u6255\u3044\u5f8c\u3001\u3053\u306e\u30da\u30fc\u30b8\u306b\u623b\u3063\u3066\u672c\u7de8\u3092\u3054\u8996\u8074\u3044\u305f\u3060\u3051\u307e\u3059\u3002",
       "watchRoom.gateCta": "\u672c\u7de8\u3092\u89b3\u308b\u30fb\u91d1\u984d\u306f\u4efb\u610f",
       "watchRoom.download": "HD\u672c\u7de8\u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9",
       "watchRoom.verifyingTitle": "\u8996\u8074\u30d1\u30b9\u3092\u78ba\u8a8d\u4e2d",
@@ -386,7 +386,7 @@
     buy: { label: "Own", terms: "Watch any time, as often as you like" },
     support: { label: "Support the film", terms: "Pay what you want, any amount from $1. Goes to the next cut and festival fees." },
     free: { label: "Watch free", terms: "The full film, streaming in HD. No account, no payment." },
-    film: { label: "Watch the film", terms: "The full film, 15 min, streaming in HD. Pay what you want, from $0.50." },
+    film: { label: "Watch the film", terms: "The full film, 15 min, streaming in HD. Pay what you want, from $1." },
     interviews: { label: "Full uncut interviews", terms: "All 41:43 of the uncut street interviews, 11 chapters, with verbatim transcripts in English and Japanese." }
   };
 

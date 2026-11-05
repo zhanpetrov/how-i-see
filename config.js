@@ -13,9 +13,9 @@
 window.SITE = {
   mode: "links",            // "links" = Stripe Payment Links, "worker" = phase-2 paywall
   WORKER_URL: "",
-  // The film: pay what you want (Stripe minimum $0.50). Stripe sends buyers to
+  // The film: pay what you want (minimum $1). Stripe sends buyers to
   // watch.html with the film's video id; the id is not stored in this file.
-  film:       { label: "Watch the film", price: "Pay what you want", priceJa: "\u4efb\u610f\u306e\u91d1\u984d", terms: "The full film, 15 min, streaming in HD. Pay what you want, from $0.50.", link: "https://buy.stripe.com/7sYeVd09S1nn6tY09q7g402" },
+  film:       { label: "Watch the film", price: "Pay what you want", priceJa: "\u4efb\u610f\u306e\u91d1\u984d", terms: "The full film, 15 min, streaming in HD. Pay what you want, from $1.", link: "https://buy.stripe.com/7sYeVd09S1nn6tY09q7g402" },
   // Full uncut street interviews: $100. Stripe sends buyers to interviews.html with the
   // video id and access key; neither is stored in this file.
   interviews: { label: "Full uncut interviews", price: "$100", priceJa: "100\u30c9\u30eb", terms: "All 41:43 of the uncut street interviews, 11 chapters, with verbatim transcripts in English and Japanese.", link: "https://buy.stripe.com/eVq8wPf4M6HHaKeg8o7g403" },

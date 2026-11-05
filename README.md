@@ -84,7 +84,7 @@ python3 -m http.server 8000
 
 | File | Purpose |
 | :--- | :--- |
-| `config.js` | Prices, Stripe links (`film` pay-what-you-want from $0.50, `interviews` $100), embed URLs, and contact email. Video IDs are not stored here; they live only in the Stripe after-payment links. |
+| `config.js` | Prices, Stripe links (`film` pay-what-you-want from $1, `interviews` $100), embed URLs, and contact email. Video IDs are not stored here; they live only in the Stripe after-payment links. |
 | `index.html` | Main one-page film site (Hero opening with Official Trailer viewfinder followed by Official Film Poster, Watch, The Film, Street Interviews, Director, Screenings, Press, Credits, Footer) |
 | `interviews.html` + `x/<key>.js` | Paid page ($100) for the uncut Street Interviews reel and transcripts. Stripe redirects buyers to `interviews.html?v=<video id>&k=<key>`; the transcript file is named by the key. Soft protection: anyone holding a buyer's link can open it. |
 | `watch.html` | Screening room (`noindex`). Stripe redirects film buyers to `watch.html?v=<video id>&plan=film`. |
