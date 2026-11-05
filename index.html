@@ -80,6 +80,7 @@
         <h1 class="hero-title">HOW I SEE</h1>
         <p class="hero-byline" data-i18n="hero.byline">A film by Zhan Petrov</p>
         <p class="hero-facts" data-i18n-html="hero.facts">2025 &middot; <span class="nowrap">15 min</span> &middot; <span class="nowrap">Black &amp; White</span> &middot; English &middot; <span class="nowrap">San Francisco</span></p>
+        <p class="hero-lead" data-i18n="hero.lead">Shot in black and white on the streets of San Francisco’s Tenderloin, a Ukrainian filmmaker confronts the parallels between an American neighborhood left behind and the war in his homeland.</p>
       </div>
 
       <!-- Official FilmFreeway Trailer inside Camera-Viewfinder Frame (Opening) -->
@@ -134,8 +135,7 @@
       </div>
 
       <div class="hero-actions">
-        <a class="btn btn--hero-primary" href="#watch" data-i18n="hero.ctaWatch">Watch the film</a>
-        <a class="btn btn--hero-secondary" href="#trailer" data-play-trailer data-i18n="hero.ctaTrailer">Watch trailer</a>
+        <a class="btn btn--hero-primary" href="#watch" data-hero-film rel="noopener" data-i18n="hero.ctaFilm">Watch the film · Pay what you want</a>
       </div>
 
       <!-- Official Film Poster (After Trailer) -->
@@ -166,35 +166,35 @@
       </div>
 
       <div class="tickets-grid">
-        <!-- Free Ticket -->
-        <article class="ticket-card" data-tier="free">
+        <!-- Film Ticket: pay what you want -->
+        <article class="ticket-card" data-tier="film">
           <div>
             <div class="ticket-top">
-              <h3 class="ticket-label" data-tier-label>Watch free</h3>
-              <span class="ticket-price" data-tier-price>$0</span>
+              <h3 class="ticket-label" data-tier-label>Watch the film</h3>
+              <span class="ticket-price" data-tier-price>Pay what you want</span>
             </div>
-            <p class="ticket-terms" data-tier-terms>The full film, streaming in HD. No account, no payment.</p>
+            <p class="ticket-terms" data-tier-terms>The full film, 15 min, streaming in HD. Pay what you want, from $0.50.</p>
           </div>
           <div class="ticket-action">
             <div data-tier-slot>
-              <a class="btn btn--ticket" href="watch.html">Watch free — $0</a>
+              <button type="button" class="btn btn--ticket is-disabled" disabled aria-disabled="true">Watch the film</button>
             </div>
-            <p class="ticket-status" data-tier-status hidden></p>
+            <p class="ticket-status" data-tier-status>Checkout opens soon</p>
           </div>
         </article>
 
-        <!-- Support Ticket -->
-        <article class="ticket-card" data-tier="support">
+        <!-- Interviews Ticket: $100 -->
+        <article class="ticket-card" data-tier="interviews">
           <div>
             <div class="ticket-top">
-              <h3 class="ticket-label" data-tier-label>Support the film</h3>
-              <span class="ticket-price" data-tier-price>Any amount</span>
+              <h3 class="ticket-label" data-tier-label>Full uncut interviews</h3>
+              <span class="ticket-price" data-tier-price>$100</span>
             </div>
-            <p class="ticket-terms" data-tier-terms>Pay what you want, any amount from $1. Goes to the next cut and festival fees.</p>
+            <p class="ticket-terms" data-tier-terms>All 41:43 of the uncut street interviews, 11 chapters, with verbatim transcripts in English and Japanese.</p>
           </div>
           <div class="ticket-action">
             <div data-tier-slot>
-              <button type="button" class="btn btn--outline is-disabled" disabled aria-disabled="true">Support the film</button>
+              <button type="button" class="btn btn--outline is-disabled" disabled aria-disabled="true">Full uncut interviews — $100</button>
             </div>
             <p class="ticket-status" data-tier-status>Checkout opens soon</p>
           </div>
@@ -239,44 +239,10 @@
         Uncut street encounters recorded across San Francisco’s Tenderloin, transit corridors, and train tracks (41:43)—eleven chapters and thirteen voices on camera, divided by person with full verbatim transcripts.
       </p>
 
-      <div class="interviews-player">
-        <div class="interviews-screen" id="interviews-screen">
-          <iframe
-            id="interviews-iframe"
-            src="https://www.youtube-nocookie.com/embed/QgwRsArIVKI?rel=0&amp;modestbranding=1&amp;playsinline=1"
-            title="HOW I SEE — Full Street Interviews (41:43)"
-            data-i18n-title="interviews.iframeTitle"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-            allowfullscreen
-            referrerpolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        </div>
-        <div class="interviews-bar">
-          <span class="interviews-now" id="interviews-now" data-i18n="interviews.fullReel">00:00 &ndash; 41:43 &middot; Full Uncut Reel</span>
-          <a
-            class="arrow-link interviews-yt-link"
-            id="interviews-yt-link"
-            href="https://youtu.be/QgwRsArIVKI"
-            target="_blank"
-            rel="noopener"
-            data-i18n="interviews.watchYt"
-          >Open on YouTube &nearr;</a>
-        </div>
+      <div class="interviews-teaser">
+        <p class="interviews-count" data-i18n="interviews.teaserCount">41:43 · 11 chapters · 13 voices · Verbatim transcripts in English and Japanese</p>
+        <a class="btn btn--ticket" href="#watch" data-interviews-buy rel="noopener" data-i18n="interviews.ctaBuy">Get the full uncut interviews — $100</a>
       </div>
-
-      <div class="interviews-toolbar">
-        <p class="interviews-count" data-i18n="interviews.count">11 Chapters &middot; 13 On-Camera Voices &middot; Click any timestamp to jump in player</p>
-        <button
-          type="button"
-          class="btn-text-toggle"
-          id="interviews-toggle-all"
-          aria-expanded="false"
-          data-i18n="interviews.expandAll"
-        >Expand all transcripts</button>
-      </div>
-
-      <div class="interviews-list" id="interviews-list"></div>
 
       <aside class="interviews-crew" aria-labelledby="interviews-crew-heading">
         <h3 class="interviews-crew-title" id="interviews-crew-heading" data-i18n="interviews.crewTitle">Interviewing Crew Behind the Camera</h3>
@@ -498,7 +464,6 @@
   </footer>
 
   <script src="config.js"></script>
-  <script src="interviews-data.js"></script>
   <script src="site.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   HOW I SEE — Full Street Interviews Reel (41:43 · QgwRsArIVKI)
+   HOW I SEE — Full Street Interviews Reel (41:43)
    Chronological character identifications & verified speaker-divided transcript.
    ========================================================================== */
 

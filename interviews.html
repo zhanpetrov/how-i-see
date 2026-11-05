@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Uncut Interviews — HOW I SEE</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="theme-color" content="#070707">
+
+  <!-- Google Fonts: Big Shoulders Display, Source Serif 4, Noto Sans JP & Shippori Mincho -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=Noto+Sans+JP:wght@500;700&amp;family=Shippori+Mincho:wght@400;600&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="interviews-page" id="top">
+  <nav class="watch-nav interviews-page-nav" aria-label="Interviews page navigation">
+    <a href="./" data-i18n="watchRoom.back">&larr; HOW I SEE</a>
+    <div class="site-nav-controls">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn is-active" data-set-lang="en" aria-pressed="true" lang="en">EN</button>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-set-lang="ja" aria-pressed="false" lang="ja">日本語</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-main" id="main-content">
+    <section class="section" id="interviews" aria-labelledby="heading-interviews">
+      <div class="section-header">
+        <h1 class="section-title" id="heading-interviews" data-i18n="interviews.heading">Street Interviews</h1>
+        <span class="section-index">41:43</span>
+      </div>
+
+      <p class="logline" data-i18n="interviews.lead">
+        Uncut street encounters recorded across San Francisco’s Tenderloin, transit corridors, and train tracks (41:43)—eleven chapters and thirteen voices on camera, divided by person with full verbatim transcripts.
+      </p>
+
+      <!-- Shown until a valid purchase link is used -->
+      <div class="interviews-gate" id="interviews-gate">
+        <h2 class="interviews-gate-title" data-i18n="interviews.gateTitle">Access Required</h2>
+        <p class="interviews-gate-copy" data-i18n="interviews.gateCopy">The full uncut interviews open on this page after purchase.</p>
+        <a class="btn btn--ticket" id="interviews-gate-cta" data-interviews-buy href="./#watch" rel="noopener" data-i18n="interviews.ctaBuy">Get the full uncut interviews — $100</a>
+      </div>
+
+      <!-- Unlocked by the purchase link (?v=…&k=…) -->
+      <div id="interviews-gated" hidden>
+        <p class="interviews-paid-note" data-i18n="interviews.paidNote">Thank you. Bookmark this page — this address is your access link.</p>
+        <div class="interviews-player">
+          <div class="interviews-screen" id="interviews-screen">
+            <iframe
+              id="interviews-iframe"
+              src="about:blank"
+              title="HOW I SEE — Full Street Interviews (41:43)"
+              data-i18n-title="interviews.iframeTitle"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+          <div class="interviews-bar">
+            <span class="interviews-now" id="interviews-now" data-i18n="interviews.fullReel">00:00 &ndash; 41:43 &middot; Full Uncut Reel</span>
+            <a
+              class="arrow-link interviews-yt-link"
+              id="interviews-yt-link"
+              href="#"
+              target="_blank"
+              rel="noopener"
+              data-i18n="interviews.watchYt"
+            >Open on YouTube &nearr;</a>
+          </div>
+        </div>
+
+        <div class="interviews-toolbar">
+          <p class="interviews-count" data-i18n="interviews.count">11 Chapters &middot; 13 On-Camera Voices &middot; Click any timestamp to jump in player</p>
+          <button
+            type="button"
+            class="btn-text-toggle"
+            id="interviews-toggle-all"
+            aria-expanded="false"
+            data-i18n="interviews.expandAll"
+          >Expand all transcripts</button>
+        </div>
+
+        <div class="interviews-list" id="interviews-list"></div>
+
+        <aside class="interviews-crew" aria-labelledby="interviews-crew-heading">
+          <h3 class="interviews-crew-title" id="interviews-crew-heading" data-i18n="interviews.crewTitle">Interviewing Crew Behind the Camera</h3>
+          <p class="interviews-crew-body" data-i18n-html="interviews.crewBody">
+            <strong>Zhan Petrov</strong> (director &amp; primary interviewer throughout), joined on the streets by unit camera &amp; location sound crew <strong>Jeff Kao</strong> (location sound &amp; camera), <strong>Timofei Glin</strong>, <strong>Tatiana Scutelnic</strong>, <strong>Anastasia Shubina</strong>, and <strong>Konstantin Kodincev</strong> (including second-angle handheld iPhone camera at 06:45&ndash;13:21 and Taylor Street co-interviewing at 18:51&ndash;19:21 &amp; 39:25).
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="watch-nav" style="padding-bottom: 1.75rem;" aria-label="Footer">
+    <span style="color: #737373; font-size: 0.82rem;">&copy; 2025 Zhan Petrov</span>
+    <a href="mailto:zhanpetrov8@gmail.com" data-site-email="text">zhanpetrov8@gmail.com</a>
+  </footer>
+
+  <script src="config.js"></script>
+  <script>
+    // The transcripts file is named by the access key in the purchase link.
+    (function () {
+      function load(src, done) {
+        var s = document.createElement("script");
+        s.src = src;
+        s.onload = done;
+        s.onerror = done;
+        document.body.appendChild(s);
+      }
+      var k = "";
+      try { k = new URLSearchParams(location.search).get("k") || ""; } catch (e) {}
+      var startSite = function () { load("site.js", function () {}); };
+      if (/^[a-f0-9]{16}$/.test(k)) load("x/" + k + ".js", startSite);
+      else startSite();
+    })();
+  </script>
+</body>
+</html>

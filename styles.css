@@ -2073,3 +2073,74 @@ html[lang="ja"] .interviews-crew-title {
 
 /* Never show elements marked hidden (e.g. the download button and controls bar before access is granted). */
 [hidden] { display: none !important; }
+
+/* ==========================================================================
+   Hero short description · Interviews teaser, gate & paid page
+   ========================================================================== */
+.hero-lead {
+  max-width: 40rem;
+  margin: 1.1rem auto 0;
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2vw, 1.12rem);
+  line-height: 1.6;
+  color: #d4d4d4;
+}
+
+html[lang="ja"] .hero-lead {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  line-height: 1.9;
+}
+
+.interviews-teaser {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--rule-light);
+  border-bottom: 1px solid var(--rule-light);
+}
+
+.interviews-page .watch-nav a {
+  color: var(--ink-muted);
+}
+
+.interviews-gate {
+  margin: 2rem 0 1rem;
+  padding: 2rem 1.5rem;
+  border: 1px solid var(--ink);
+  text-align: center;
+}
+
+.interviews-gate-title {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.interviews-gate-copy {
+  margin: 0 0 1.25rem;
+  color: var(--ink-muted);
+}
+
+.interviews-paid-note {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.84rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+@media (max-width: 560px) {
+  .interviews-teaser .btn {
+    width: 100%;
+  }
+}

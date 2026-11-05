@@ -74,6 +74,17 @@
       "tier.support.terms": "Pay what you want, any amount from $1. Goes to the next cut and festival fees.",
       "tier.free.label": "Watch free",
       "tier.free.terms": "The full film, streaming in HD. No account, no payment.",
+      "tier.film.label": "Watch the film",
+      "tier.film.terms": "The full film, 15 min, streaming in HD. Pay what you want, from $0.50.",
+      "tier.interviews.label": "Full uncut interviews",
+      "tier.interviews.terms": "All 41:43 of the uncut street interviews, 11 chapters, with verbatim transcripts in English and Japanese.",
+      "hero.lead": "Shot in black and white on the streets of San Francisco\u2019s Tenderloin, a Ukrainian filmmaker confronts the parallels between an American neighborhood left behind and the war in his homeland.",
+      "hero.ctaFilm": "Watch the film \u00b7 Pay what you want",
+      "interviews.teaserCount": "41:43 \u00b7 11 chapters \u00b7 13 voices \u00b7 Verbatim transcripts in English and Japanese",
+      "interviews.ctaBuy": "Get the full uncut interviews \u2014 $100",
+      "interviews.gateTitle": "Access Required",
+      "interviews.gateCopy": "The full uncut interviews open on this page after purchase.",
+      "interviews.paidNote": "Thank you. Bookmark this page \u2014 this address is your access link.",
       "film.heading": "The Film",
       "film.logline":
         "Shot in stark black and white on the streets of San Francisco\u2019s Tenderloin, a Ukrainian filmmaker confronts the unsettling visual and human parallels between an American neighborhood left behind and the war tearing through his homeland.",
@@ -166,8 +177,8 @@
       "watchRoom.vfAria": "HOW I SEE full film player",
       "watchRoom.gateTitle": "Screening Pass Required",
       "watchRoom.gateCopy":
-        "After renting or purchasing <em>HOW I SEE</em>, you are brought back here automatically to watch the film.",
-      "watchRoom.gateCta": "Rent or Own the Film",
+        "Pay what you want for <em>HOW I SEE</em>, from $0.50, and you are brought back here to watch the film.",
+      "watchRoom.gateCta": "Watch the film \u00b7 Pay what you want",
       "watchRoom.download": "Download HD Copy",
       "watchRoom.verifyingTitle": "Verifying Screening Pass",
       "watchRoom.verifyingCopy": "Checking your access token\u2026",
@@ -248,6 +259,17 @@
       "tier.support.terms": "\u4efb\u610f\u306e\u91d1\u984d\uff081\u30c9\u30eb\u304b\u3089\uff09\u3067\u672c\u4f5c\u3092\u652f\u63f4\u3044\u305f\u3060\u3051\u307e\u3059\u3002\u6b21\u306e\u7de8\u96c6\u3068\u6620\u753b\u796d\u306e\u51fa\u54c1\u8cbb\u7528\u306b\u5145\u3066\u3089\u308c\u307e\u3059\u3002",
       "tier.free.label": "\u7121\u6599\u3067\u89b3\u308b",
       "tier.free.terms": "\u672c\u7de8\u3092\u7121\u6599\u30fbHD\u3067\u914d\u4fe1\u3002\u767b\u9332\u3082\u652f\u6255\u3044\u3082\u4e0d\u8981\u3067\u3059\u3002",
+      "tier.film.label": "\u672c\u7de8\u3092\u89b3\u308b",
+      "tier.film.terms": "\u672c\u7de8\uff0815\u5206\uff09\u3092HD\u30b9\u30c8\u30ea\u30fc\u30df\u30f3\u30b0\u3067\u3002\u304a\u652f\u6255\u3044\u306f\u4efb\u610f\u306e\u91d1\u984d\u3067\u30010.50\u30c9\u30eb\u304b\u3089\u3002",
+      "tier.interviews.label": "\u30ce\u30fc\u30ab\u30c3\u30c8\u8857\u982d\u30a4\u30f3\u30bf\u30d3\u30e5\u30fc",
+      "tier.interviews.terms": "41\u520643\u79d2\u306e\u30ce\u30fc\u30ab\u30c3\u30c8\u8857\u982d\u30a4\u30f3\u30bf\u30d3\u30e5\u30fc\u5168\u7de8\uff08\u516811\u7ae0\uff09\u3068\u3001\u82f1\u8a9e\u30fb\u65e5\u672c\u8a9e\u306e\u5168\u6587\u66f8\u304d\u8d77\u3053\u3057\u3002",
+      "hero.lead": "\u30b5\u30f3\u30d5\u30e9\u30f3\u30b7\u30b9\u30b3\u30fb\u30c6\u30f3\u30c0\u30fc\u30ed\u30a4\u30f3\u306e\u8def\u4e0a\u3067\u767d\u9ed2\u64ae\u5f71\u3002\u30a6\u30af\u30e9\u30a4\u30ca\u51fa\u8eab\u306e\u6620\u753b\u4f5c\u5bb6\u304c\u3001\u53d6\u308a\u6b8b\u3055\u308c\u305f\u30a2\u30e1\u30ea\u30ab\u306e\u8857\u3068\u7956\u56fd\u306e\u6226\u4e89\u3068\u306e\u91cd\u306a\u308a\u306b\u5411\u304d\u5408\u3046\u3002",
+      "hero.ctaFilm": "\u672c\u7de8\u3092\u89b3\u308b\u30fb\u91d1\u984d\u306f\u4efb\u610f",
+      "interviews.teaserCount": "41\u520643\u79d2\u30fb\u516811\u7ae0\u30fb\u767b\u5834\u4eba\u726913\u540d\u30fb\u82f1\u8a9e\uff0f\u65e5\u672c\u8a9e\u306e\u5168\u6587\u66f8\u304d\u8d77\u3053\u3057",
+      "interviews.ctaBuy": "\u30ce\u30fc\u30ab\u30c3\u30c8\u30fb\u30a4\u30f3\u30bf\u30d3\u30e5\u30fc\u5168\u7de8\u3092\u8cfc\u5165 \u2014 100\u30c9\u30eb",
+      "interviews.gateTitle": "\u30a2\u30af\u30bb\u30b9\u304c\u5fc5\u8981\u3067\u3059",
+      "interviews.gateCopy": "\u3054\u8cfc\u5165\u5f8c\u3001\u3053\u306e\u30da\u30fc\u30b8\u3067\u30ce\u30fc\u30ab\u30c3\u30c8\u30fb\u30a4\u30f3\u30bf\u30d3\u30e5\u30fc\u5168\u7de8\u3092\u3054\u89a7\u3044\u305f\u3060\u3051\u307e\u3059\u3002",
+      "interviews.paidNote": "\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\u3053\u306e\u30da\u30fc\u30b8\u3092\u30d6\u30c3\u30af\u30de\u30fc\u30af\u3057\u3066\u304f\u3060\u3055\u3044\uff08\u3053\u306eURL\u304c\u30a2\u30af\u30bb\u30b9\u7528\u30ea\u30f3\u30af\u3067\u3059\uff09\u3002",
       "film.heading": "\u4f5c\u54c1\u7d39\u4ecb",
       "film.logline":
         "\u30b5\u30f3\u30d5\u30e9\u30f3\u30b7\u30b9\u30b3\u30fb\u30c6\u30f3\u30c0\u30fc\u30ed\u30a4\u30f3\u5730\u533a\u306e\u8def\u4e0a\u3067\u9bae\u70c8\u306a\u30e2\u30ce\u30af\u30ed\u30fc\u30e0\u306b\u3088\u3063\u3066\u64ae\u5f71\u3055\u308c\u305f\u672c\u4f5c\u3067\u3001\u30a6\u30af\u30e9\u30a4\u30ca\u51fa\u8eab\u306e\u6620\u753b\u76e3\u7763\u306f\u3001\u53d6\u308a\u6b8b\u3055\u308c\u305f\u30a2\u30e1\u30ea\u30ab\u306e\u8857\u89d2\u3068\u6226\u706b\u306b\u5f15\u304d\u88c2\u304b\u308c\u308b\u6545\u90f7\u3068\u306e\u9593\u306b\u6a2a\u305f\u308f\u308b\u3001\u4e0d\u7a4f\u306a\u8996\u899a\u7684\u30fb\u4eba\u9593\u7684\u5171\u9cf4\u3068\u5411\u304d\u5408\u3046\u3002",
@@ -340,8 +362,8 @@
       "watchRoom.vfAria": "HOW I SEE \u672c\u7de8\u30d7\u30ec\u30fc\u30e4\u30fc",
       "watchRoom.gateTitle": "\u8996\u8074\u30d1\u30b9\u304c\u5fc5\u8981\u3067\u3059",
       "watchRoom.gateCopy":
-        "<em>HOW I SEE</em>\u3092\u30ec\u30f3\u30bf\u30eb\u307e\u305f\u306f\u3054\u8cfc\u5165\u3044\u305f\u3060\u304f\u3068\u3001\u6c7a\u6e08\u5b8c\u4e86\u5f8c\u306b\u81ea\u52d5\u7684\u306b\u3053\u306e\u30da\u30fc\u30b8\u3078\u623b\u308a\u672c\u7de8\u3092\u3054\u8996\u8074\u3044\u305f\u3060\u3051\u307e\u3059\u3002",
-      "watchRoom.gateCta": "\u30ec\u30f3\u30bf\u30eb\u30fb\u8cfc\u5165\u3078\u9032\u3080",
+        "\u300eHOW I SEE\u300f\u306f\u4efb\u610f\u306e\u91d1\u984d\uff080.50\u30c9\u30eb\u304b\u3089\uff09\u3067\u3054\u89a7\u3044\u305f\u3060\u3051\u307e\u3059\u3002\u304a\u652f\u6255\u3044\u5f8c\u3001\u3053\u306e\u30da\u30fc\u30b8\u306b\u623b\u3063\u3066\u672c\u7de8\u3092\u3054\u8996\u8074\u3044\u305f\u3060\u3051\u307e\u3059\u3002",
+      "watchRoom.gateCta": "\u672c\u7de8\u3092\u89b3\u308b\u30fb\u91d1\u984d\u306f\u4efb\u610f",
       "watchRoom.download": "HD\u672c\u7de8\u3092\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9",
       "watchRoom.verifyingTitle": "\u8996\u8074\u30d1\u30b9\u3092\u78ba\u8a8d\u4e2d",
       "watchRoom.verifyingCopy": "\u30a2\u30af\u30bb\u30b9\u30c8\u30fc\u30af\u30f3\u3092\u7167\u4f1a\u3057\u3066\u3044\u307e\u3059\u2026",
@@ -363,7 +385,9 @@
     rent: { label: "Rent", terms: "48 hours to watch, streaming in HD" },
     buy: { label: "Own", terms: "Watch any time, as often as you like" },
     support: { label: "Support the film", terms: "Pay what you want, any amount from $1. Goes to the next cut and festival fees." },
-    free: { label: "Watch free", terms: "The full film, streaming in HD. No account, no payment." }
+    free: { label: "Watch free", terms: "The full film, streaming in HD. No account, no payment." },
+    film: { label: "Watch the film", terms: "The full film, 15 min, streaming in HD. Pay what you want, from $0.50." },
+    interviews: { label: "Full uncut interviews", terms: "All 41:43 of the uncut street interviews, 11 chapters, with verbatim transcripts in English and Japanese." }
   };
 
   var currentLang = "en";
@@ -559,6 +583,19 @@
   }
 
   function wireTickets() {
+    var filmCfg = cfg.film || {};
+    var filmLink = localizeCheckoutUrl(trimStr(filmCfg.link), currentLang);
+    var heroFilm = document.querySelectorAll("[data-hero-film]");
+    for (var h = 0; h < heroFilm.length; h++) {
+      if (filmLink) heroFilm[h].href = filmLink;
+    }
+    var intCfg = cfg.interviews || {};
+    var intLink = localizeCheckoutUrl(trimStr(intCfg.link), currentLang);
+    var intBuy = document.querySelectorAll("[data-interviews-buy]");
+    for (var b = 0; b < intBuy.length; b++) {
+      if (intLink) intBuy[b].href = intLink;
+    }
+
     var cards = document.querySelectorAll("[data-tier]");
     if (!cards.length) return;
 
@@ -650,7 +687,7 @@
 
     if (watchRoomState === "yt" && expiryEl) {
       expiryEl.textContent =
-        watchRoomPlan === "own"
+        watchRoomPlan === "own" || watchRoomPlan === "film"
           ? t("watchRoom.ytOwn")
           : watchRoomPlan === "rent"
             ? t("watchRoom.ytRent")
@@ -660,12 +697,12 @@
                 ? t("watchRoom.ytFree")
                 : t("watchRoom.ytNeutral");
       var supportCta = document.getElementById("watch-support");
-      var supportLink = cfg.support ? trimStr(cfg.support.link) : "";
+      var supportLink = cfg.support ? trimStr(cfg.support.link) : cfg.film ? trimStr(cfg.film.link) : "";
       var navSupport = document.getElementById("watch-nav-support");
       if (navSupport && supportLink) navSupport.href = localizeCheckoutUrl(supportLink, currentLang);
       if (supportCta) {
         supportCta.textContent = t("watchRoom.supportCta");
-        if (supportLink && watchRoomPlan !== "support") {
+        if (supportLink && !watchRoomPlan) {
           supportCta.href = localizeCheckoutUrl(supportLink, currentLang);
           supportCta.hidden = false;
         } else {
@@ -1376,16 +1413,13 @@
     // Payment Links mode: Stripe redirects buyers here with the YouTube video id
     // in the URL (?v=VIDEO_ID&plan=rent|own&session_id=...). The id lives only in
     // the Stripe Payment Link settings, never in this public code.
-    // Free release: with no ?v, the Screening Room plays cfg.freeVideoId.
     var ytId = trimStr(params.get("v"));
-    var freeId = trimStr(cfg.freeVideoId);
     var planRaw = trimStr(params.get("plan")).toLowerCase();
-    if (!ytId && freeId) {
-      ytId = freeId;
-      planRaw = "free";
-    }
+    var gateCtaEl = document.getElementById("watch-gate-cta");
+    var filmLinkRaw = cfg.film ? trimStr(cfg.film.link) : "";
+    if (gateCtaEl && filmLinkRaw) gateCtaEl.href = localizeCheckoutUrl(filmLinkRaw, currentLang);
     if (!isWorkerMode && /^[A-Za-z0-9_-]{11}$/.test(ytId)) {
-      watchRoomPlan = planRaw === "own" ? "own" : planRaw === "rent" ? "rent" : planRaw === "support" ? "support" : planRaw === "free" ? "free" : "";
+      watchRoomPlan = planRaw === "own" ? "own" : planRaw === "rent" ? "rent" : planRaw === "support" ? "support" : planRaw === "free" ? "free" : planRaw === "film" ? "film" : "";
       watchRoomState = "yt";
 
       var screen = root.querySelector(".vf-screen");
@@ -1413,7 +1447,9 @@
                 ? "SUPPORTER"
                 : watchRoomPlan === "free"
                   ? "FREE SCREENING"
-                  : "SCREENING ROOM";
+                  : watchRoomPlan === "film"
+                    ? "SCREENING PASS"
+                    : "SCREENING ROOM";
       }
       if (controlsBar) controlsBar.hidden = false;
       renderWatchRoomDynamicCopy();
@@ -1475,8 +1511,20 @@
 
   function wireInterviews() {
     var listEl = document.getElementById("interviews-list");
+    var gatedEl = document.getElementById("interviews-gated");
+    var gateEl = document.getElementById("interviews-gate");
+    var gateCta = document.getElementById("interviews-gate-cta");
+    var intLinkRaw = cfg.interviews ? trimStr(cfg.interviews.link) : "";
+    if (gateCta && intLinkRaw) gateCta.href = localizeCheckoutUrl(intLinkRaw, currentLang);
     var items = Array.isArray(window.INTERVIEWS_DATA) ? window.INTERVIEWS_DATA : [];
-    if (!listEl || !items.length) return;
+    var urlVid = "";
+    try {
+      urlVid = trimStr(new URLSearchParams(window.location.search).get("v"));
+    } catch (eV) {}
+    if (!/^[A-Za-z0-9_-]{11}$/.test(urlVid)) urlVid = "";
+    if (!listEl || !items.length || !urlVid) return;
+    if (gatedEl) gatedEl.hidden = false;
+    if (gateEl) gateEl.hidden = true;
 
     var iframeEl = document.getElementById("interviews-iframe");
     var screenEl = document.getElementById("interviews-screen");
@@ -1484,10 +1532,10 @@
     var ytLinkEl = document.getElementById("interviews-yt-link");
     var toggleAllBtn = document.getElementById("interviews-toggle-all");
 
-    var vid = trimStr(cfg.interviewsVideoId) || "QgwRsArIVKI";
-    var ytBaseUrl = trimStr(cfg.interviewsYoutubeUrl) || "https://youtu.be/" + vid;
+    var vid = urlVid;
+    var ytBaseUrl = "https://youtu.be/" + vid;
 
-    if (iframeEl && iframeEl.getAttribute("src").indexOf(vid) === -1) {
+    if (iframeEl && (iframeEl.getAttribute("src") || "").indexOf(vid) === -1) {
       iframeEl.src =
         "https://www.youtube-nocookie.com/embed/" +
         vid +

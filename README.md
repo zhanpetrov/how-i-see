@@ -84,10 +84,10 @@ python3 -m http.server 8000
 
 | File | Purpose |
 | :--- | :--- |
-| `config.js` | Single source of truth for prices, Stripe links, embed URLs (`freeVideoId`, `interviewsVideoId`), and contact email |
+| `config.js` | Prices, Stripe links (`film` pay-what-you-want from $0.50, `interviews` $100), embed URLs, and contact email. Video IDs are not stored here; they live only in the Stripe after-payment links. |
 | `index.html` | Main one-page film site (Hero opening with Official Trailer viewfinder followed by Official Film Poster, Watch, The Film, Street Interviews, Director, Screenings, Press, Credits, Footer) |
-| `interviews-data.js` | Chronological character roster & speaker-divided verbatim transcripts (`00:00 – 41:43`) for the uncut Street Interviews reel |
-| `watch.html` | Screening room (`noindex`) for streaming & supporter playback |
+| `interviews.html` + `x/<key>.js` | Paid page ($100) for the uncut Street Interviews reel and transcripts. Stripe redirects buyers to `interviews.html?v=<video id>&k=<key>`; the transcript file is named by the key. Soft protection: anyone holding a buyer's link can open it. |
+| `watch.html` | Screening room (`noindex`). Stripe redirects film buyers to `watch.html?v=<video id>&plan=film`. |
 | `styles.css` | Pure black-and-white responsive stylesheet (`Big Shoulders Display` + `Source Serif 4`) |
 | `site.js` | Wires `window.SITE` and `window.INTERVIEWS_DATA` into `index.html` and `watch.html` |
 | `assets/` | Official FilmFreeway `poster.jpg`, `trailer.mp4`, `trailer-poster.jpg`, and viewfinder `favicon.svg` |
