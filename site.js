@@ -733,7 +733,8 @@
     document.documentElement.setAttribute("lang", currentLang);
 
     var isWatchRoom = !!document.getElementById("watch-player-root");
-    document.title = isWatchRoom ? t("watchPageTitle") : t("pageTitle");
+    var isInterviewsPage = !!document.getElementById("interviews-gated");
+    document.title = isWatchRoom ? t("watchPageTitle") : isInterviewsPage ? t("interviews.heading") + " \u2014 HOW I SEE" : t("pageTitle");
 
     var textNodes = document.querySelectorAll("[data-i18n]");
     for (var i = 0; i < textNodes.length; i++) {
