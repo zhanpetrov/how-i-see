@@ -246,7 +246,7 @@
       "poster.kicker": "\u516c\u5f0f\u30dd\u30b9\u30bf\u30fc",
       "trailer.playAria": "\u516c\u5f0f\u4e88\u544a\u7de8\u3092\u518d\u751f",
       "trailer.playLabel": "\u4e88\u544a\u7de8\u3092\u518d\u751f",
-      "watch.heading": "\u672c\u7de8\u8996\u8074",
+      "watch.heading": "\u8996\u8074",
       "watch.supportAria": "\u4f5c\u54c1\u3092\u652f\u63f4\u3059\u308b",
       "watch.soon": "\u6c7a\u6e08\u53d7\u4ed8\u306f\u307e\u3082\u306a\u304f\u958b\u59cb\u3057\u307e\u3059",
       "watch.opening": "\u6c7a\u6e08\u753b\u9762\u3092\u958b\u3044\u3066\u3044\u307e\u3059\u2026",
@@ -428,13 +428,22 @@
     if (!rawUrl) return "";
     try {
       var parsed = new URL(rawUrl, window.location.href);
-      if (parsed.hostname.indexOf("stripe.com") !== -1 && !parsed.searchParams.has("locale")) {
+      if (parsed.hostname.indexOf("stripe.com") !== -1) {
         parsed.searchParams.set("locale", lang === "ja" ? "ja" : "en");
       }
       return parsed.toString();
     } catch (e) {
       return rawUrl;
     }
+  }
+
+  function resolveTierCheckoutLink(tierCfg) {
+    if (!tierCfg) return "";
+    var raw =
+      currentLang === "ja" && trimStr(tierCfg.linkJa)
+        ? trimStr(tierCfg.linkJa)
+        : trimStr(tierCfg.link);
+    return localizeCheckoutUrl(raw, currentLang);
   }
 
   function wireGlobalLinks() {
@@ -583,14 +592,17 @@
   }
 
   function wireTickets() {
-    var filmCfg = cfg.film || {};
-    var filmLink = localizeCheckoutUrl(trimStr(filmCfg.link), currentLang);
+    var filmLink = resolveTierCheckoutLink(cfg.film);
     var heroFilm = document.querySelectorAll("[data-hero-film]");
     for (var h = 0; h < heroFilm.length; h++) {
       if (filmLink) heroFilm[h].href = filmLink;
     }
-    var intCfg = cfg.interviews || {};
-    var intLink = localizeCheckoutUrl(trimStr(intCfg.link), currentLang);
+    var navSupportEl = document.getElementById("watch-nav-support");
+    var supportCheckout = resolveTierCheckoutLink(cfg.support || cfg.film);
+    if (navSupportEl && supportCheckout) {
+      navSupportEl.href = supportCheckout;
+    }
+    var intLink = resolveTierCheckoutLink(cfg.interviews);
     var intBuy = document.querySelectorAll("[data-interviews-buy]");
     for (var b = 0; b < intBuy.length; b++) {
       if (intLink) intBuy[b].href = intLink;
@@ -619,11 +631,7 @@
         currentLang === "ja" && trimStr(tierCfg.priceJa)
           ? trimStr(tierCfg.priceJa)
           : trimStr(tierCfg.price);
-      var rawDirectLink =
-        currentLang === "ja" && trimStr(tierCfg.linkJa)
-          ? trimStr(tierCfg.linkJa)
-          : trimStr(tierCfg.link);
-      var directLink = localizeCheckoutUrl(rawDirectLink, currentLang);
+      var directLink = resolveTierCheckoutLink(tierCfg);
 
       var labelEl = card.querySelector("[data-tier-label]");
       var priceEl = card.querySelector("[data-tier-price]");
@@ -697,13 +705,13 @@
                 ? t("watchRoom.ytFree")
                 : t("watchRoom.ytNeutral");
       var supportCta = document.getElementById("watch-support");
-      var supportLink = cfg.support ? trimStr(cfg.support.link) : cfg.film ? trimStr(cfg.film.link) : "";
+      var supportCheckoutUrl = resolveTierCheckoutLink(cfg.support || cfg.film);
       var navSupport = document.getElementById("watch-nav-support");
-      if (navSupport && supportLink) navSupport.href = localizeCheckoutUrl(supportLink, currentLang);
+      if (navSupport && supportCheckoutUrl) navSupport.href = supportCheckoutUrl;
       if (supportCta) {
         supportCta.textContent = t("watchRoom.supportCta");
-        if (supportLink && !watchRoomPlan) {
-          supportCta.href = localizeCheckoutUrl(supportLink, currentLang);
+        if (supportCheckoutUrl && !watchRoomPlan) {
+          supportCta.href = supportCheckoutUrl;
           supportCta.hidden = false;
         } else {
           supportCta.hidden = true;
@@ -1417,8 +1425,8 @@
     var ytId = trimStr(params.get("v"));
     var planRaw = trimStr(params.get("plan")).toLowerCase();
     var gateCtaEl = document.getElementById("watch-gate-cta");
-    var filmLinkRaw = cfg.film ? trimStr(cfg.film.link) : "";
-    if (gateCtaEl && filmLinkRaw) gateCtaEl.href = localizeCheckoutUrl(filmLinkRaw, currentLang);
+    var filmCheckoutUrl = resolveTierCheckoutLink(cfg.film);
+    if (gateCtaEl && filmCheckoutUrl) gateCtaEl.href = filmCheckoutUrl;
     if (!isWorkerMode && /^[A-Za-z0-9_-]{11}$/.test(ytId)) {
       watchRoomPlan = planRaw === "own" ? "own" : planRaw === "rent" ? "rent" : planRaw === "support" ? "support" : planRaw === "free" ? "free" : planRaw === "film" ? "film" : "";
       watchRoomState = "yt";
@@ -1515,8 +1523,8 @@
     var gatedEl = document.getElementById("interviews-gated");
     var gateEl = document.getElementById("interviews-gate");
     var gateCta = document.getElementById("interviews-gate-cta");
-    var intLinkRaw = cfg.interviews ? trimStr(cfg.interviews.link) : "";
-    if (gateCta && intLinkRaw) gateCta.href = localizeCheckoutUrl(intLinkRaw, currentLang);
+    var intCheckoutUrl = resolveTierCheckoutLink(cfg.interviews);
+    if (gateCta && intCheckoutUrl) gateCta.href = intCheckoutUrl;
     var items = Array.isArray(window.INTERVIEWS_DATA) ? window.INTERVIEWS_DATA : [];
     var urlVid = "";
     try {
