@@ -23,6 +23,7 @@
       "nav.screenings": "Screenings",
       "nav.press": "Press",
       "nav.credits": "Credits",
+      "nav.scriptlab": "Script Lab",
       "nav.menu": "Menu",
       "nav.close": "Close",
       "hero.kicker": "Short Documentary",
@@ -170,6 +171,11 @@
       "credits.dedicatedDt": "Dedicated To",
       "credits.dedicatedDd":
         "All those whose stories and sacrifices may never reach the headlines.<br>Special appreciation to theaters that keep the spirit of cinema alive.",
+      "storyContinues.kicker": "Made With / The Story Continues",
+      "storyContinues.body":
+        "The interviews in HOW I SEE became the first project in Film Script Lab, the screenplay tool Zhan Petrov built at 220 Lab.",
+      "storyContinues.cta": "See Script Lab \u2192",
+      "footer.scriptlab": "Script Lab",
       "footer.contact": "Contact",
       "watchRoom.skip": "Skip to player",
       "watchRoom.back": "\u2190 HOW I SEE",
@@ -208,6 +214,7 @@
       "nav.screenings": "\u4e0a\u6620\u60c5\u5831",
       "nav.press": "\u30d7\u30ec\u30b9",
       "nav.credits": "\u30af\u30ec\u30b8\u30c3\u30c8",
+      "nav.scriptlab": "Script Lab",
       "nav.menu": "\u30e1\u30cb\u30e5\u30fc",
       "nav.close": "\u9589\u3058\u308b",
       "hero.kicker": "\u77ed\u7de8\u30c9\u30ad\u30e5\u30e1\u30f3\u30bf\u30ea\u30fc",
@@ -355,6 +362,11 @@
       "credits.dedicatedDt": "\u732e\u8f9e",
       "credits.dedicatedDd":
         "\u305d\u306e\u7269\u8a9e\u3068\u72a0\u7272\u304c\u6c7a\u3057\u3066\u898b\u51fa\u3057\u306b\u5c4a\u304f\u3053\u3068\u306e\u306a\u3044\u3059\u3079\u3066\u306e\u4eba\u3005\u3078\u3002<br>\u6620\u753b\u306e\u7cbe\u795e\u3092\u751f\u304b\u3057\u7d9a\u3051\u308b\u6620\u753b\u9928\u3078\u306e\u7279\u5225\u306a\u611f\u8b1d\u3092\u8fbc\u3081\u3066\u3002",
+      "storyContinues.kicker": "[ZHAN: verify JP] \u5236\u4f5c\u30c4\u30fc\u30eb\u30fb\u305d\u306e\u5148\u3078",
+      "storyContinues.body":
+        "[ZHAN: verify JP] \u300eHOW I SEE\u300f\u306e\u8857\u982d\u30a4\u30f3\u30bf\u30d3\u30e5\u30fc\u306f\u3001\u30b8\u30e3\u30f3\u30fb\u30da\u30c8\u30ed\u30d5\u304c220 Lab\u3067\u958b\u767a\u3057\u305f\u811a\u672c\u30c4\u30fc\u30eb\u300cFilm Script Lab\u300d\u306e\u6700\u521d\u306e\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306b\u306a\u308a\u307e\u3057\u305f\u3002",
+      "storyContinues.cta": "[ZHAN: verify JP] Script Lab\u3092\u898b\u308b \u2192",
+      "footer.scriptlab": "Script Lab",
       "footer.contact": "\u304a\u554f\u3044\u5408\u308f\u305b",
       "watchRoom.skip": "\u30d7\u30ec\u30fc\u30e4\u30fc\u3078\u30b9\u30ad\u30c3\u30d7",
       "watchRoom.back": "\u2190 HOW I SEE \u30c8\u30c3\u30d7\u3078",
